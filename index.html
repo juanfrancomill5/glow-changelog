@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230D0B0A'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23F0703A'/%3E%3C/svg%3E">
+<title>Glow Changelog</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one sticky filter bar, then a single table (Date · Time · Type · Area · Change · Figma). Glow tokens, dark-first, Manrope. */
+:root{
+  --bg:#0D0B0A; --surface:#17120F; --surface-2:#1F1915; --row-alt:rgba(255,255,255,.025);
+  --line:rgba(255,255,255,.09); --line-strong:rgba(255,255,255,.16);
+  --ink:#F3EDE7; --ink-2:#C9BEB4; --ink-muted:#8B7F76;
+  --brand:#F0703A; --brand-ink:#FFB088; --brand-soft:rgba(240,112,58,.16);
+  --new:#7BC98E; --new-soft:rgba(123,201,142,.14);
+  --upd:#F0703A; --upd-soft:rgba(240,112,58,.14);
+  --fix:#6FB4F2; --fix-soft:rgba(111,180,242,.14);
+  --rem:#C9BEB4; --rem-soft:rgba(201,190,180,.12);
+  --rule:#D7B45C; --rule-soft:rgba(215,180,92,.14);
+  --shadow:0 8px 24px -12px rgba(0,0,0,.6);
+  --font:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){ :root:not([data-theme="dark"]){
+  --bg:#EEE7E0; --surface:#FDFBF9; --surface-2:#F5F0EA; --row-alt:rgba(28,22,19,.03);
+  --line:rgba(28,22,19,.10); --line-strong:rgba(28,22,19,.18);
+  --ink:#17110E; --ink-2:#382E29; --ink-muted:#5F544E;
+  --brand:#A23D16; --brand-ink:#A23D16; --brand-soft:rgba(162,61,22,.12);
+  --new:#13633A; --new-soft:rgba(19,99,58,.12);
+  --upd:#A23D16; --upd-soft:rgba(162,61,22,.12);
+  --fix:#1F5FA8; --fix-soft:rgba(31,95,168,.12);
+  --rem:#5F544E; --rem-soft:rgba(95,84,78,.12);
+  --rule:#8A6A14; --rule-soft:rgba(138,106,20,.14);
+  --shadow:0 8px 24px -12px rgba(28,22,19,.22);
+  color-scheme:light;
+}}
+:root[data-theme="light"]{
+  --bg:#EEE7E0; --surface:#FDFBF9; --surface-2:#F5F0EA; --row-alt:rgba(28,22,19,.03);
+  --line:rgba(28,22,19,.10); --line-strong:rgba(28,22,19,.18);
+  --ink:#17110E; --ink-2:#382E29; --ink-muted:#5F544E;
+  --brand:#A23D16; --brand-ink:#A23D16; --brand-soft:rgba(162,61,22,.12);
+  --new:#13633A; --new-soft:rgba(19,99,58,.12);
+  --upd:#A23D16; --upd-soft:rgba(162,61,22,.12);
+  --fix:#1F5FA8; --fix-soft:rgba(31,95,168,.12);
+  --rem:#5F544E; --rem-soft:rgba(95,84,78,.12);
+  --rule:#8A6A14; --rule-soft:rgba(138,106,20,.14);
+  --shadow:0 8px 24px -12px rgba(28,22,19,.22);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:14px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:var(--brand-ink)}
+button,input,select{font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto}
+.hero{padding:30px 0 16px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-content:space-between}
+.hero h1{margin:0;font-size:26px;font-weight:700;letter-spacing:-.01em}
+.hero h1 small{display:block;font-size:12.5px;font-weight:500;color:var(--ink-muted);letter-spacing:.02em;margin-bottom:4px}
+.count{font-size:13px;color:var(--ink-muted);font-variant-numeric:tabular-nums}
+.count b{color:var(--ink);font-weight:700}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:10px 0 12px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.field{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:0 10px;height:38px}
+.field label{font-size:12px;font-weight:600;color:var(--ink-muted);white-space:nowrap}
+.field input,.field select{background:none;border:0;outline:0;color:var(--ink);font-size:13.5px;min-width:0;height:100%}
+.field input[type="date"]{width:142px;font-family:var(--mono);font-size:12.5px}
+.field input[type="search"]{width:100%}
+.field.search{flex:1 1 200px}
+.field:focus-within{border-color:var(--brand)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 11px;font-size:12.5px;font-weight:600;cursor:pointer;color:var(--ink-2)}
+.chip:hover{border-color:var(--line-strong)}
+.chip[aria-pressed="true"]{background:var(--brand-soft);border-color:var(--brand);color:var(--brand-ink)}
+.chip:focus-visible,.btn:focus-visible,.field:focus-within{outline:2px solid var(--brand);outline-offset:2px}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;height:38px;padding:0 12px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}
+.btn:hover{border-color:var(--line-strong)}
+.btn.link{border:0;background:none;color:var(--brand-ink);padding:0 4px;height:auto}
+.quick{display:flex;gap:4px;align-items:center;font-size:12.5px;color:var(--ink-muted);flex-wrap:wrap}
+.notice{margin:14px 0 0;padding:10px 14px;border-radius:10px;background:var(--surface);border:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+.tablewrap{margin-top:16px;overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:760px}
+thead th{position:sticky;top:0;background:var(--surface-2);text-align:left;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-muted);padding:10px 12px;border-bottom:1px solid var(--line-strong);white-space:nowrap}
+thead th button{background:none;border:0;padding:0;cursor:pointer;font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit}
+thead th button:hover{color:var(--ink)}
+thead th .arrow{margin-left:4px;color:var(--brand-ink)}
+tbody tr{border-bottom:1px solid var(--line)}
+tbody tr:nth-child(4n+3){background:var(--row-alt)}
+tbody tr.first-of-day td{border-top:1px solid var(--line-strong)}
+tbody tr:last-child{border-bottom:0}
+td{padding:11px 12px;vertical-align:top;font-size:13.5px}
+td.date{font-family:var(--mono);font-size:12.5px;white-space:nowrap;color:var(--ink);font-variant-numeric:tabular-nums}
+td.time{font-family:var(--mono);font-size:12.5px;white-space:nowrap;color:var(--ink-muted);font-variant-numeric:tabular-nums}
+td.type{white-space:nowrap}
+td.area{color:var(--ink-2);font-weight:600;font-size:12.5px;min-width:150px;max-width:220px}
+td.change{min-width:320px;max-width:620px}
+td.change .title{font-weight:600;line-height:1.35}
+td.change .summary{color:var(--ink-2);margin:4px 0 0;max-width:68ch}
+td.change .more{margin-top:4px}
+td.figma{white-space:nowrap}
+td.figma a{font-weight:600;text-decoration:none;border-bottom:1px solid transparent}
+td.figma a:hover{border-bottom-color:currentColor}
+td.figma .src{display:block;font-family:var(--mono);font-size:11px;color:var(--ink-muted);margin-top:4px;max-width:180px;overflow:hidden;text-overflow:ellipsis}
+tr.detail td{padding:0 12px 12px;background:transparent;border-bottom:1px solid var(--line)}
+tr.detail ul{margin:0;padding:10px 0 0 18px;display:flex;flex-direction:column;gap:5px;color:var(--ink-2);font-size:13px;border-top:1px dashed var(--line)}
+tr.detail ul li{max-width:88ch}
+tr.detail[hidden]{display:none}
+.pill{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-radius:999px;padding:3px 8px;line-height:1.3}
+.pill.new{background:var(--new-soft);color:var(--new)} .pill.updated{background:var(--upd-soft);color:var(--upd)} .pill.fixed{background:var(--fix-soft);color:var(--fix)} .pill.removed{background:var(--rem-soft);color:var(--rem)} .pill.rule{background:var(--rule-soft);color:var(--rule)}
+.newtag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.06em;color:var(--brand-ink);background:var(--brand-soft);border-radius:6px;padding:2px 6px;margin-left:6px;vertical-align:middle}
+.empty{padding:36px 16px;text-align:center;color:var(--ink-muted)}
+.empty h3{margin:0 0 6px;color:var(--ink);font-size:15px}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--surface-2);border:1px solid var(--line-strong);color:var(--ink);padding:9px 14px;border-radius:10px;font-size:13px;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.show{opacity:1}
+.foot{display:flex;flex-wrap:wrap;gap:10px 16px;font-size:12px;color:var(--ink-muted);margin-top:14px}
+.foot span::before{content:"";display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;background:var(--c)}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}}
+@media (max-width:560px){.hero{padding-top:20px}.field input[type="date"]{width:130px}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <h1><small>Phoenix Glow · design → dev</small>Glow Changelog</h1>
+    <div class="count" id="count">–</div>
+  </header>
+
+  <div class="bar" role="region" aria-label="Filters">
+    <div class="field"><label for="since">Changes since</label><input id="since" type="date"></div>
+    <div class="field"><label for="until">to</label><input id="until" type="date"></div>
+    <div class="quick">
+      <button class="btn link" data-days="1">Yesterday</button>·
+      <button class="btn link" data-days="7">7 days</button>·
+      <button class="btn link" data-days="30">30 days</button>·
+      <button class="btn link" id="lastVisit">Last visit</button>·
+      <button class="btn link" id="clearDates">All</button>
+    </div>
+    <div class="chips" id="typeChips" role="group" aria-label="Type">
+      <button class="chip" data-type="" aria-pressed="true">All</button>
+      <button class="chip" data-type="new">New</button>
+      <button class="chip" data-type="updated">Updated</button>
+      <button class="chip" data-type="fixed">Fixed</button>
+      <button class="chip" data-type="removed">Removed</button>
+      <button class="chip" data-type="rule">Rule</button>
+    </div>
+    <div class="field"><label for="area">Area</label><select id="area"><option value="">All</option></select></div>
+    <div class="field search"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="Search screen, component, node id…" autocomplete="off" aria-label="Search"></div>
+    <button class="btn" id="copyBtn" title="Copy the visible rows as Markdown">Copy as Markdown</button>
+  </div>
+
+  <div class="notice" id="notice" hidden></div>
+
+  <div class="tablewrap">
+    <table id="table" aria-live="polite">
+      <thead><tr>
+        <th><button data-sort="date">Date <span class="arrow" id="arrow">▼</span></button></th>
+        <th>Time</th><th>Type</th><th>Area</th><th>Change</th><th>Figma</th>
+      </tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="foot">
+    <span style="--c:var(--new)">New screen or component</span>
+    <span style="--c:var(--upd)">Updated</span>
+    <span style="--c:var(--fix)">Fixed</span>
+    <span style="--c:var(--rem)">Removed / archived</span>
+    <span style="--c:var(--rule)">Rule or decision</span>
+    <span style="--c:var(--line-strong)">Times shown in your local time zone</span>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  const $=s=>document.querySelector(s);
+  const tbody=$('#tbody'), notice=$('#notice'), toast=$('#toast');
+  const state={q:'',type:'',area:'',since:'',until:'',sortDesc:true,docs:[],loaded:false};
+  const TYPES={new:'New',updated:'Updated',fixed:'Fixed',removed:'Removed',rule:'Rule'};
+  const MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  let lastSeen=null; const openIds=new Set();
+
+  try{ lastSeen=localStorage.getItem('glowlog:lastSeen'); }catch(e){}
+  setTimeout(()=>{ try{ localStorage.setItem('glowlog:lastSeen',new Date().toISOString()); }catch(e){} },1500);
+
+  const pad=n=>String(n).padStart(2,'0');
+  function localDate(ts){ const d=new Date(ts); return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`; }
+  function rowDate(d){ return d.ts ? localDate(d.ts) : (d.date||''); }
+  function fmtDate(iso){ if(!iso) return ''; const [y,m,dd]=iso.split('-').map(Number); return `${MONTHS[m-1]} ${pad(dd)}, ${y}`; }
+  function fmtTime(ts){ if(!ts) return '—'; const d=new Date(ts); return `${pad(d.getHours())}:${pad(d.getMinutes())}`; }
+  function esc(s){ return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function showToast(t){ toast.textContent=t; toast.classList.add('show'); clearTimeout(showToast.t); showToast.t=setTimeout(()=>toast.classList.remove('show'),1800); }
+  function isUnseen(d){ return !!(lastSeen && d.ts && d.ts>lastSeen); }
+  function dateMinus(days){ const d=new Date(); d.setDate(d.getDate()-days); return localDate(d.toISOString()); }
+
+  function filtered(){
+    const q=state.q.trim().toLowerCase();
+    const rows=state.docs.filter(d=>{
+      const rd=rowDate(d);
+      if(state.since && rd<state.since) return false;
+      if(state.until && rd>state.until) return false;
+      if(state.type && d.type!==state.type) return false;
+      if(state.area && d.area!==state.area) return false;
+      if(q){ const hay=[d.title,d.area,d.summary,(d.details||[]).join(' '),d.file,d.figma].join(' ').toLowerCase(); if(!hay.includes(q)) return false; }
+      return true;
+    });
+    rows.sort((a,b)=>{ const r=(b.ts||b.date||'').localeCompare(a.ts||a.date||''); return state.sortDesc?r:-r; });
+    return rows;
+  }
+
+  function render(){
+    const rows=filtered();
+    $('#count').innerHTML=`<b>${rows.length}</b> of ${state.docs.length} changes${state.since?` since ${esc(fmtDate(state.since))}`:''}`;
+    $('#arrow').textContent=state.sortDesc?'▼':'▲';
+    const areas=[...new Set(state.docs.map(d=>d.area).filter(Boolean))].sort();
+    const areaSel=$('#area'); const cur=areaSel.value;
+    areaSel.innerHTML='<option value="">All</option>'+areas.map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join('');
+    areaSel.value=areas.includes(cur)?cur:''; state.area=areaSel.value;
+
+    tbody.innerHTML='';
+    if(!rows.length){
+      const msg= state.loaded ? (state.docs.length? '<h3>No changes in this range</h3>Try an earlier "since" date or clear the filters.' : '<h3>No entries yet</h3>The first design change made in the Phoenix Glow project will appear here.') : '<h3>Loading the log…</h3>Entries are added automatically whenever a design change is made in the Phoenix Glow project.';
+      tbody.innerHTML=`<tr><td colspan="6"><div class="empty">${msg}</div></td></tr>`; return;
+    }
+    let prevDay=null;
+    rows.forEach(d=>{
+      const rd=rowDate(d); const firstOfDay=rd!==prevDay; prevDay=rd;
+      const tr=document.createElement('tr');
+      tr.className=(firstOfDay?'first-of-day':'');
+      const hasDetails=d.details&&d.details.length;
+      tr.innerHTML=`
+        <td class="date">${firstOfDay?esc(fmtDate(rd)):''}</td>
+        <td class="time">${esc(fmtTime(d.ts))}</td>
+        <td class="type"><span class="pill ${esc(d.type||'updated')}">${TYPES[d.type]||'Updated'}</span></td>
+        <td class="area">${esc(d.area||'')}</td>
+        <td class="change"><div class="title">${esc(d.title)}${isUnseen(d)?'<span class="newtag">NEW</span>':''}</div>${d.summary?`<p class="summary">${esc(d.summary)}</p>`:''}${hasDetails?`<div class="more"><button class="btn link" aria-expanded="${openIds.has(d.id)}">${openIds.has(d.id)?'Hide details':`Details (${d.details.length})`}</button></div>`:''}</td>
+        <td class="figma">${d.figma?`<a href="${esc(d.figma)}" target="_blank" rel="noopener">Open ↗</a>`:'<span style="color:var(--ink-muted)">—</span>'}${d.file?`<span class="src" title="${esc(d.file)}">${esc(d.file)}</span>`:''}</td>`;
+      tbody.appendChild(tr);
+      if(hasDetails){
+        const dr=document.createElement('tr'); dr.className='detail'; dr.hidden=!openIds.has(d.id);
+        dr.innerHTML=`<td colspan="6"><ul>${d.details.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></td>`;
+        tbody.appendChild(dr);
+        tr.querySelector('.more button').addEventListener('click',e=>{
+          const open=dr.hidden; dr.hidden=!open;
+          e.target.setAttribute('aria-expanded',String(open)); e.target.textContent=open?'Hide details':`Details (${d.details.length})`;
+          if(open) openIds.add(d.id); else openIds.delete(d.id);
+        });
+      }
+    });
+  }
+
+  // filters
+  $('#since').addEventListener('change',e=>{state.since=e.target.value;render();});
+  $('#until').addEventListener('change',e=>{state.until=e.target.value;render();});
+  document.querySelectorAll('.quick [data-days]').forEach(b=>b.addEventListener('click',()=>{ state.since=dateMinus(+b.dataset.days); state.until=''; $('#since').value=state.since; $('#until').value=''; render(); }));
+  $('#lastVisit').addEventListener('click',()=>{ if(!lastSeen){ showToast('First visit on this device'); return; } state.since=localDate(lastSeen); state.until=''; $('#since').value=state.since; $('#until').value=''; render(); });
+  $('#clearDates').addEventListener('click',()=>{ state.since=''; state.until=''; $('#since').value=''; $('#until').value=''; render(); });
+  $('#q').addEventListener('input',e=>{state.q=e.target.value;render();});
+  $('#typeChips').addEventListener('click',e=>{ const b=e.target.closest('.chip'); if(!b) return; state.type=b.dataset.type; [...$('#typeChips').children].forEach(c=>c.setAttribute('aria-pressed',String(c===b))); render(); });
+  $('#area').addEventListener('change',e=>{state.area=e.target.value;render();});
+  document.querySelector('th button[data-sort]').addEventListener('click',()=>{state.sortDesc=!state.sortDesc;render();});
+  $('#copyBtn').addEventListener('click',()=>{
+    const rows=filtered();
+    const md='| Date | Time | Type | Area | Change | Figma |\n|---|---|---|---|---|---|\n'+rows.map(d=>`| ${rowDate(d)} | ${fmtTime(d.ts)} | ${TYPES[d.type]||'Updated'} | ${(d.area||'').replace(/\|/g,'/')} | ${d.title.replace(/\|/g,'/')}${d.summary?' — '+d.summary.replace(/\|/g,'/'):''} | ${d.figma||''} |`).join('\n');
+    const done=()=>showToast(`Copied ${rows.length} row${rows.length===1?'':'s'}`);
+    const fallback=t=>{ const ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy');done();}catch(e){showToast('Select and copy manually');} document.body.removeChild(ta); };
+    if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(md).then(done).catch(()=>fallback(md)); } else fallback(md);
+  });
+
+  // data: embedded copy first (works signed-out), live database on top when available
+  (async()=>{
+    try{ const r=await fetch('changes.json?v='+Date.now(),{cache:'no-store'}); if(r.ok){ state.docs=await r.json(); } }catch(e){}
+    state.loaded=true; render();
+    const db=await (window.claude&&window.claude.use ? window.claude.use('db').catch(()=>null) : null);
+    if(!db) return;
+    const timer=setTimeout(()=>{},10000);
+    db.collection('changes').onSnapshot(snap=>{
+      const live=snap.docs.filter(x=>x.exists).map(x=>Object.assign({id:x.id},x.data()));
+      if(live.length || !snap.metadata.fromCache) state.docs=live;
+      if(!snap.metadata.fromCache){ clearTimeout(timer); }
+      render();
+    },err=>{ clearTimeout(timer); });
+  })();
+  render();
+})();
+</script>
+
+</body>
+</html>
