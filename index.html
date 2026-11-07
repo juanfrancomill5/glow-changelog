@@ -95,6 +95,7 @@ td.date{font-family:var(--mono);font-size:12.5px;white-space:nowrap;color:var(--
 td.time{font-family:var(--mono);font-size:12.5px;white-space:nowrap;color:var(--ink-muted);font-variant-numeric:tabular-nums}
 td.type{white-space:nowrap}
 td.area{color:var(--ink-2);font-weight:600;font-size:12.5px;min-width:150px;max-width:220px}
+td.area .prod{display:block;font-weight:500;font-size:11px;color:var(--ink-muted);margin-top:2px}
 td.change{min-width:320px;max-width:620px}
 td.change .title{font-weight:600;line-height:1.35}
 td.change .summary{color:var(--ink-2);margin:4px 0 0;max-width:68ch}
@@ -146,6 +147,7 @@ tr.detail[hidden]{display:none}
       <button class="chip" data-type="removed">Removed</button>
       <button class="chip" data-type="rule">Rule</button>
     </div>
+    <div class="field"><label for="product">Figma file</label><select id="product"><option value="">All</option><option>Client App iPhone Glow</option><option>Client App iPhone Duo</option><option>Broker Portal</option></select></div>
     <div class="field"><label for="area">Area</label><select id="area"><option value="">All</option></select></div>
     <div class="field search"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="Search screen, component, node id…" autocomplete="off" aria-label="Search"></div>
     <button class="btn" id="copyBtn" title="Copy the visible rows as Markdown">Copy as Markdown</button>
@@ -178,7 +180,7 @@ tr.detail[hidden]{display:none}
 (function(){
   const $=s=>document.querySelector(s);
   const tbody=$('#tbody'), notice=$('#notice'), toast=$('#toast');
-  const state={q:'',type:'',area:'',since:'',until:'',sortDesc:true,docs:[],loaded:false};
+  const state={q:'',type:'',area:'',product:'',since:'',until:'',sortDesc:true,docs:[],loaded:false};
   const TYPES={new:'New',updated:'Updated',fixed:'Fixed',removed:'Removed',rule:'Rule'};
   const MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   let lastSeen=null; const openIds=new Set();
@@ -204,6 +206,7 @@ tr.detail[hidden]{display:none}
       if(state.until && rd>state.until) return false;
       if(state.type && d.type!==state.type) return false;
       if(state.area && d.area!==state.area) return false;
+      if(state.product && (d.product||'Client App iPhone Glow')!==state.product) return false;
       if(q){ const hay=[d.title,d.area,d.summary,(d.details||[]).join(' '),d.file,d.figma].join(' ').toLowerCase(); if(!hay.includes(q)) return false; }
       return true;
     });
@@ -215,7 +218,7 @@ tr.detail[hidden]{display:none}
     const rows=filtered();
     $('#count').innerHTML=`<b>${rows.length}</b> of ${state.docs.length} changes${state.since?` since ${esc(fmtDate(state.since))}`:''}`;
     $('#arrow').textContent=state.sortDesc?'▼':'▲';
-    const areas=[...new Set(state.docs.map(d=>d.area).filter(Boolean))].sort();
+    const areas=[...new Set(state.docs.filter(d=>!state.product||(d.product||'Client App iPhone Glow')===state.product).map(d=>d.area).filter(Boolean))].sort();
     const areaSel=$('#area'); const cur=areaSel.value;
     areaSel.innerHTML='<option value="">All</option>'+areas.map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join('');
     areaSel.value=areas.includes(cur)?cur:''; state.area=areaSel.value;
@@ -235,7 +238,7 @@ tr.detail[hidden]{display:none}
         <td class="date">${firstOfDay?esc(fmtDate(rd)):''}</td>
         <td class="time">${esc(fmtTime(d.ts))}</td>
         <td class="type"><span class="pill ${esc(d.type||'updated')}">${TYPES[d.type]||'Updated'}</span></td>
-        <td class="area">${esc(d.area||'')}</td>
+        <td class="area">${esc(d.area||'')}<span class="prod">${esc(d.product||'Client App iPhone Glow')}</span></td>
         <td class="change"><div class="title">${esc(d.title)}${isUnseen(d)?'<span class="newtag">NEW</span>':''}</div>${d.summary?`<p class="summary">${esc(d.summary)}</p>`:''}${hasDetails?`<div class="more"><button class="btn link" aria-expanded="${openIds.has(d.id)}">${openIds.has(d.id)?'Hide details':`Details (${d.details.length})`}</button></div>`:''}</td>
         <td class="figma">${d.figma?`<a href="${esc(d.figma)}" target="_blank" rel="noopener">Open ↗</a>`:'<span style="color:var(--ink-muted)">—</span>'}${d.file?`<span class="src" title="${esc(d.file)}">${esc(d.file)}</span>`:''}</td>`;
       tbody.appendChild(tr);
@@ -261,10 +264,11 @@ tr.detail[hidden]{display:none}
   $('#q').addEventListener('input',e=>{state.q=e.target.value;render();});
   $('#typeChips').addEventListener('click',e=>{ const b=e.target.closest('.chip'); if(!b) return; state.type=b.dataset.type; [...$('#typeChips').children].forEach(c=>c.setAttribute('aria-pressed',String(c===b))); render(); });
   $('#area').addEventListener('change',e=>{state.area=e.target.value;render();});
+  $('#product').addEventListener('change',e=>{state.product=e.target.value;render();});
   document.querySelector('th button[data-sort]').addEventListener('click',()=>{state.sortDesc=!state.sortDesc;render();});
   $('#copyBtn').addEventListener('click',()=>{
     const rows=filtered();
-    const md='| Date | Time | Type | Area | Change | Figma |\n|---|---|---|---|---|---|\n'+rows.map(d=>`| ${rowDate(d)} | ${fmtTime(d.ts)} | ${TYPES[d.type]||'Updated'} | ${(d.area||'').replace(/\|/g,'/')} | ${d.title.replace(/\|/g,'/')}${d.summary?' — '+d.summary.replace(/\|/g,'/'):''} | ${d.figma||''} |`).join('\n');
+    const md='| Date | Time | Type | File | Area | Change | Figma |\n|---|---|---|---|---|---|---|\n'+rows.map(d=>`| ${rowDate(d)} | ${fmtTime(d.ts)} | ${TYPES[d.type]||'Updated'} | ${d.product||'Client App iPhone Glow'} | ${(d.area||'').replace(/\|/g,'/')} | ${d.title.replace(/\|/g,'/')}${d.summary?' — '+d.summary.replace(/\|/g,'/'):''} | ${d.figma||''} |`).join('\n');
     const done=()=>showToast(`Copied ${rows.length} row${rows.length===1?'':'s'}`);
     const fallback=t=>{ const ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy');done();}catch(e){showToast('Select and copy manually');} document.body.removeChild(ta); };
     if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(md).then(done).catch(()=>fallback(md)); } else fallback(md);
