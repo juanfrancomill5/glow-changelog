@@ -1185,5 +1185,25 @@
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2138-185",
     "file": "Phoenix Glow — Design System",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-save-flow-review",
+    "date": "2026-11-07",
+    "ts": "2026-11-07T20:45:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Saved / 05 · Company profile",
+    "title": "Save flows reviewed end to end: offering vs company destinations, competing bookmark links removed",
+    "summary": "Saving an offering now lands on the Opportunities tab of Saved and saving a company on the Companies tab (client) or Saved · Prospect (prospect). The old bookmark link that lived inside the header icon (→ Saved) was still active on 60 company screens and competed with the new save reaction; those were cleared, and the 12 plain-frame company screens (Stripe, states) got the save reaction too. The \"Stripe removed from saved\" toast now has an Undo action on the Toast component; leftover temporary Undo/View frames were removed. 09.10 Meeting booked dismisses to its own \"toast gone\" state instead of 15.5.",
+    "details": [
+      "04.1a \"Anthropic saved\" · View → 04.4 Saved · Opportunities (was Companies).",
+      "follow (header bookmark): client 52 + templates 4 → Change to Brand + Overlay · Toast · Company saved · Client; prospect 52 → Change to Brand + Overlay · Toast · Company saved; the 4 Prospect Stripe · saved frames keep bookmark = unsave (back to the unsaved screen). No nested icon links left.",
+      "04.4a Stripe removed (client/prospect): Toast Show action = true, Undo → 04.4 Saved · Opportunities / 04.4 Saved · Prospect.",
+      "New states 09.10 Meeting booked · toast gone (client 3465:*, prospect 3470:*). Code-resent overlays auto-close after 3 s.",
+      "Still open: unsave from the Saved · Companies rows (no state yet)."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-8333",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
