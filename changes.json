@@ -1205,5 +1205,22 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-8333",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-saved-offerings-content",
+    "date": "2026-11-07",
+    "ts": "2026-11-07T21:05:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Saved / 04 · Opportunities",
+    "title": "Saved offerings are Anthropic + Stripe; saved state reflected on every Opportunities list",
+    "summary": "04.4 Saved · Opportunities now lists Anthropic and Stripe (Figure AI dropped). The Stripe card shows the filled bookmark on every Opportunities list (All, AI, Fintech, saved states) since it is saved; Anthropic stays unsaved on 04.1 because that screen demonstrates saving it. Unsaving from Saved has a toast per offering: Stripe removed (04.4a/b, Anthropic remains) and new Anthropic removed (04.4c/d, Stripe remains), both with Undo → Saved · Opportunities.",
+    "details": [
+      "04.4 282:8333: cards Anthropic (→ 05.1 Anthropic) + Stripe; 04.4a/04.4b remaining card = Anthropic; new 04.4c 3586:51530 / 04.4d 3586:51542 remaining card = Stripe. Last unsave → 04.5 Saved · Empty.",
+      "5 Stripe DealCards set Saved=On across Opportunities lists."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-8333",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
