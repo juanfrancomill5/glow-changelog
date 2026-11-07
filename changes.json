@@ -1128,5 +1128,25 @@
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2126-2169",
     "file": "Phoenix Glow — Design System",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-saved-tabs-and-save-flow",
+    "date": "2026-11-07",
+    "ts": "2026-11-07T19:30:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Saved / 05 · Company profile",
+    "title": "Saved: Opportunities | Companies tabs; saving a company shows a toast with \"View saved companies\"",
+    "summary": "04.4 Saved (client) now splits into two tabs built with the library Tabs component: Opportunities (saved offerings, bookmark filled) and Companies (saved companies as rows with a bookmark button). On every company page (Overview, Company, Research, News) the header bookmark now turns Brand and opens a \"Company saved\" toast with a \"View saved companies\" link; the toast closes by itself after 3 s. Prospect gets the same save flow and a companies-only Saved list (no offerings in that journey).",
+    "details": [
+      "Client: 04.4 Saved · Opportunities 282:8333 (tabs, DealCards Saved=On), new 04.4 Saved · Companies 3568:43525 (CompanyRow + Glass bookmark IconButton, badge/chevron hidden); 04.4a/04.4b Stripe-removed states carry the same tabs. New overlay \"Overlay · Toast · Company saved · Client\" 3564:43504 (After delay 3 s → Close; link → Saved · Companies).",
+      "Templates 3072:26482 / 26546 / 26580 / 26607: CompanyHeader \"follow\" IconButton on tap = Change to Variant=Brand + open overlay (two actions in one reaction).",
+      "Prospect: 44 company screens override the bookmark to the prospect toast 3237:52687 (now auto-closes, link renamed \"View saved companies\" → 04.4 Saved · Prospect); Saved · Prospect rows (and Stripe-removed states) use the same row + bookmark pattern.",
+      "Library: DealCard Saved=On lost its filled bookmark when the icon vector was rebuilt — restored (Finance page, set 17:105). Needs publish + update for the Saved screens to show the filled state.",
+      "Open: unsave from the Saved list is not wired (no state for it yet); the Brand bookmark reverts when the user leaves the screen, because the template has no persistent \"saved\" variant."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-8333",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
