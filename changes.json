@@ -1090,5 +1090,24 @@
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2121-2174",
     "file": "Phoenix Glow — Design System",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-metricpanel-in-v3",
+    "date": "2026-11-07",
+    "ts": "2026-11-07T18:05:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Company profile · Overview",
+    "title": "Overview chart panel is now the library MetricPanel (tabs switch the chart)",
+    "summary": "The hand-built chart panel inside Template · Overview was replaced by an instance of the new MetricPanel component, so all 22 company Overview screens (client + prospect) now get a working metric switch: tapping Revenue, Price/share or Rounds swaps figure, dots and y-axis. Each company keeps its own valuation numbers (value, delta, three ticks) as overrides on the Valuation variant.",
+    "details": [
+      "Template · Overview 3072:26482: panel frame removed, MetricPanel instance inserted at the same position (FILL width).",
+      "22 instances re-overridden from the previous values (e.g. SpaceX $400B +300% since 2021; Anduril $30.5B +260% since 2022).",
+      "Revenue / Price/share / Rounds show the library placeholder data until real figures exist.",
+      "Icons: after the library update, 1,259 nested icon instances and 112 instance-swap properties still pointed at stale copies and were re-linked by key; 0 stale icons remain on ▶ Prototype V3."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3072-26482",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
