@@ -1054,5 +1054,22 @@
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=5-2",
     "file": "Phoenix Glow — Design System",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-metric-switch-price-label",
+    "date": "2026-11-07",
+    "ts": "2026-11-07T17:00:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Company profile · Overview",
+    "title": "Metric switch: \"Price / share\" → \"Price\" so all four segments fit",
+    "summary": "In the Overview chart's segmented control (Valuation · Revenue · Price · Rounds) the third label was 76px wide inside a 79px segment and touched the borders. The label is now \"Price\" on the Template · Overview master and on all 26 company Overview screens (client + prospect); the panel heading still reads the full metric name when selected.",
+    "details": [
+      "Tabs/Segment Label property set to \"Price\" on every metric-switch instance on ▶ Prototype V3 (26 screens incl. the template 3072:26482).",
+      "Implementation: segment labels must fit at Controls/chip 13 Medium with ≥8px side room; prefer short labels over shrinking type."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3072-26482",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
