@@ -1062,11 +1062,11 @@
     "type": "fixed",
     "product": "Client App iPhone Glow",
     "area": "05 · Company profile · Overview",
-    "title": "Metric switch: \"Price / share\" → \"Price\" so all four segments fit",
-    "summary": "In the Overview chart's segmented control (Valuation · Revenue · Price · Rounds) the third label was 76px wide inside a 79px segment and touched the borders. The label is now \"Price\" on the Template · Overview master and on all 26 company Overview screens (client + prospect); the panel heading still reads the full metric name when selected.",
+    "title": "Metric switch restyled: no segment borders, bright labels, \"Price/share\"",
+    "summary": "The Overview chart's segmented control (Valuation · Revenue · Price/share · Rounds) read as static: 1px outlines on every segment and muted labels. Now the unselected segments have no border and use ink/primary for the label, the selected segment keeps the brand gradient, and the third label is \"Price/share\" (no spaces) so it fits the 79px segment. Applied on the Template · Overview master and all 26 company Overview screens (client + prospect).",
     "details": [
-      "Tabs/Segment Label property set to \"Price\" on every metric-switch instance on ▶ Prototype V3 (26 screens incl. the template 3072:26482).",
-      "Implementation: segment labels must fit at Controls/chip 13 Medium with ≥8px side room; prefer short labels over shrinking type."
+      "Per segment: stroke weight 0 on all sides; unselected label fill → ink/primary; Label \"Price/share\". Track unchanged (surface fill, line/default 1px).",
+      "Implementation: unselected segment = no border, label ink/primary 13 Medium; selected = brand gradient + on-brand label; labels must fit at 13px without shrinking type."
     ],
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3072-26482",
     "file": "V3 Phoenix Client App — Screens (Glow)",
