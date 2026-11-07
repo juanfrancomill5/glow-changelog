@@ -1002,5 +1002,22 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11738",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-signature-pad-larger",
+    "date": "2026-11-07",
+    "ts": "2026-11-07T16:20:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "15 · Request allocation",
+    "title": "15.4 Signature pad: drawing area enlarged to 338×196",
+    "summary": "The finger-signing area on 15.4 Request · Signature was too small to sign in. The pad card grew from 170 to 300px tall, the drawing area from 300×90 to 338×196, with the sample stroke re-centred; the name/date line and Clear stay where they were relative to the card. Content still clears the pinned CTA (bottom 735 vs CTA at 762).",
+    "details": [
+      "Pad 270:1334 → 370×300; drawing area 270:1352 → 16,40 338×196; divider 270:1354 at y=250; name line 270:1355 at y=262.",
+      "Implementation: signature canvas should fill the card width minus 16px padding, min height 196pt."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=270-1249",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
