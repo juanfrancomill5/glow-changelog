@@ -1071,5 +1071,24 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3072-26482",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-metricpanel-component",
+    "date": "2026-11-07",
+    "ts": "2026-11-07T17:30:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "Glow library · Data viz",
+    "title": "MetricPanel component: chart panel with a working metric switch (4 variants)",
+    "summary": "The company Overview chart panel (figure + DotMatrix + y-axis + metric switch) is now a library component set, MetricPanel, with a Metric variant: Valuation, Revenue, Price/share, Rounds. Each variant carries its own figure, delta, dot pattern and y-axis ticks, and every tab is wired with Change to → its variant, so tapping a tab flips the whole panel in the prototype.",
+    "details": [
+      "Component set 2121:2174 on the Data viz page; variants Metric=Valuation 2121:134, Revenue 2121:647, Price/share 2121:1156, Rounds 2121:1665. 370×252, surface/100 fill, line/default 1px, radius 10, padding 16, gap 14.",
+      "Built from DotMatrix (40 cols × 11 dots: cream = value, surface/400 = empty, brand/300 = Today column) and Tabs (Style=Ember, segment borders 0, unselected labels ink/primary). Figure: Figures/figure-lg + delta 13 Medium success; ticks Text/caption ink/muted.",
+      "Per-company data: override the Valuation variant texts (value · Valuation, delta · Valuation, y1–y3 · Valuation). Layer names differ per metric on purpose so overrides do not leak between variants; Revenue / Price/share / Rounds show library placeholders until real data exists.",
+      "12 Change-to interactions inside the set (3 per variant). Next step: publish, then the Template · Overview panel in V3 becomes an instance of this component."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2121-2174",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
   }
 ]
