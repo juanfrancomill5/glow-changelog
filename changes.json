@@ -16,6 +16,25 @@
  },
  {
   "addedBy": "Claude (backfill)",
+  "area": "Glow library · Tokens",
+  "date": "2026-10-16",
+  "details": [
+   "Round 1 Light: bg #EEE7E0 · surface/200 #FDFBF9 · surface/300 #DFD6CD · surface/400 #D3C7BD · glass/100 #FFFFFFD9 · line/default #1C16131A · ink/primary #17110E · ink/secondary #382E29 · ink/muted #5F544E · brand/300 #A23D16 · focus #A23D16 · success #13633A · danger #B02F24 · glow #F0703A4D. New shadow/card (Dark transparent, Light #1C161338; y 8, blur 24, spread −12).",
+   "Round 2: surface/hero-top, surface/hero-bottom, chip/fill (Dark = alias of original token). Screens-file BalanceHero fill overrides rebound.",
+   "Round 3: chart/line-start, chart/line; scrim Light #1C161340.",
+   "Round 4: chart/line-end, chart/glow-start, chart/glow, chart/glow-end → uniform orange line and soft halo in Light.",
+   "Rollback steps per round in the project doc."
+  ],
+  "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU",
+  "file": "Phoenix Glow — Design System",
+  "summary": "White cards on warm sand bg, soft shadow, darker text, orange as the only accent. Dark mode byte-identical before/after. Rounds 1–3 published; round 4 (chart line end + glow) applied, needs Publish + Update.",
+  "title": "Light theme \"Layered\": new Light values for bg, surfaces, glass, lines, ink, brand, status, glow; shadow/card and chart tokens added",
+  "ts": "2026-10-16T19:15:00Z",
+  "type": "updated",
+  "id": "2026-10-16-light-theme"
+ },
+ {
+  "addedBy": "Claude (backfill)",
   "area": "Email templates",
   "date": "2026-10-16",
   "details": [
@@ -48,25 +67,6 @@
  },
  {
   "addedBy": "Claude (backfill)",
-  "area": "Glow library · Tokens",
-  "date": "2026-10-16",
-  "details": [
-   "Round 1 Light: bg #EEE7E0 · surface/200 #FDFBF9 · surface/300 #DFD6CD · surface/400 #D3C7BD · glass/100 #FFFFFFD9 · line/default #1C16131A · ink/primary #17110E · ink/secondary #382E29 · ink/muted #5F544E · brand/300 #A23D16 · focus #A23D16 · success #13633A · danger #B02F24 · glow #F0703A4D. New shadow/card (Dark transparent, Light #1C161338; y 8, blur 24, spread −12).",
-   "Round 2: surface/hero-top, surface/hero-bottom, chip/fill (Dark = alias of original token). Screens-file BalanceHero fill overrides rebound.",
-   "Round 3: chart/line-start, chart/line; scrim Light #1C161340.",
-   "Round 4: chart/line-end, chart/glow-start, chart/glow, chart/glow-end → uniform orange line and soft halo in Light.",
-   "Rollback steps per round in the project doc."
-  ],
-  "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU",
-  "file": "Phoenix Glow — Design System",
-  "summary": "White cards on warm sand bg, soft shadow, darker text, orange as the only accent. Dark mode byte-identical before/after. Rounds 1–3 published; round 4 (chart line end + glow) applied, needs Publish + Update.",
-  "title": "Light theme \"Layered\": new Light values for bg, surfaces, glass, lines, ink, brand, status, glow; shadow/card and chart tokens added",
-  "ts": "2026-10-16T19:15:00Z",
-  "type": "updated",
-  "id": "2026-10-16-light-theme"
- },
- {
-  "addedBy": "Claude (backfill)",
   "area": "Flows & navigation",
   "date": "2026-10-16",
   "details": [
@@ -81,6 +81,88 @@
   "ts": "2026-10-16T21:42:00Z",
   "type": "new",
   "id": "2026-10-16-prototype-v2"
+ },
+ {
+  "addedBy": "Claude (backfill)",
+  "area": "05 · Search",
+  "date": "2026-10-19",
+  "details": [
+   "See project doc \"Glow Prototype V2 — Flow 05 Company search audit (Oct 19, 2026)\"."
+  ],
+  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=282-8877",
+  "file": "Phoenix Client App — Screens (Glow) · V2",
+  "summary": "Audit of the search flow after the Deals change; the old 05.14 Companies directory frame deleted and its 7 inbound links repointed to 05.4 (03.2 → 05.6). Every screen reachable from a flow start, 0 dangling links.",
+  "title": "Flow 05 Company search audit: dangling links fixed, Search opens on the full company list",
+  "ts": "2026-10-19T13:06:00Z",
+  "type": "fixed",
+  "id": "2026-10-19-flow-05-audit"
+ },
+ {
+  "addedBy": "Claude (backfill)",
+  "area": "04 · Deals",
+  "date": "2026-10-19",
+  "details": [
+   "Screens: 04.1 (282:8172), 04.2 Defense, 04.3 No matches, 04.7 For you (340:6594, provenance rows \"Serge flagged this for you\"), 04.8 For you · empty.",
+   "End of every list: ListRow \"Looking for a company? · Browse all 12 companies on Phoenix\" → 05.4, which lists every company A–Z with chips All · In portfolio · With research · On Tap. Variants 05.5 In portfolio (326:6128), 05.14 On Tap (368:7351), 05.6 New client (326:6165).",
+   "Home 03.1 / 03.2: new \"Companies\" section with three CompanyRows and \"Browse all\" → 05.4.",
+   "Library DealCard (set 17:105): props renamed Round → Closes, Valuation → Minimum, Total raised → Allocated, Sector → Offering line; new label props; bookmark layer swapped to an exposed status Tag with Show status boolean. Needs Publish → Update."
+  ],
+  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=282-8172",
+  "file": "Phoenix Client App — Screens (Glow) · V2",
+  "summary": "SearchField and Offerings | Companies chips removed from Deals. TopBar Root with search → 05.4 and saved → 04.4; library Tabs All / For you. DealCard stats are now offering facts: Closes · Minimum · Allocated, with a status Tag (On Tap / Closing soon / Waitlist).",
+  "title": "Deals shows offerings only (All / For you); company directory folded into Search · Start (05.4)",
+  "ts": "2026-10-19T14:11:00Z",
+  "type": "updated",
+  "id": "2026-10-19-flow-04-deals"
+ },
+ {
+  "addedBy": "Claude (backfill)",
+  "area": "★ Share boards",
+  "date": "2026-10-19",
+  "details": [
+   "Frame 370:8826 (rebuilt after the first build 352:8826 disappeared). PDF deck Deals-and-Company-search-how-it-works-Oct19.pdf, 6 slides.",
+   "Claude artifact \"Deals flow prototype\" v3."
+  ],
+  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=370-8826",
+  "file": "Phoenix Client App — Screens (Glow) · V2",
+  "summary": "Four chapters: Deals shows only offerings; For you; How to find a company (three doors → Search · every company → profile); Search before typing / results / no results.",
+  "title": "Share board 06 · Deals & Company search — how it works + PDF deck + navigable prototype",
+  "ts": "2026-10-19T14:55:00Z",
+  "type": "new",
+  "id": "2026-10-19-share-board-06"
+ },
+ {
+  "addedBy": "Claude (backfill)",
+  "area": "Glow library · Accordion",
+  "date": "2026-10-19",
+  "details": [
+   "18.3 = 400:7051, 18.4 = 400:7086, 18.5 = 400:7121 (section 18).",
+   "Home 03.1 / 03.2 content paddingBottom 102 → 140 so the accordion clears the Nav fade.",
+   "Superseded Nov 6: Accordion replaced by DisclosureFooter on all V3 screens outside the Archive."
+  ],
+  "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=13-69",
+  "file": "Phoenix Glow — Design System",
+  "summary": "Library Accordion (set 13:69): Open=Off → tap → Change to Open=On (smart animate 200 ms) and back. Links row added to Open=On with new text style Text/link-sm (Manrope 13/20, underlined). New V2 screens 18.3 Data disclaimer, 18.4 Disclosures, 18.5 Legal cloned from the document viewer.",
+  "title": "Accordion is an interactive component with three links (Data Disclaimer | Disclosures | Legal) opening embedded document viewers 18.3 / 18.4 / 18.5",
+  "ts": "2026-10-19T16:21:00Z",
+  "type": "updated",
+  "id": "2026-10-19-legal-accordion"
+ },
+ {
+  "addedBy": "Claude (backfill)",
+  "area": "★ Share boards",
+  "date": "2026-10-19",
+  "details": [
+   "Frame 411:10692 on ★ Share boards (95:20). Export: select frame 07 → Export → PDF.",
+   "Prototype flow start \"5 · Search companies, offerings & research\" (05.4 = 282:8877)."
+  ],
+  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=411-10692",
+  "file": "Phoenix Client App — Screens (Glow) · V2",
+  "summary": "Three chapters with numbered callouts: open Search (every company already listed), type a word (companies, offerings, research), nothing found + new client. Screen copies are clones with badges — rebuild if the prototype screens change.",
+  "title": "Share board 07 · Search — how it works (search-only client delivery)",
+  "ts": "2026-10-19T19:43:00Z",
+  "type": "new",
+  "id": "2026-10-19-share-board-07"
  },
  {
   "addedBy": "Claude (backfill)",
@@ -134,88 +216,6 @@
  },
  {
   "addedBy": "Claude (backfill)",
-  "area": "04 · Deals",
-  "date": "2026-10-19",
-  "details": [
-   "Screens: 04.1 (282:8172), 04.2 Defense, 04.3 No matches, 04.7 For you (340:6594, provenance rows \"Serge flagged this for you\"), 04.8 For you · empty.",
-   "End of every list: ListRow \"Looking for a company? · Browse all 12 companies on Phoenix\" → 05.4, which lists every company A–Z with chips All · In portfolio · With research · On Tap. Variants 05.5 In portfolio (326:6128), 05.14 On Tap (368:7351), 05.6 New client (326:6165).",
-   "Home 03.1 / 03.2: new \"Companies\" section with three CompanyRows and \"Browse all\" → 05.4.",
-   "Library DealCard (set 17:105): props renamed Round → Closes, Valuation → Minimum, Total raised → Allocated, Sector → Offering line; new label props; bookmark layer swapped to an exposed status Tag with Show status boolean. Needs Publish → Update."
-  ],
-  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=282-8172",
-  "file": "Phoenix Client App — Screens (Glow) · V2",
-  "summary": "SearchField and Offerings | Companies chips removed from Deals. TopBar Root with search → 05.4 and saved → 04.4; library Tabs All / For you. DealCard stats are now offering facts: Closes · Minimum · Allocated, with a status Tag (On Tap / Closing soon / Waitlist).",
-  "title": "Deals shows offerings only (All / For you); company directory folded into Search · Start (05.4)",
-  "ts": "2026-10-19T14:11:00Z",
-  "type": "updated",
-  "id": "2026-10-19-flow-04-deals"
- },
- {
-  "addedBy": "Claude (backfill)",
-  "area": "05 · Search",
-  "date": "2026-10-19",
-  "details": [
-   "See project doc \"Glow Prototype V2 — Flow 05 Company search audit (Oct 19, 2026)\"."
-  ],
-  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=282-8877",
-  "file": "Phoenix Client App — Screens (Glow) · V2",
-  "summary": "Audit of the search flow after the Deals change; the old 05.14 Companies directory frame deleted and its 7 inbound links repointed to 05.4 (03.2 → 05.6). Every screen reachable from a flow start, 0 dangling links.",
-  "title": "Flow 05 Company search audit: dangling links fixed, Search opens on the full company list",
-  "ts": "2026-10-19T13:06:00Z",
-  "type": "fixed",
-  "id": "2026-10-19-flow-05-audit"
- },
- {
-  "addedBy": "Claude (backfill)",
-  "area": "Glow library · Accordion",
-  "date": "2026-10-19",
-  "details": [
-   "18.3 = 400:7051, 18.4 = 400:7086, 18.5 = 400:7121 (section 18).",
-   "Home 03.1 / 03.2 content paddingBottom 102 → 140 so the accordion clears the Nav fade.",
-   "Superseded Nov 6: Accordion replaced by DisclosureFooter on all V3 screens outside the Archive."
-  ],
-  "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=13-69",
-  "file": "Phoenix Glow — Design System",
-  "summary": "Library Accordion (set 13:69): Open=Off → tap → Change to Open=On (smart animate 200 ms) and back. Links row added to Open=On with new text style Text/link-sm (Manrope 13/20, underlined). New V2 screens 18.3 Data disclaimer, 18.4 Disclosures, 18.5 Legal cloned from the document viewer.",
-  "title": "Accordion is an interactive component with three links (Data Disclaimer | Disclosures | Legal) opening embedded document viewers 18.3 / 18.4 / 18.5",
-  "ts": "2026-10-19T16:21:00Z",
-  "type": "updated",
-  "id": "2026-10-19-legal-accordion"
- },
- {
-  "addedBy": "Claude (backfill)",
-  "area": "★ Share boards",
-  "date": "2026-10-19",
-  "details": [
-   "Frame 370:8826 (rebuilt after the first build 352:8826 disappeared). PDF deck Deals-and-Company-search-how-it-works-Oct19.pdf, 6 slides.",
-   "Claude artifact \"Deals flow prototype\" v3."
-  ],
-  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=370-8826",
-  "file": "Phoenix Client App — Screens (Glow) · V2",
-  "summary": "Four chapters: Deals shows only offerings; For you; How to find a company (three doors → Search · every company → profile); Search before typing / results / no results.",
-  "title": "Share board 06 · Deals & Company search — how it works + PDF deck + navigable prototype",
-  "ts": "2026-10-19T14:55:00Z",
-  "type": "new",
-  "id": "2026-10-19-share-board-06"
- },
- {
-  "addedBy": "Claude (backfill)",
-  "area": "★ Share boards",
-  "date": "2026-10-19",
-  "details": [
-   "Frame 411:10692 on ★ Share boards (95:20). Export: select frame 07 → Export → PDF.",
-   "Prototype flow start \"5 · Search companies, offerings & research\" (05.4 = 282:8877)."
-  ],
-  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=411-10692",
-  "file": "Phoenix Client App — Screens (Glow) · V2",
-  "summary": "Three chapters with numbered callouts: open Search (every company already listed), type a word (companies, offerings, research), nothing found + new client. Screen copies are clones with badges — rebuild if the prototype screens change.",
-  "title": "Share board 07 · Search — how it works (search-only client delivery)",
-  "ts": "2026-10-19T19:43:00Z",
-  "type": "new",
-  "id": "2026-10-19-share-board-07"
- },
- {
-  "addedBy": "Claude (backfill)",
   "area": "iPhone Duo",
   "date": "2026-10-20",
   "details": [
@@ -250,6 +250,24 @@
  },
  {
   "addedBy": "Claude (backfill)",
+  "area": "18 · Account, help & legal",
+  "date": "2026-10-26",
+  "details": [
+   "18.7 Help & support (577:6784): Your representative → Contact Serge 09.5 · Your Phoenix team 09.4 · A question about a request 16.1; Your account → Documents 18.1 · Security 17.1 · Legal 18.2. No generic help desk.",
+   "18.8 Edit profile (577:6885): Change photo, Preferred name (legal name locked), Time zone, About me (SOW 3.1). Save → 09.3.",
+   "18.9 Close account (577:7003): request to Serge, not instant; Open requests / Holdings / Statements; Send request → 18.10 (577:6972) → Done → 09.6; \"Talk to Serge first\" → 09.5.",
+   "Accordion links Data Disclaimer / Disclosures / Legal → 18.3 / 18.4 / 18.5 wired on all 11 instances (live in the Open=On variant)."
+  ],
+  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=577-6784",
+  "file": "Phoenix Client App — Screens (Glow) · V2",
+  "summary": "The original 18.3–18.5 screens had been overwritten by the Oct 19 legal viewers, leaving Menu / Settings / Profile rows unlinked. Rebuilt from Glow screens with library instances only. Result: 129 numbered screens, 0 null links.",
+  "title": "Help & support (18.7), Edit profile (18.8), Close account (18.9 / 18.10) restored and wired",
+  "ts": "2026-10-26T16:47:00Z",
+  "type": "new",
+  "id": "2026-10-26-help-edit-close"
+ },
+ {
+  "addedBy": "Claude (backfill)",
   "area": "05c · Company Details",
   "date": "2026-10-26",
   "details": [
@@ -266,24 +284,6 @@
   "ts": "2026-10-26T21:04:00Z",
   "type": "new",
   "id": "2026-10-26-company-details-v5-v7"
- },
- {
-  "addedBy": "Claude (backfill)",
-  "area": "18 · Account, help & legal",
-  "date": "2026-10-26",
-  "details": [
-   "18.7 Help & support (577:6784): Your representative → Contact Serge 09.5 · Your Phoenix team 09.4 · A question about a request 16.1; Your account → Documents 18.1 · Security 17.1 · Legal 18.2. No generic help desk.",
-   "18.8 Edit profile (577:6885): Change photo, Preferred name (legal name locked), Time zone, About me (SOW 3.1). Save → 09.3.",
-   "18.9 Close account (577:7003): request to Serge, not instant; Open requests / Holdings / Statements; Send request → 18.10 (577:6972) → Done → 09.6; \"Talk to Serge first\" → 09.5.",
-   "Accordion links Data Disclaimer / Disclosures / Legal → 18.3 / 18.4 / 18.5 wired on all 11 instances (live in the Open=On variant)."
-  ],
-  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=577-6784",
-  "file": "Phoenix Client App — Screens (Glow) · V2",
-  "summary": "The original 18.3–18.5 screens had been overwritten by the Oct 19 legal viewers, leaving Menu / Settings / Profile rows unlinked. Rebuilt from Glow screens with library instances only. Result: 129 numbered screens, 0 null links.",
-  "title": "Help & support (18.7), Edit profile (18.8), Close account (18.9 / 18.10) restored and wired",
-  "ts": "2026-10-26T16:47:00Z",
-  "type": "new",
-  "id": "2026-10-26-help-edit-close"
  },
  {
   "addedBy": "Claude (backfill)",
@@ -304,22 +304,6 @@
  },
  {
   "addedBy": "Claude (backfill)",
-  "area": "06 · Portfolio",
-  "date": "2026-10-29",
-  "details": [
-   "Page 06b. L = 710:13840 (L.1 48 holdings, L.2 find \"sa\", L.3 Private expanded, L.4 Group and sort). J = 700:12721 / 13355 / 14061. K = 707:13607. I = 691:12546. H = 687:12234.",
-   "Search filter clarified: search is its own flow; \"In portfolio\" exposes Type / Account / Sort (sections F + G)."
-  ],
-  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=710-13840",
-  "file": "Phoenix Client App — Screens (Glow) · V2",
-  "summary": "L is recommended for large books: inline SearchField under the total, sticky class headers, compact PositionRows, \"Show 26 more\", Group and sort sheet.",
-  "title": "Portfolio without header tabs: sections J (tabs docked at bottom), K (collapsible groups), L (40+ holdings, inline find, sticky class headers), I (drill-down), H (floating filter)",
-  "ts": "2026-10-29T12:00:00Z",
-  "type": "new",
-  "id": "2026-10-29-portfolio-no-tabs"
- },
- {
-  "addedBy": "Claude (backfill)",
   "area": "05 · Search",
   "date": "2026-10-29",
   "details": [
@@ -335,6 +319,22 @@
   "ts": "2026-10-29T11:14:00Z",
   "type": "new",
   "id": "2026-10-29-search-in-portfolio"
+ },
+ {
+  "addedBy": "Claude (backfill)",
+  "area": "06 · Portfolio",
+  "date": "2026-10-29",
+  "details": [
+   "Page 06b. L = 710:13840 (L.1 48 holdings, L.2 find \"sa\", L.3 Private expanded, L.4 Group and sort). J = 700:12721 / 13355 / 14061. K = 707:13607. I = 691:12546. H = 687:12234.",
+   "Search filter clarified: search is its own flow; \"In portfolio\" exposes Type / Account / Sort (sections F + G)."
+  ],
+  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=710-13840",
+  "file": "Phoenix Client App — Screens (Glow) · V2",
+  "summary": "L is recommended for large books: inline SearchField under the total, sticky class headers, compact PositionRows, \"Show 26 more\", Group and sort sheet.",
+  "title": "Portfolio without header tabs: sections J (tabs docked at bottom), K (collapsible groups), L (40+ holdings, inline find, sticky class headers), I (drill-down), H (floating filter)",
+  "ts": "2026-10-29T12:00:00Z",
+  "type": "new",
+  "id": "2026-10-29-portfolio-no-tabs"
  },
  {
   "addedBy": "Claude (backfill)",
@@ -371,34 +371,20 @@
   "id": "2026-10-30-icon-rule"
  },
  {
-  "addedBy": "Claude (backfill)",
-  "area": "14 · Identity check & KYC",
-  "date": "2026-11-04",
+  "id": "2026-11-03-admin-choose-account",
+  "date": "2026-11-03",
+  "ts": "2026-11-03T15:31:00Z",
+  "type": "new",
+  "area": "02 · Sign in",
+  "title": "Admin \"Choose who to view\" screen next to 02 · Sign in; AI tab in the Dock reduced to a plain icon",
+  "summary": "New screen for users with admin privilege: after sign-in they choose to view their own account or another user's account. Built from the Glow library beside the 02 · Sign in flow. In the library, the Dock's AI item became an ordinary inactive tab (icon only, icon/muted, same width as the others) with a new icon/nav-ai glyph.",
   "details": [
-   "14.3 = 269:736, 14.4 = 269:787 (file ThqxwCgebZynoQxMfqrVVQ, page ▶ Prototype V2)."
+   "Library koMupwxjOx3Zuu4XoeTNGU: BottomNav/Dock set 2056:275, property Show AI; icon/nav-ai on the Icons page next to the other nav-* icons.",
+   "All 24 Dock instances already had Show AI on; Publish the library + Update the screens file to see it."
   ],
-  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=269-736",
+  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=65-20",
   "file": "Phoenix Client App — Screens (Glow) · V2",
-  "summary": "Label \"Social Security number\", masked •••-••-••••, helper \"9 digits · masked as you type\". 14.4 error state shows •••-••-4471. Body copy no longer claims the SSN is never stored.",
-  "title": "Identity check asks for the full SSN (14.3 Identity · SSN & ZIP)",
-  "ts": "2026-11-04T11:40:00Z",
-  "type": "updated",
-  "id": "2026-11-04-full-ssn"
- },
- {
-  "addedBy": "Claude (backfill)",
-  "area": "13 · Passkey & 2FA",
-  "date": "2026-11-04",
-  "details": [
-   "icon/passkey in the Glow library (Icons page, 2077:134) was not yet published → local copies named \"icon/passkey (local · swap after library publish)\" in 02.2/13.1/13.2."
-  ],
-  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=268-697",
-  "file": "Phoenix Client App — Screens (Glow) · V2",
-  "summary": "02.2 Passkey, 13.1 Enable passkey, 13.2 Passkey · Didn't work; copy updated in 02.1, 02.2, 13.1, 13.2, 17.1, 17.5, 17.6, 09.2, 09.6, 10.5, 18.7. New library icon icon/passkey.",
-  "title": "Face ID renamed to passkey across sign-in and security screens",
-  "ts": "2026-11-04T11:35:00Z",
-  "type": "updated",
-  "id": "2026-11-04-passkey"
+  "addedBy": "Claude (backfill)"
  },
  {
   "addedBy": "Claude (backfill)",
@@ -420,6 +406,231 @@
  },
  {
   "addedBy": "Claude (backfill)",
+  "area": "13 · Passkey & 2FA",
+  "date": "2026-11-04",
+  "details": [
+   "icon/passkey in the Glow library (Icons page, 2077:134) was not yet published → local copies named \"icon/passkey (local · swap after library publish)\" in 02.2/13.1/13.2."
+  ],
+  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=268-697",
+  "file": "Phoenix Client App — Screens (Glow) · V2",
+  "summary": "02.2 Passkey, 13.1 Enable passkey, 13.2 Passkey · Didn't work; copy updated in 02.1, 02.2, 13.1, 13.2, 17.1, 17.5, 17.6, 09.2, 09.6, 10.5, 18.7. New library icon icon/passkey.",
+  "title": "Face ID renamed to passkey across sign-in and security screens",
+  "ts": "2026-11-04T11:35:00Z",
+  "type": "updated",
+  "id": "2026-11-04-passkey"
+ },
+ {
+  "addedBy": "Claude (backfill)",
+  "area": "14 · Identity check & KYC",
+  "date": "2026-11-04",
+  "details": [
+   "14.3 = 269:736, 14.4 = 269:787 (file ThqxwCgebZynoQxMfqrVVQ, page ▶ Prototype V2)."
+  ],
+  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=269-736",
+  "file": "Phoenix Client App — Screens (Glow) · V2",
+  "summary": "Label \"Social Security number\", masked •••-••-••••, helper \"9 digits · masked as you type\". 14.4 error state shows •••-••-4471. Body copy no longer claims the SSN is never stored.",
+  "title": "Identity check asks for the full SSN (14.3 Identity · SSN & ZIP)",
+  "ts": "2026-11-04T11:40:00Z",
+  "type": "updated",
+  "id": "2026-11-04-full-ssn"
+ },
+ {
+  "id": "2026-11-04-opportunities-rename",
+  "date": "2026-11-04",
+  "ts": "2026-11-04T11:49:00Z",
+  "type": "updated",
+  "area": "04 · Opportunities",
+  "title": "\"Deals\" renamed to \"Opportunities\" in section 04 titles, frame names and flow starts",
+  "summary": "TopBar title changed to Opportunities on the 7 screens of section 04; section, frames (04.1–04.8, 04.1a/b) and the three \"4 · …\" flow starts renamed. Other \"deals\" mentions (Notifications chip, Calendar legend, onboarding copy, Phoenix AI prompts) were changed later in the Nov 5 vocabulary pass.",
+  "details": [
+   "Frames: 282:8172 04.1 Opportunities · 282:8215 04.2 · Defense · 282:8254 04.3 · No matches · 340:6594 04.7 · For you · 340:6814 04.8 · For you · empty · 794:6926 / 794:6963 saved states."
+  ],
+  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=282-8172",
+  "file": "Phoenix Client App — Screens (Glow) · V2",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "id": "2026-11-04-per-company-screens",
+  "date": "2026-11-04",
+  "ts": "2026-11-04T17:30:00Z",
+  "type": "new",
+  "area": "05 · Companies & offerings",
+  "title": "Per-company screens for 11 companies cloned from the Stripe set with real company data; search \"In portfolio\" flow brought into the prototype",
+  "summary": "Offering detail + Overview · Company · Research · News generated per company (Anthropic, SpaceX, Anduril, Figure AI, Saronic, Castelion, CHAOS, Crusoe, HavocAI, Neuralink, Saildrone) from the Stripe screens: descriptions, offering line, close dates, minimums, funding rounds, leadership rows, news sources and positions replaced per company; companies without an offering get the four company tabs only. The Search · In portfolio filter flow (Type · Account · Sort pills) moved from the proposals page into the prototype. Position wording changed from \"units\" to \"shares\".",
+  "details": [
+   "Section 05 · Companies & offerings · per company (1269:17932). Stripe set used as the base; per-company copy and data applied as text and instance overrides."
+  ],
+  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=1269-17932",
+  "file": "Phoenix Client App — Screens (Glow) · V2",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "id": "2026-11-04-allocated-removed",
+  "date": "2026-11-04",
+  "ts": "2026-11-04T17:53:00Z",
+  "type": "removed",
+  "area": "05 · Companies & offerings",
+  "title": "Allocation percentage removed everywhere: Round progress card, OfferingBar text, DealCard third stat",
+  "summary": "Client decision: the app does not show how much of a round is allocated. The \"Round progress\" card (gauge \"82% allocated · closes Nov 12\") was removed from Offering detail and from the Request allocation screens; OfferingBar now reads \"Closes Nov 12\"; the DealCard's third stat changed from Allocated to Valuation (Stripe $91.5B · Anthropic $183B · SpaceX $400B · Anduril $30.5B · Figure AI $39B · Saronic $4.0B).",
+  "details": [
+   "Round progress card removed on 6 Offering details + 15.1, 15.5–15.8. OfferingBar updated on 28 company tabs. 32 DealCards updated (Allocated label → Valuation). Phoenix AI 08.4 copy no longer says \"and is 82% allocated\".",
+   "\"Allocated · Jun 2026\" in My Requests kept: it is the status of an approved request, not a round percentage."
+  ],
+  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=282-8380",
+  "file": "Phoenix Client App — Screens (Glow) · V2",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "id": "2026-11-04-broker-recommendations-removed",
+  "date": "2026-11-04",
+  "ts": "2026-11-04T18:23:00Z",
+  "type": "removed",
+  "area": "Compliance copy",
+  "title": "Broker recommendations removed: \"Recommended by Serge\" tags, \"Your broker\" fit cards, 09.5 \"Latest note\"",
+  "summary": "No investment recommendation appears anywhere. The \"Recommended by Serge\" tag was deleted from the 6 offerings and the 5 Request allocation screens; the \"Your broker\" section (avatar + \"Strong fit for your fintech exposure\") from 14 screens (offerings, 15.1–15.8, 16.2–16.4); and the \"Latest note\" card on 09.5 Representative · Serge. Plain contact-the-broker entry points stay (Contact your broker buttons, Serge CTA on Home without accounts, onboarding line).",
+  "details": [],
+  "figma": "https://www.figma.com/design/ThqxwCgebZynoQxMfqrVVQ/?node-id=266-4663",
+  "file": "Phoenix Client App — Screens (Glow) · V2",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "id": "2026-11-04-logo-tile-colors",
+  "date": "2026-11-04",
+  "ts": "2026-11-04T20:59:00Z",
+  "type": "fixed",
+  "area": "05 · Companies & offerings",
+  "title": "Company logo tiles use each brand's gradient (54 tiles were all Stripe violet)",
+  "summary": "Monogram on Offering detail, CompanyHeader logo on Overview/Company/Research/News and PositionRow logos in section 05 now carry the gradient already used on Home/Deals for that company.",
+  "details": [
+   "Anthropic clay #E39A74→#C4693F · SpaceX graphite #4A4544→#232020 · Anduril olive #7D8C74→#3E4A39 · Figure AI blue #6F9BFF→#2F5EE0 · Saronic lime #C8F56A→#86C21F · Castelion warm grey #9A8F86→#5B534E · CHAOS charcoal #3A3A3C→#1C1C1E · Crusoe orange #FF8A4C→#E2552A · HavocAI blue #5B8CFF→#2F5EE0 · Neuralink slate #96A0B2→#424A5A · Saildrone amber #F2B33D→#C98A14."
+  ],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=1269-17932",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "id": "2026-11-04-v3-consistency-audit",
+  "date": "2026-11-04",
+  "ts": "2026-11-04T21:17:00Z",
+  "type": "fixed",
+  "area": "Flows & navigation",
+  "title": "V3 consistency audit run and fixed: 277 active screens, 1,369 links, 0 broken; forbidden vocabulary at 0 hits",
+  "summary": "Read-only audit of the V3 copy followed by in-place fixes. Verified: 0 broken links, 0 links into the Archive, 64 unique flow starts; 0 visible hits for estimated value, investment return, curated for you, offering terms, SPV report, cash, mark range, carried interest, brokerage fee, data room and similar; every holding row and deal card opens a screen headed by its own company. Data Phoenix has not supplied is shown as \"Pending\", nothing invented.",
+  "details": [
+   "Pending data: amount invested and lot dates for SpaceX, Stripe, Figure AI, Neuralink, Crusoe; price per share wording; purchase confirmations; per-lot documents; KYC 14.8 agreement names.",
+   "Change report saved as a Claude doc at the time of the audit."
+  ],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=266-4663",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "id": "2026-11-04-section-bar-bottom",
+  "date": "2026-11-04",
+  "ts": "2026-11-04T21:53:00Z",
+  "type": "updated",
+  "area": "05 · Companies & offerings",
+  "title": "CompanySectionBar pinned to the bottom of every company profile screen; OfferingBar sits just above it",
+  "summary": "On the 52 company profile screens outside the Archive the Overview · Company · Research · News bar moved from under the header (y 111) to the bottom edge above the home indicator; the OfferingBar (\"Closes Dec 5 · View offering\") sits directly above it; content now starts right under the header and the ambient glow moved with it. Layer order fixed so bars stay above the scroll.",
+  "details": [
+   "Prototype links on the tabs untouched. OfferingBar stays on all four tabs (not Overview only), as before."
+  ],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=1269-17932",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "id": "2026-11-05-company-templates",
+  "date": "2026-11-05",
+  "ts": "2026-11-05T13:33:00Z",
+  "type": "new",
+  "area": "05 · Companies & offerings",
+  "title": "Company screens turned into templates: 5 master components, 49 screens replaced by instances",
+  "summary": "New 🧩 Templates row at the top of section 05 with Template · Offering detail, · Overview, · Company, · Research, · News (Anthropic data as base; tabs, offering bar and row links wired between them). The 49 per-company screens became instances with per-company overrides (texts, Tag / ListRow / MetricGrid / SectionHeader / RoundRow / NewsRow / Monogram props, logo swaps, visibility, e.g. Castelion without valuation or offering bar, Figure AI with one leader). To change the structure, edit the master; data stays as overrides.",
+  "details": [
+   "120 prototype destinations re-pointed on 60 nodes (DealCards, CompanyRows, notifications, Search) + 16 flow starts now point at the instances. 0 dangling links.",
+   "Originals moved to 99 · Archive as \"05 · pre-component originals (2026-11-05)\", renamed ARCHIVED.",
+   "Local components used by these screens (OfferingBar, SectionHeader, MetricGrid, DotMatrix, metric-switch, RoundRow, ReportRow, NewsRow) are orphaned: they work but have no master on the canvas."
+  ],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=1269-17932",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "id": "2026-11-05-audit-fixes-applied",
+  "date": "2026-11-05",
+  "ts": "2026-11-05T16:30:00Z",
+  "type": "fixed",
+  "area": "Flows & navigation",
+  "title": "Consistency audit fixes A-001 to A-010 applied in place on V3",
+  "summary": "Ten findings fixed directly in the design: naming, wrong link targets, mismatched amounts, leftover offerings on the no-accounts Home, and vocabulary.",
+  "details": [
+   "A-001 19 un-suffixed Stripe screens renamed with \"· Stripe\".",
+   "A-002 Template · Overview \"Private\" stat no longer links to the archived Portfolio · Private.",
+   "A-003 16.5 My Requests · Empty \"Browse offerings\" → 04.1 Opportunities.",
+   "A-004 16.1 My Requests: Anduril, SpaceX, Saronic, Figure AI rows no longer open the Stripe request detail (per-company detail screens pending).",
+   "A-005 Calendar and Home event rows for Stripe, Saronic, SpaceX no longer open the Anduril event (24 nodes).",
+   "A-006 Event detail amount $150,000 → $100,000 to match My Requests (3 nodes).",
+   "A-007 03.2 Home · No accounts yet: Offerings header + Stripe DealCard removed; \"Total Phoenix wealth\" → \"Total invested\".",
+   "A-008 Splash carousel copy \"deals\" → \"opportunities\" on 01.3 and 01.4.",
+   "A-009 \"deal(s)\" → \"opportunity/opportunities\" on 41 text nodes (Notifications, Settings, Saved, Calendar, Phoenix AI, team copy).",
+   "A-010 Invested-over-time chart on Home and Portfolio given y-axis values ($7.4M / $3.7M / $0).",
+   "Acceptance: 1,365 links rechecked, 0 into Archive, 0 null destinations."
+  ],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=266-4663",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "id": "2026-11-05-two-users-402x874",
+  "date": "2026-11-05",
+  "ts": "2026-11-05T17:01:00Z",
+  "type": "updated",
+  "area": "Flows & navigation",
+  "title": "Page restructured into User 1 · Existing Client and User 2 · Prospect; all 457 screens resized to 402 × 874 (iPhone 17 Pro)",
+  "summary": "▶ Prototype V3 rebuilt around two personas with 01 · Splash & Welcome shared on top. Every active screen (01, User 1, User 2 and the templates) resized from 390×844 to 402×874 after setting constraints: header and content stretch with 16 px gutters, dock, bars and home indicator pinned to the bottom, scrims full-screen, sheets full-width. The Archive stays at 390×844.",
+  "details": [
+   "Prototype device setting: iPhone 16 Pro preset (402×874, same as 17 Pro), background #0D0B0A.",
+   "Dev note: all V3 frames are now 402×874 pt; layouts were verified on Home, company Overview and the calendar sheet."
+  ],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=266-4663",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "id": "2026-11-05-ticker-marquee",
+  "date": "2026-11-05",
+  "ts": "2026-11-05T17:30:00Z",
+  "type": "new",
+  "area": "Glow library · Finance",
+  "title": "TickerMarquee component set: infinite scrolling market ticker that runs in Present",
+  "summary": "Position=Start / Position=End variants with a doubled Chip/Ticker track inside a 358×30 clipped viewport; After delay → Smart animate (Linear, 14 s) → instant reset gives a seamless loop. Built in V3 first, moved to the library on Nov 6.",
+  "details": [
+   "Dev note: implement as a continuous horizontal marquee of ticker chips, ~14 s per cycle, linear easing, seamless wrap.",
+   "Market chips (DJIA / NASDAQ / S&P) remain subject to SOW §3.15 review."
+  ],
+  "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU",
+  "file": "Phoenix Glow — Design System",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "id": "2026-11-05-saved-rule",
+  "date": "2026-11-05",
+  "ts": "2026-11-05T20:30:00Z",
+  "type": "updated",
+  "area": "04 · Saved",
+  "title": "Saved rule: Client saves opportunities and companies; Prospect saves companies only",
+  "summary": "Client 04.4 / 04.4a / 04.4b split into \"Opportunities\" and \"Companies\" groups with counters (\"2 opportunities · 1 company\"); 04.5 copy updated; bookmark on all 52 Client company screens → Saved. Prospect: \"In portfolio\" tags hidden on 24 rows; 04.5 \"Browse companies\" → directory; 04.4 lists Stripe + Anthropic.",
+  "details": [
+   "Prospect save flow: Stripe's four tabs get \"· saved\" twins (orange bookmark, \"Company saved · View saved list\" toast, toggle, saved state kept across tabs); the other 48 company screens open a shared full-screen toast overlay with \"View saved list\" → 04.4 and tap-outside to dismiss.",
+   "Canvas housekeeping the same day: every section re-gridded (screens sorted by number, 10 per row, 470 px pitch); Prospect 05.8 / 05.12 leftover empty \"Offerings\" group removed."
+  ],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=266-4663",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "addedBy": "Claude (backfill)",
   "area": "Flows & navigation",
   "date": "2026-11-05",
   "details": [
@@ -435,6 +646,87 @@
   "ts": "2026-11-05T21:05:00Z",
   "type": "updated",
   "id": "2026-11-05-persona-flows"
+ },
+ {
+  "addedBy": "Claude (backfill)",
+  "area": "Legal & disclosures",
+  "date": "2026-11-06",
+  "details": [
+   "Local component DisclosureFooter (3250:52743) in 🧩 Templates · Company screens: hairline, body copy (ink-muted 12.5/19), links row Data Disclaimer · Disclosures · Legal (Text/link-sm underlined), \"Phoenix Financial · Member FINRA / SIPC · CRD 144403\", \"© 2026 Phoenix Financial\".",
+   "Links: client → 18.3 / 18.4 / 18.5; prospect → the · Prospect twins (3150:53478 / 53503 / 53528). Dissolve 200 ms.",
+   "Library Accordion untouched (still used in Archive and other files)."
+  ],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3250-52743",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "summary": "Client request: the disclosure block can no longer collapse. Juan chose page-footer option C (no logo). All 23 Accordion instances and the two templates outside the Archive replaced.",
+  "title": "\"Legal and disclosures\" is always visible: DisclosureFooter replaces the Accordion on every screen",
+  "ts": "2026-11-06T13:25:00Z",
+  "type": "updated",
+  "id": "2026-11-06-disclosure-footer"
+ },
+ {
+  "id": "2026-11-06-ticker-on-home",
+  "date": "2026-11-06",
+  "ts": "2026-11-06T13:30:00Z",
+  "type": "updated",
+  "area": "03 · Home",
+  "title": "Animated TickerMarquee placed on Home (Client 03.1, Client 03.2, Prospect 03.2)",
+  "summary": "The static Tickers row is replaced by the TickerMarquee instance on the three Home screens; the static row is hidden, not deleted.",
+  "details": [],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-2553",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "id": "2026-11-06-components-to-library",
+  "date": "2026-11-06",
+  "ts": "2026-11-06T14:28:00Z",
+  "type": "updated",
+  "area": "Glow library",
+  "title": "DisclosureFooter, SkeletonRow and TickerMarquee moved into the Glow library; V3 swapped to the library versions",
+  "summary": "Added to the library bound to library tokens: DisclosureFooter and SkeletonRow on the Display page, the TickerMarquee set on the Finance page. Published. In V3 every instance now points at the library (52 DisclosureFooter with document links re-applied per persona, 8 SkeletonRow, 4 TickerMarquee); the local masters, the ticker preview frame and its flow start were deleted. Only the five Template · … company screens remain local to V3.",
+  "details": [
+   "Rule: new reusable components live in the library, never local to a screens file.",
+   "If Figma prompts, run Update in V3 to pick up the library."
+  ],
+  "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU",
+  "file": "Phoenix Glow — Design System",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "id": "2026-11-06-notifications-filters",
+  "date": "2026-11-06",
+  "ts": "2026-11-06T16:47:00Z",
+  "type": "new",
+  "area": "03 · Notifications",
+  "title": "Notifications filter chips wired: filtered screens for Client (News · Opportunities · Broker · System) and empty states for Prospect",
+  "summary": "Client: four new screens beside 03.3 (News 2 items, Opportunities 1, Broker 1, System 1); every chip on all five screens navigates to its filter with a quick dissolve and keeps scroll position; All returns to the full list; news cards still open the leaving-Phoenix sheet. Prospect: News, Broker and System empty states reusing the compact pattern from the company News tab with adapted copy (no news yet / no messages yet, Serge will reach out / no system updates); All → the welcome screen.",
+  "details": [
+   "Reactions: ON_CLICK → NAVIGATE, dissolve 0.15 s ease-out, preserveScrollPosition true.",
+   "Empty states currently share the document icon; Broker (chat icon) and System (shield icon) swaps pending. 03.4 Leaving Phoenix · Prospect backdrop still shows the old news item."
+  ],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=266-4663",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "addedBy": "Claude (backfill)"
+ },
+ {
+  "addedBy": "Claude (backfill)",
+  "area": "15 · Request allocation",
+  "date": "2026-11-06",
+  "details": [
+   "Root cause of the broken modal: 15.1 · Anthropic had its Sheet loose on the canvas.",
+   "Overlay settings: Center, no background, no click-outside (Scrim handles it). Scrim/Cancel → Close; 15.6 Got it → Close; 15.7 Retry → Swap with 15.1; 15.2 back → Back.",
+   "Openers switched Navigate → Open overlay: Request allocation on 05.1 ×6 + Template · Offering detail, 08.4 AI chip, \"What this means\" on 15.2.",
+   "Deleted 25 Anthropic/SpaceX/Anduril/Figure AI/Saronic copies. 15.3 subtitle \"18 pages · Version Oct 10, 2026\"; 15.4 \"$50,000 in this offering\"; 15.5/15.8 show a request summary (Amount · Account · Documents · Submitted) instead of the company card.",
+   "Trade-off: the Sent screen no longer shows the company. Open: 15.7 Offline sheet still has no entry point."
+  ],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=266-4673",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "summary": "15.1 Amount, 15.6 What this means and 15.7 Offline are transparent overlays (Scrim + Sheet + Home indicator). Six per-company chains collapsed into one offering-agnostic chain 15.1 → 15.8.",
+  "title": "Request allocation sheets are now prototype overlays, one shared chain for all companies",
+  "ts": "2026-11-06T18:00:00Z",
+  "type": "updated",
+  "id": "2026-11-06-request-overlays"
  },
  {
   "addedBy": "Claude (backfill)",
@@ -470,41 +762,5 @@
   "ts": "2026-11-06T19:30:00Z",
   "type": "new",
   "id": "2026-11-06-contact-serge-sheet"
- },
- {
-  "addedBy": "Claude (backfill)",
-  "area": "Legal & disclosures",
-  "date": "2026-11-06",
-  "details": [
-   "Local component DisclosureFooter (3250:52743) in 🧩 Templates · Company screens: hairline, body copy (ink-muted 12.5/19), links row Data Disclaimer · Disclosures · Legal (Text/link-sm underlined), \"Phoenix Financial · Member FINRA / SIPC · CRD 144403\", \"© 2026 Phoenix Financial\".",
-   "Links: client → 18.3 / 18.4 / 18.5; prospect → the · Prospect twins (3150:53478 / 53503 / 53528). Dissolve 200 ms.",
-   "Library Accordion untouched (still used in Archive and other files)."
-  ],
-  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3250-52743",
-  "file": "V3 Phoenix Client App — Screens (Glow)",
-  "summary": "Client request: the disclosure block can no longer collapse. Juan chose page-footer option C (no logo). All 23 Accordion instances and the two templates outside the Archive replaced.",
-  "title": "\"Legal and disclosures\" is always visible: DisclosureFooter replaces the Accordion on every screen",
-  "ts": "2026-11-06T13:25:00Z",
-  "type": "updated",
-  "id": "2026-11-06-disclosure-footer"
- },
- {
-  "addedBy": "Claude (backfill)",
-  "area": "15 · Request allocation",
-  "date": "2026-11-06",
-  "details": [
-   "Root cause of the broken modal: 15.1 · Anthropic had its Sheet loose on the canvas.",
-   "Overlay settings: Center, no background, no click-outside (Scrim handles it). Scrim/Cancel → Close; 15.6 Got it → Close; 15.7 Retry → Swap with 15.1; 15.2 back → Back.",
-   "Openers switched Navigate → Open overlay: Request allocation on 05.1 ×6 + Template · Offering detail, 08.4 AI chip, \"What this means\" on 15.2.",
-   "Deleted 25 Anthropic/SpaceX/Anduril/Figure AI/Saronic copies. 15.3 subtitle \"18 pages · Version Oct 10, 2026\"; 15.4 \"$50,000 in this offering\"; 15.5/15.8 show a request summary (Amount · Account · Documents · Submitted) instead of the company card.",
-   "Trade-off: the Sent screen no longer shows the company. Open: 15.7 Offline sheet still has no entry point."
-  ],
-  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=266-4673",
-  "file": "V3 Phoenix Client App — Screens (Glow)",
-  "summary": "15.1 Amount, 15.6 What this means and 15.7 Offline are transparent overlays (Scrim + Sheet + Home indicator). Six per-company chains collapsed into one offering-agnostic chain 15.1 → 15.8.",
-  "title": "Request allocation sheets are now prototype overlays, one shared chain for all companies",
-  "ts": "2026-11-06T18:00:00Z",
-  "type": "updated",
-  "id": "2026-11-06-request-overlays"
  }
 ]
