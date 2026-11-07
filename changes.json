@@ -1109,5 +1109,24 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3072-26482",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-chart-scrub",
+    "date": "2026-11-07",
+    "ts": "2026-11-07T18:40:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "Glow library · Data viz",
+    "title": "Tap a column on the chart to see the value at that date (ChartScrub)",
+    "summary": "MetricPanel charts are now inspectable: six invisible tap zones over the DotMatrix (2021 … Today) switch a nested ChartScrub component that draws a marker line and knob on that column and a tooltip with date · value. Tapping the same zone again hides it. One ChartScrub set per metric (Valuation, Revenue, Price/share, Rounds) with its own values, nested inside the matching MetricPanel variant.",
+    "details": [
+      "Sets ChartScrub/Valuation 2126:2169, Revenue 2126:2291, Price/share 2126:2413, Rounds 2126:2535 (Point = None · 2021 · 2022 · 2023 · 2024 · 2025 · Today; 36 Change-to interactions each… 6 hotspots × 7 variants).",
+      "Marker x = column × 7 + 2 (DotMatrix pitch 4px dot + 3px gap); tooltip ink/primary bg, surface text, clamped to chart width; knob brand/300.",
+      "Values are placeholders (e.g. Valuation 2021 $2B → Today $183B). Implementation: on tap/drag show the nearest column value; the dev build can use a continuous scrub instead of 6 zones.",
+      "Reaches V3 through the MetricPanel update (publish + accept)."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2126-2169",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
   }
 ]
