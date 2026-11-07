@@ -1166,5 +1166,24 @@
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=18-105",
     "file": "Phoenix Glow — Design System",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-toast-tone-variant",
+    "date": "2026-11-07",
+    "ts": "2026-11-07T20:15:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "Glow library · Overlays / Icons",
+    "title": "Toast gets a Tone variant (Success / Error) + icon/circle-alert",
+    "summary": "Toast is now a component set with Tone = Success (check well, as before) or Error (circle-alert icon in a 16% danger well). New Lucide icon component icon/circle-alert added to the Icons page. Message and Show action work the same on both tones; the error tone is for \"Couldn't send\" and similar failures.",
+    "details": [
+      "Toast set 2138:185 (Overlays): Tone=Success 18:105 (unchanged key), Tone=Error 2138:178. Property ids changed on the set: Message#2138:0, Show action#2138:1 (default false).",
+      "icon/circle-alert 2138:134 (Icons / Library), built like the other Lucide icons (24, stroke 1.6, ink/primary).",
+      "Error well: danger at 16% (unbound, like the success well) — Figma ignores paint opacity on variable-bound fills inside instances.",
+      "After publish: 15.8 Request · Failed to send (×2) switch to Tone=Error in V3."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2138-185",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
   }
 ]
