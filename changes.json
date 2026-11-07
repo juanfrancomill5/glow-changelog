@@ -1035,5 +1035,23 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3269-98033",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-lucide-icons",
+    "date": "2026-11-07",
+    "ts": "2026-11-07T16:55:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "Glow library · Icons",
+    "title": "Icon set rebuilt on Lucide (46 icons, same components)",
+    "summary": "Every outline icon component in the Glow library now carries the Lucide glyph (lucide-static 1.70.0) instead of the hand-drawn one: one flattened VECTOR \"Vector\" per 24×24 component, stroke 1.6, round caps/joins, colour bound to ink/primary, SCALE constraints. Component names and keys are unchanged, so all instances in the screens file (IconButton, ListRow, TextField, Chip, DisclosureFooter…) pick the new glyphs up on library update. The five nav icons (icon/nav-*) were not touched.",
+    "details": [
+      "Mapping (icon → Lucide): arrow-left, arrow-up, bell, book, bookmark, calendar, cash→banknote, chart-bars→chart-column, chat→message-square, check, chevron-down, chevron-right, clipboard, close→x, compass, document→file-text, external-link, eye, face-id→scan-face, filter→list-filter, globe, home→house, info, lock, log-out, mail, menu, message-sms→message-square-more, microphone→mic, more-horizontal→ellipsis, news→newspaper, phone, plus, scale, search, settings, shield-check, signature, sparkle-ai→sparkles, sparkline→activity, star, sync→refresh-cw, trend-up→trending-up, user, users, passkey→fingerprint.",
+      "Each component description ends with \"Lucide: <name>\" for the dev mapping. Flutter: use the lucide_icons package with the same names, 1.6 stroke at 24.",
+      "Requires: publish the library, then accept the update in V3 Phoenix Client App — Screens (Glow)."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=5-2",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
   }
 ]
