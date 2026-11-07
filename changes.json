@@ -968,5 +968,39 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-2553",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-back-button-component-everywhere",
+    "date": "2026-11-07",
+    "ts": "2026-11-07T16:05:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "All pushed screens (TopBar)",
+    "title": "Every back arrow is now the \"back\" IconButton (Glass · 44 · arrow-left)",
+    "summary": "The small 24px arrow inside the library TopBar (Pushed and Step types) was replaced on 173 screens by the 44px glass \"back\" IconButton already used on company headers, so every screen shares one back control. Each screen keeps the destination its arrow had; the TopBar title shifts 56px right when there is one.",
+    "details": [
+      "Reference instance 3487:67764 (IconButton Variant=Glass, Size=44, Icon=arrow-left, action Back).",
+      "Per screen: TopBar nested icon hidden + reactions cleared; \"back\" instance added to the sticky header at the TopBar position (absolute); TopBar with a title moved to x+56 and narrowed by 56. Root-type TopBars (Home, Opportunities) untouched.",
+      "21 existing arrow-left IconButtons renamed \"back\". 09.5 Serge card: stray \"Mark all read\" action hidden."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3487-67764",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-message-buttons-not-ai",
+    "date": "2026-11-07",
+    "ts": "2026-11-07T16:08:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "09 · Menu & Account",
+    "title": "\"Message\" on Your Phoenix team opens the Contact Serge sheet, not Phoenix AI",
+    "summary": "Phoenix AI is out of the current build, so the six Message buttons on 09.4 Your Phoenix team (client + prospect) now open the Contact Serge bottom sheet. There is no remaining entry point into the 08 · Phoenix AI screens.",
+    "details": [
+      "282:11750 / 282:11760 / 282:11770 → 18.25 (3362:41275); 3149:50718 / 50728 / 50738 → 18.26 (3370:41293)."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11738",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
