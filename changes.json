@@ -1019,5 +1019,21 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=270-1249",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-phoenix-ai-archived",
+    "date": "2026-11-07",
+    "ts": "2026-11-07T16:25:00Z",
+    "type": "removed",
+    "product": "Client App iPhone Glow",
+    "area": "08 · Phoenix AI",
+    "title": "08 · Phoenix AI screens moved to 99 · Archive (not in this release)",
+    "summary": "Phoenix AI is not part of this release, so both 08 · Phoenix AI sections (client: 08.1 Start, 08.2 Answer, 08.3 Thinking, 08.4 Deals in chat; prospect: 08.1 Start) were moved from ▶ Prototype V3 to the 99 · Archive page. No interaction pointed at them any more (Message buttons already go to the Contact Serge sheet) and their two flow starting points were removed. BottomNav stays with Show AI = false.",
+    "details": [
+      "Sections 282:11474 and 3149:50489 now live on page 3269:98033, renamed \"… (archived Nov 7 — AI not in this release)\"."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3269-98033",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
