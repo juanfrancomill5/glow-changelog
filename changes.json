@@ -1462,5 +1462,41 @@
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2150-605",
     "file": "Phoenix Glow — Design System",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-companies-industries",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T18:40:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore · Companies",
+    "title": "Companies results for AI, Fintech, Space and Robotics; every industry chip wired",
+    "summary": "Added one Companies results screen per industry chip so every chip on Explore and Companies leads somewhere. Tapping the selected industry again returns to Companies · All.",
+    "details": [
+      "04.10c AI 3798:45253, Fintech 3798:45532, Space 3798:45805, Robotics 3798:46084 (Defense stays 04.10b 3776:46508)",
+      "52 chip links on 04.1, 04.6, 04.7 and all Companies screens",
+      "Selected industry chip moves next to All"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3798-45253",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-offering-detail-no-type",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T18:35:00Z",
+    "type": "rule",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Offering detail & templates",
+    "title": "Offering detail: no offering type, no close date",
+    "summary": "Offering detail titles read “Company · Offering” instead of Primary or Secondary offering, the close-date tag is hidden, and the structure row drops the type. Company templates' offering bars read Offering open with the latest round.",
+    "details": [
+      "05.1 for Stripe, Anthropic, SpaceX, Anduril, Figure AI, Saronic; Template · Offering detail 3072:26386",
+      "Templates Overview, Company, Research, News: OfferingBar eyebrow and detail",
+      "Search results 05.10 and 05.12: Stripe offering row reads Stripe · Offering, Series I"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3164-52201",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
