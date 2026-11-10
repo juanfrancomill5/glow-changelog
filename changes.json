@@ -1535,5 +1535,23 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3771-45655",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-most-active-interest-sheets",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T18:55:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore · Most Active",
+    "title": "Indicate interest sheet for every Most Active company without an offering",
+    "summary": "Each Indicate interest button on Most Active now opens its own sheet with that company's name and logo. Send to my broker swaps to a toast that closes after 2.5 s.",
+    "details": [
+      "Sheets: CHAOS 3810:46777, HavocAI 3810:46798, Saildrone 3810:46826, Neuralink 3810:46845, Castelion 3810:46864 (Crusoe 3803:45593 keeps the full sent-state flow)",
+      "Toast overlay 04.6t 3810:46764",
+      "Wired from 04.6 and 04.6c; sections below Explore moved down to make room"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3810-46777",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
