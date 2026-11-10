@@ -1282,5 +1282,185 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3682-44417",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-companycard",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T17:20:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Finance",
+    "title": "New CompanyCard component (Saved × Bottom)",
+    "summary": "Company card for every Explore list. Same skeleton everywhere: identity row with bookmark, description, three company facts (Latest round · Valuation · Total raised). The bottom slot changes by list; it never shows a close date, offering type or terms.",
+    "details": [
+      "Component set 2150:605, 10 variants: Saved=Off/On × Bottom=None/Offering/Locked/Headline/Update",
+      "Text props: Company, Meta, Description, Round, Valuation, Total raised, Offering, Headline, Headline meta, Update; boolean Show offering tag",
+      "Bookmark toggles Saved Off↔On (Change to, smart animate 200 ms)",
+      "Offering strip tint is an absolute 'tint' layer at 14% opacity (brand/500)"
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2150-605",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-offeringsheet",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T17:30:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Overlays",
+    "title": "New OfferingSheet component (Client / Prospect)",
+    "summary": "Bottom sheet that opens automatically on the Company page when the user arrives from a For You card with an open offering. Client shows structure and minimum with Request allocation and View full offering; Prospect shows terms locked with Complete investor profile and I'm interested.",
+    "details": [
+      "Component set 2154:421: Audience=Client 2154:348, Audience=Prospect 2154:388",
+      "Text props: Company, Offering, Structure, Minimum",
+      "No close date, no offering type"
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2154-421",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-chip-filters-removable",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T17:35:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Actions · Chip",
+    "title": "Chip: Filters entry, Removable and option counts",
+    "summary": "Added Type=Filters (Off, and On with a count badge) and Type=Removable (label + 28pt remove target). Filter chips can show a Count for option results in the Filters sheet. Existing variants are unchanged.",
+    "details": [
+      "New variants 2152:175, 2152:180, 2152:187",
+      "New props Count and Show count",
+      "A 0-result option is shown at 40% opacity and is not tappable"
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=9-28",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-dock-explore",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T17:40:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Navigation · BottomNav/Dock",
+    "title": "Dock tab Opportunities renamed Explore",
+    "summary": "The second dock tab is labelled Explore and uses icon/compass. The variant value stays Active=Deals so existing instances keep their state.",
+    "details": [
+      "Set 2056:275",
+      "V3 dock instances with a text override were updated to Explore"
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2056-275",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-explore-tabs",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T18:10:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore",
+    "title": "Explore replaces Opportunities: For You, Most Active, Watch List",
+    "summary": "New tab root with three tabs built from CompanyCard. For You shows a reason line per card and the offering strip when one is open; Most Active shows the latest headline and counts; Watch List replaces Saved with the same bookmark save and unsave.",
+    "details": [
+      "04.1 For You 3765:45831, 04.6 Most Active 3771:45655, 04.7 Watch List 3771:46012, 04.8 Watch List · Empty 3771:46462",
+      "Overlay 04.9 Why you're seeing this 3787:45267 (opens from every Why)",
+      "Chip row: Filters → Filters sheet overlay; All companies → 04.10; Defense → 04.10b"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3763-45459",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-companies-filters",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T18:20:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore · Companies",
+    "title": "Companies results view with search and Filters sheet",
+    "summary": "Filtering opens a Companies view over the full catalog instead of narrowing a tab. It has a search field, synced industry chips, removable chips per active value and a Filters sheet with option counts. Logic is OR within a group and AND across groups; options that would return nothing are disabled.",
+    "details": [
+      "04.10 All 3776:46147, 04.10b Defense 3776:46508, 04.12 Filters applied 3776:46865, 04.13 No results 3776:47134",
+      "Overlay 04.11 Filters sheet 3786:45159 (Industry, Offering, Stage, Valuation, More); Show all industries swaps to Overlay 04.14 All industries 3786:45275",
+      "Show 3 companies → 04.12; scrim and × close",
+      "Home Browse all → 04.10"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3763-45459",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-foryou-offering-sheet",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T18:30:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore · Company",
+    "title": "For You card opens the Company page with the offering sheet",
+    "summary": "Tapping a For You card that has an open offering opens the Company page and slides up the offering sheet after 350 ms. Closing it or tapping outside leaves the user on the Company page; View offering reopens it.",
+    "details": [
+      "Anduril: 04.15 company 3787:45282 + overlay 3787:45965; Anthropic: 3787:46022 + overlay 3787:46690",
+      "Sheet: Request allocation → 15.1 270:836; View full offering → 05.1 for that company",
+      "Cards without an offering and cards on other lists open the Company page with no sheet"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3787-45282",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-retire-opportunities-saved",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T18:40:00Z",
+    "type": "removed",
+    "product": "Client App iPhone Glow",
+    "area": "99 · Archive",
+    "title": "04 · Opportunities and 04 · Saved retired",
+    "summary": "The old Opportunities and Saved sections moved to an archive section. Every link that pointed to them now points to Explore · For You or Explore · Watch List.",
+    "details": [
+      "Archive section 3763:45458",
+      "26 prototype links repointed: 04.1 Opportunities → 04.1 Explore · For You; Saved screens → 04.7 Watch List",
+      "Saved toast copy: Saved to your Watch List"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3763-45458",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-offeringbar-copy",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T18:45:00Z",
+    "type": "rule",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Companies & offerings",
+    "title": "Offering bar: no close date, no offering type",
+    "summary": "Company page offering bars now read Offering open with the latest round, instead of the close date and Primary or Secondary. Close dates and offering type are not available in the data.",
+    "details": [
+      "42 OfferingBar instances updated (Anthropic, SpaceX, Anduril, Figure AI, Saronic, Stripe)",
+      "Offering detail screens (05.1) still show the type in their title; not changed in this pass"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=1269-17932",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-offering-strip-tint",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T18:05:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Finance · CompanyCard / Actions · Chip",
+    "title": "Offering strip and active Filters chip tint render correctly",
+    "summary": "The 12% brand tint was set as paint opacity on a variable-bound fill and rendered as solid orange in screens. It is now an absolute tint layer at 14% layer opacity. The Removable chip label is bound to the Label property.",
+    "details": [
+      "CompanyCard offering frame: fills/strokes removed, child 'tint' rectangle (brand/500) at 14% opacity",
+      "Chip Type=Filters, Selected=On: 'tint' rectangle (brand/400) at 16% opacity",
+      "V3 Explore instances refreshed and old fill overrides cleared"
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2150-605",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
   }
 ]
