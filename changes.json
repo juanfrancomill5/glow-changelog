@@ -1715,5 +1715,24 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3853-48162",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-save-toasts",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T21:55:00Z",
+    "type": "fix",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore",
+    "title": "Bookmark save works, with Saved and Removed toasts",
+    "summary": "Tapping the bookmark on a company card now toggles it and shows a toast: Saved to your Watch List, or Removed from your Watch List. The toast closes after 2.5 s. The rest of the card still opens the Company page.",
+    "details": [
+      "Card tap moved from the instance to its logo, name, description, numbers, headline and update rows so it no longer overrides the bookmark",
+      "Library: bookmark layer named Save (Off) and Unsave (On); offering tag cleanup now live in V3",
+      "Overlays 04.17 Toast · Saved 3857:47953 and 04.18 Toast · Removed 3857:47968",
+      "69 cards updated to the published CompanyCard and wired"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3763-45459",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
