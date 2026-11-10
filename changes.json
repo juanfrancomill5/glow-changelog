@@ -1646,5 +1646,22 @@
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2150-605",
     "file": "Phoenix Glow — Design System",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-foryou-title",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T20:35:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore · For You",
+    "title": "For You: one section title instead of a reason line per card",
+    "summary": "The per-card Flagged by Phoenix Financial lines were removed. The section title now reads Flagged by Phoenix Financial; its Why action opens the explanation sheet.",
+    "details": [
+      "Client 04.1 3765:45831: section action Why → Overlay 04.9 3787:45267",
+      "Prospect P-04.1 3816:45708: same title, action Terms locked"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3765-45831",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
