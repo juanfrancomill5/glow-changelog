@@ -1553,5 +1553,24 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3810-46777",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-explore-prospect",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T19:15:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore · Prospect",
+    "title": "Prospect Explore: account gate on For You, Show interest leads to Create investment account",
+    "summary": "Prospects get the same Explore tabs. For You opens with a Create your investment account card and shows companies with terms locked. On Most Active, Watch List and Companies every card has Show interest, which explains why an investment account is needed and starts the identity and accredited-investor flow.",
+    "details": [
+      "P-04.1 For You 3816:45708, P-04.6 Most Active 3816:46119, P-04.7 Watch List 3816:47005, P-04.10 Companies 3817:46459",
+      "Overlay P-04s Create investment account 3816:47332; overlay P-04.11 Filters (no Offering group, no In my portfolio) 3817:46831",
+      "Create investment account → 14.2 Identity · Your details (start of identity, accredited investor, qualified purchaser and review steps)",
+      "Old 04 · Opportunities · Prospect and 04 · Saved · Prospect moved to the archive; 17 links repointed"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3815-46831",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
