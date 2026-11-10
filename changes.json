@@ -1770,5 +1770,41 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-10908",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-dropdown-components",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T23:35:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Inputs",
+    "title": "New Dropdown, DropdownMenu and DropdownOption",
+    "summary": "Field that opens a menu right below it. Dropdown shows a caption and the current value with a chevron (State=Default/Open; Open has a brand border and flipped chevron). DropdownMenu is a same-width panel 6px below the field holding DropdownOption rows; the selected row gets a surface/200 fill and a brand check.",
+    "details": [
+      "Dropdown 2171:163: Label, Value, Show label",
+      "DropdownOption 2171:176: Selected=On/Off, Title, Subtitle, Show subtitle",
+      "DropdownMenu 2171:177"
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2171-163",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-portfolio-account-dropdown",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T23:40:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "06 · Portfolio",
+    "title": "Portfolio account filter is a dropdown under the header",
+    "summary": "The account pill is replaced by a full-width Account dropdown under the Portfolio title, inside the sticky header, so the selected account (All accounts, Individual ••4821, Phoenix Family Trust) is always visible. Tapping it drops the menu below; choosing an account goes straight to that account on the same tab; tapping outside closes it.",
+    "details": [
+      "12 Portfolio screens (4 tabs × 3 accounts) updated; content starts below the taller header",
+      "12 menu overlays (one per tab × account), e.g. 3889:48258",
+      "The bottom-sheet account overlays moved to Archive"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-10908",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
