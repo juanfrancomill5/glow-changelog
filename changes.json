@@ -1591,5 +1591,24 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3763-45459",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-company-bottom-cta",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T20:00:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Companies & offerings · Company templates",
+    "title": "Company page bottom bar: Request allocation or Indicate interest (Show interest for prospects)",
+    "summary": "The action now lives in the bar at the bottom of the Company page instead of on the cards. Companies with an open offering show Request allocation; companies without one show Indicate interest, which opens that company's interest sheet. Prospects see Show interest, which opens the Create investment account sheet.",
+    "details": [
+      "Templates Overview 3072:26482, Company 3072:26546, Research 3072:26580, News 3072:26607: OfferingBar CTA = Request allocation (→ 15.1 270:836); new InterestBar 3834:47493 / 3834:47505 / 3834:47517 / 3834:47529",
+      "Client: 26 offering bars set to Request allocation, 24 Indicate interest bars wired to the per-company sheets (Crusoe, CHAOS, HavocAI, Saildrone, Neuralink, Castelion); hidden where an offering exists",
+      "Prospect: 44 template pages + 12 Stripe prospect frames show Show interest → Overlay P-04s Create investment account 3816:47332",
+      "Card-level Indicate interest / Show interest buttons turned off (44 cards); 04.6b and 04.6c card-state screens removed; Crusoe sheet now ends in the toast like the others"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3164-52201",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
