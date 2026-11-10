@@ -1572,5 +1572,24 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3815-46831",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-explore-navigation-pass",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T19:40:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore · Client and Prospect",
+    "title": "Explore navigation pass: no dead ends, flow starts tidied",
+    "summary": "Audited every control in both Explore sections and linked the gaps. Added Most Active page 2, prospect industry results and the prospect All industries panel; flow starting points renamed per tab.",
+    "details": [
+      "Client: 04.13 Ask your broker → 18.25 Contact your broker sheet; Filters Clear all → 04.10; Most Active Next ↔ 04.6d Page 2 3823:46723; remaining Indicate interest buttons on 04.6b wired",
+      "Prospect: P-04.10b Defense/AI/Fintech/Space/Robotics (3826:46866, 3826:47266, 3826:47424, 3826:47582, 3826:47712) with Show interest; Overlay P-04.14 All industries 3826:47842; 42 chip links",
+      "Flow starts: 1 · Client — 04 · Explore (For You, Most Active, Watch List, Watch List · Empty, Companies & filters, Companies · No results); 2 · Prospect — 04 · Explore (For You, Most Active, Companies & filters)",
+      "Audit result: no broken destinations, no unreachable frames"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3763-45459",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
