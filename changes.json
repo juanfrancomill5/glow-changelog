@@ -1663,5 +1663,57 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3765-45831",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-explore-audit-fixes",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T22:30:00Z",
+    "type": "fix",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore",
+    "title": "Explore audit fixes",
+    "summary": "Most Active no longer repeats For You companies and page 2 shows a loading state. Home and onboarding use CompanyCard instead of the old deal card. Offering tag and Offering filter group removed. Offering type and close dates removed from Overview, search results, My Requests and the calendar event.",
+    "details": [
+      "Most Active page 1: 9 companies not in For You; range 1–9 of 108",
+      "Filters sheet: Offering group removed, counts recalculated, Show 4 companies",
+      "04.12 Filters applied: Anduril, Anthropic, CHAOS, Saronic",
+      "CompanyCard: offering tag and Offering/Locked variants removed (library)"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3763-45459",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-prospect-filters-applied",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T22:35:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore · Prospect",
+    "title": "Prospect Filters applied screen",
+    "summary": "Prospect Show 4 companies now opens its own results screen. Cards open the prospect company pages, chips go to the prospect industry screens and Filters reopens the prospect sheet.",
+    "details": [
+      "P-04.12 3853:47752"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3853-47752",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-sort-sheet",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T22:40:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore",
+    "title": "Sort sheet for Watch List and Companies",
+    "summary": "The Name A–Z sort action opens a sort sheet: Name A–Z, Valuation high to low, Recently updated. Picking an option or tapping outside closes it.",
+    "details": [
+      "Overlay 04.16 3853:48162, built with RadioOption",
+      "Wired from 16 headers: Watch List (client and prospect) and every Companies results screen"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3853-48162",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
