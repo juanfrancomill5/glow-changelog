@@ -1751,5 +1751,24 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=270-836",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-portfolio-account-selector",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T22:45:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "06 · Portfolio",
+    "title": "Portfolio: account selector always visible",
+    "summary": "The filter icon in the Portfolio header is replaced by an account selector pill that stays in the sticky header and always shows the selected account: All, ••4821 or Trust. Tapping it opens the Account sheet; picking an account and Apply shows that account's portfolio on every tab.",
+    "details": [
+      "Pill on 06.1–06.4 (All) and on 8 new screens: 06.1–06.4 · Individual ••4821 and · Phoenix Family Trust",
+      "Account sheet as overlays: All 3879:47756, Individual 3879:47889, Trust 3879:48010; options swap selection, Apply navigates, Cancel and scrim close",
+      "Split: Individual ••4821 = SpaceX, Anduril, Crusoe ($4,594,043, 6 purchases); Phoenix Family Trust = Stripe, Figure AI, Neuralink ($2,800,000, 3 purchases); cash $262,880.12 / $150,000.00",
+      "Tabs keep the selected account; old 06.5 Account filter screen moved to Archive"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-10908",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
