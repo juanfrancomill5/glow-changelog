@@ -1498,5 +1498,42 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3164-52201",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-companycard-action",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T18:45:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Finance · CompanyCard",
+    "title": "CompanyCard: optional Indicate interest button",
+    "summary": "Added a full-width Ghost button at the bottom of every CompanyCard variant, shown with the Show action property. Most Active uses it for companies with no open offering.",
+    "details": [
+      "Boolean prop Show action; nested Button is an exposed instance (label and State editable)",
+      "After sending: nested Button State=Disabled, label Interest sent",
+      "The button is its own tap target; the rest of the card opens the Company page"
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2150-605",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-most-active-pagination-interest",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T18:50:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore · Most Active",
+    "title": "Most Active: 10 per page, different from For You, Indicate interest for companies without an offering",
+    "summary": "Most Active now lists 10 companies per page, ordered by most recent news, with a Previous/Next pagination footer (1–10 of 108). Companies ready for allocation stay in For You; companies with no open offering show Indicate interest, which opens a sheet that sends the interest to the broker.",
+    "details": [
+      "04.6 Most Active 3771:45655: Crusoe, CHAOS, Figure AI, HavocAI, Stripe, SpaceX, Saildrone, Neuralink, Castelion, Saronic; headline and date from each company's latest news",
+      "Overlay 04.6s Indicate interest · Crusoe 3803:45593: Send to my broker → 04.6b; Not now and scrim close",
+      "04.6b Interest sent 3806:46243 (disabled Interest sent button + toast) → after 2.5 s → 04.6c 3806:47309",
+      "108 total is a placeholder until the catalog count is available; Next is not linked to a page 2 screen"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3771-45655",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
