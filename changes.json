@@ -1734,5 +1734,22 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3763-45459",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-request-overlay",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T22:20:00Z",
+    "type": "fix",
+    "product": "Client App iPhone Glow",
+    "area": "15 · Request allocation",
+    "title": "Request allocation step 1 opens over the Company page",
+    "summary": "Request allocation on the Company page bottom bar now opens 15.1 Amount as an overlay, so the company stays visible behind the scrim. From the For You offering sheet it swaps sheet for sheet. Cancel or tapping outside returns to the Company page; Continue goes on to 15.2.",
+    "details": [
+      "31 bottom-bar CTAs changed from Navigate to Open overlay (Stripe, Anthropic, SpaceX, Anduril, Figure AI, Saronic and the three For You company pages)",
+      "3 For You offering sheets: Request allocation now swaps to 15.1"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=270-836",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
