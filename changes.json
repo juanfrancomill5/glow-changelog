@@ -1260,5 +1260,27 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3676-44392",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-onboarding-welcome-screen",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T13:40:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "01 · Splash & Welcome",
+    "title": "New 01.2 Onboarding 1 · Welcome — logomark hero opens the onboarding",
+    "summary": "A new first onboarding screen now sits between Splash and the Total invested step. It shows the Phoenix logomark (White + Orange) centred over a warm key light and vignette, with the headline \"Your journey in private markets starts here.\" (\"starts here.\" in brand/400) and the body \"Pre-IPO opportunities, your holdings and your broker — in one place, built for accredited investors.\" Continue goes to Total invested; Skip goes straight to 01.6 Welcome. Onboarding is four steps with a four-dot pager.",
+    "details": [
+      "New frame 3682:44417 (402×874) at x=550 in section 01; Splash 282:1998 after-delay now points here.",
+      "Logomark/Color instance 3711:44472 (library component, variant White + Orange), centred at y≈299.",
+      "Background: Ambient glow instance 3682:44418 + Key light ellipse 3711:44470 (#E9582C at 50%, layer blur 150) + Vignette 3711:44471 (bg gradient, transparent → 90% at the bottom).",
+      "Headline 3711:44478 Manrope Medium 30, ink/primary with the \"starts here.\" span on brand/400; body 3711:44479 Text/body (14) ink/muted.",
+      "Pager 3711:44480: 4 dots, active dot brand/400, inactive line/strong.",
+      "Continue 3682:44452 → 01.3 Onboarding 2 · Total invested (282:2014); Skip 3682:44453 → 01.6 Welcome (282:2133); both Dissolve.",
+      "Following steps renumbered: 01.3 Total invested (282:2014), 01.4 Opportunities (282:2042), 01.5 Your broker (282:2071)."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3682-44417",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
