@@ -2047,5 +2047,22 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=270-1034",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-request-amount-no-minimum-label",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T05:35:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "15 · Request allocation",
+    "title": "Request allocation · Amount: 'Minimum' note removed from the $25,000 option",
+    "summary": "The $25,000 suggested amount no longer carries a 'Minimum' subtitle, so all three options are the same height and read as equals. The minimum is still stated in the step description and the custom field placeholder.",
+    "details": [
+      "Option · $25,000 on 270:836, 3938:48921, 3938:49005: Subtitle cleared and hidden; row height 69 → 52 px.",
+      "Supersedes the 'Minimum' note detail in 2026-11-11-request-amount-minimum-subtle."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=270-836",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
