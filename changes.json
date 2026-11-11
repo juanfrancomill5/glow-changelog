@@ -2287,5 +2287,26 @@
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2200-236",
     "file": "Phoenix Glow — Design System",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-menu-right-sidebar",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T14:25:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "09 · Menu & Account",
+    "title": "Menu is now a right-side sidebar; the close X sits exactly where the Home menu icon is",
+    "summary": "The full-screen Menu became a 340pt sidebar that slides in from the right over a scrim, leaving 62pt of Home visible. The close X is at the same position as the Home menu icon (x 342, y 56), so open and close happen under the same finger. Tapping the scrim or the X slides it out; Log out opens its dialog on top of the sidebar.",
+    "details": [
+      "09.1 Menu · Sidebar (282:11607) and Prospect (3149:50620): full-screen overlay, Scrim + Sidebar 340pt at x 62, left border line/strong, header 111pt",
+      "Open: Home menu icon → overlay 09.1a (transition) → Smart animate 300 ms ease-out into 09.1",
+      "Close: X or scrim → 09.1b (transition) Smart animate 250 ms ease-in → close overlay",
+      "09.2 Log out · Dialog is now an overlay on top of the sidebar; Cancel closes it",
+      "Back buttons on screens opened from the menu now use Back (return to the screen you came from) instead of jumping to the menu frame",
+      "Dev note: in-app, Sidebar is a right drawer 340pt wide; X button 44×44 at top 56 / right 16 of the screen, same as the Home menu icon"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11607",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
