@@ -1806,5 +1806,39 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-10908",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-listrow-detail",
+    "date": "2026-11-10",
+    "ts": "2026-11-11T00:10:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Display · ListRow",
+    "title": "ListRow Key-value: optional Detail column",
+    "summary": "Key-value rows can show a third, right-aligned Detail column (112 wide) between key and value, hidden by default. Key now fills the row and spacing is 16, so existing rows look the same.",
+    "details": [
+      "New props Detail and Show detail on ListRow 13:56"
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=13-56",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-10-lots-pps",
+    "date": "2026-11-10",
+    "ts": "2026-11-11T00:15:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "06 · Portfolio · Holding detail",
+    "title": "Lots show price per share",
+    "summary": "The Lots card on Holding detail has three columns: Date, Price / share, Amount, with a caption header row. Anduril: Mar 12, 2023 $217.45 · $739,326; Nov 04, 2023 $219.82 · $483,597; Jun 21, 2024 $186.75 · $971,120. Lot detail screens show the same price per share instead of Pending.",
+    "details": [
+      "06.6 Holding detail · Anduril 282:11137",
+      "06.7 Lot detail 3026:26310, 3026:26466, 3026:26622",
+      "Other holdings still show Lot data pending"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11137",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
