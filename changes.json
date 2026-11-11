@@ -2142,5 +2142,131 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-2553",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-07-broker-generic-wording",
+    "date": "2026-11-07",
+    "ts": "2026-11-08T00:20:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "All sections (copy)",
+    "title": "Representative is now generic: \"your broker\" replaces the named rep everywhere",
+    "summary": "Every screen on ▶ Prototype V3 that named the representative now says \"your broker\" (sentence start \"Your broker\", first-person buttons \"my broker\"), with pronouns they/them/their. 172 text layers and 65 layer names updated across both personas; no screens moved.",
+    "details": [
+      "Screen names: 09.5 Representative · Your broker, 09.9 Book a meeting · Your broker, 09.10 Meeting booked · Your broker, 18.25 Sheet · Contact your broker, 18.26 Sheet · Contact your broker · Prospect",
+      "Status chips in 16 · My Requests: \"Broker reviewing\" / \"Broker reviewed\"",
+      "Representative email placeholder: broker@phoenixinc.app",
+      "Avatar/Monogram initials \"SP\" (8 instances) not changed yet"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=266-4663",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-representatives-rebuild",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T13:30:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "09 · Menu & Account",
+    "title": "09.4 is now \"Your representatives\": grouped by account with an account filter",
+    "summary": "The team list was rebuilt to match the approved Representatives structure: reps grouped under each account, a Filter by account field, expandable rep cards with availability, a Primary tag, bio, Call and Email rows. The Message action was removed and the Lead tag renamed Primary.",
+    "details": [
+      "Screen 282:11738 renamed 09.4 Your representatives",
+      "Accounts match 09.3 Profile: Individual ··4821, Phoenix Family Trust ··7730, Roth IRA ··1194",
+      "Menu row: Your representatives · Your broker and 1 other"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11738",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-representatives-states",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T13:30:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "09 · Menu & Account",
+    "title": "Representative states: filter sheet, filtered, single rep, house account",
+    "summary": "Five new screens in a variants row under 09: the Filter by account sheet, the filtered list, single rep expanded and collapsed, and the house account state when no representative is assigned. Prototype links connect the filter field, Apply filter, Cancel and the card toggle.",
+    "details": [
+      "09.4.1 Sheet · Filter by account 4028:50138 (Scrim + Glow Sheet, RadioOption)",
+      "09.4.2 Filtered · Phoenix Family Trust 4028:49587",
+      "09.4.3 / 09.4.4 Single rep expanded/collapsed 4028:49734 / 4028:49875 (Smart animate toggle)",
+      "09.4.5 House account · No rep 4028:49999"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4028-50138",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-broker-profile-cleanup",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T13:30:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "09 · Menu & Account",
+    "title": "09.5 broker profile: Message action removed, bio added",
+    "summary": "The broker profile now offers only Call and Email, matching the representatives list, and shows the broker bio under the actions.",
+    "details": [
+      "Client 282:11788"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11788",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-repcard-component",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T13:50:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Display",
+    "title": "New RepCard component",
+    "summary": "Representative card for the representatives list: State Expanded/Collapsed × Availability Available/Away, text properties for name, role, status, bio, phone and email, a Show primary tag toggle and an exposed Avatar. Expanded shows Call and Email rows; there is no Message action.",
+    "details": [
+      "Component set 2200:236 on Display page",
+      "Props: Name, Role, Status, Bio, Phone, Email, Show primary tag, Avatar (exposed)",
+      "House account: Name Phoenix Client Services, Role Phoenix Financial · New York, initials PF, primary tag off"
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2200-236",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-repcard-instances",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T13:55:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "09 · Menu & Account",
+    "title": "Representative screens now use the RepCard library component",
+    "summary": "All rep cards on the representatives screens are RepCard instances instead of local frames, so card changes come from the library.",
+    "details": [
+      "14 instances across 09.4, 09.4.1–09.4.5 and prospect 09.4",
+      "Card-header Smart animate links kept on 09.4.3 / 09.4.4"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11738",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-prospect-client-services",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T13:58:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "09 · Menu & Account · Prospect / 18 · Account, help & legal",
+    "title": "Prospect contact is Phoenix Client Services, not a broker",
+    "summary": "Prospects are assigned the house account, so their representatives screen, representative profile, meeting booking and contact sheet now name Phoenix Client Services with the Client Services phone and email. The contact sheet explains there is no dedicated broker yet.",
+    "details": [
+      "09.4 Your representative · House account · Prospect (3149:50706); menu row Your representatives · Phoenix Client Services",
+      "09.5 Representative · Client Services · Prospect (3149:50756), Covering since row hidden, Message removed",
+      "09.9 / 09.10 Book a meeting and Meeting booked · Client Services · Prospect",
+      "18.26 Sheet · Contact Client Services · Prospect (3370:41293): Call / Email Client Services"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3370-41293",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
