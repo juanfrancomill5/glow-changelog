@@ -2268,5 +2268,24 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3370-41293",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-repcard-animated-collapse",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T14:20:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Display",
+    "title": "RepCard collapses and expands by itself (Smart animate) and the Call icon is visible",
+    "summary": "RepCard State variants are now wired inside the component: tapping the header switches Expanded and Collapsed with a 300 ms Smart animate, so every instance toggles without screen-level links. The Call and Email icon tiles are now translucent background layers, which fixes the Call icon disappearing on a solid orange tile after publishing.",
+    "details": [
+      "Component set 2200:236 on Display page",
+      "Header click → CHANGE_TO the other State, same Availability, Smart animate 300 ms",
+      "Chevron layer named chevron in all variants so it rotates; variants clip content",
+      "Icon wells use a well-bg layer (brand/300 at 16%, ink/primary at 8%) instead of a translucent paint"
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2200-236",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
   }
 ]
