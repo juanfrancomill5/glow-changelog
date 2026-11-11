@@ -1858,5 +1858,60 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3465-41707",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "date": "2026-11-10",
+    "product": "Client App iPhone Glow",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude",
+    "id": "2026-11-11-explore-gate-copy-shortened",
+    "ts": "2026-11-11T01:45:00Z",
+    "type": "updated",
+    "area": "04 · Explore · Prospect",
+    "title": "Explore · For You gate: investment account copy shortened",
+    "summary": "The Create investment account card on P-04.1 now uses shorter copy so the gate reads at a glance. Steps and the CTA are unchanged.",
+    "details": [
+      "Title: 'Create your investment account'.",
+      "Body: 'Verify your identity and investor status to see offerings that match you.'",
+      "Step 2: 'Confirm investor status'. Meta: 'About 6 minutes · Reviewed by your broker'.",
+      "Text nodes 3816:45914–45920 on P-04.1 (3816:45708)."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3816-45708"
+  },
+  {
+    "date": "2026-11-10",
+    "product": "Client App iPhone Glow",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude",
+    "id": "2026-11-11-kyc-skipped-screen",
+    "ts": "2026-11-11T01:46:00Z",
+    "type": "new",
+    "area": "14 · Identity check & KYC · Prospect",
+    "title": "New 14.11 KYC · Skipped, reached from a Skip for now link on 14.2",
+    "summary": "Prospects can now skip identity check and KYC. 14.2 Your details has a Skip for now text button that opens 14.11, which explains they can keep browsing companies and that offerings open once their broker approves the account.",
+    "details": [
+      "New screen 14.11 KYC · Skipped · Prospect (3906:48798), cloned from 14.10; icon/scan-face.",
+      "Continue verification → 14.2 (3106:37052). Keep exploring → P-04.1 Explore · For You (3816:45708).",
+      "14.2 Pinned actions: new 'Button · Skip for now' (3906:48896), Text style, → 14.11."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3906-48798"
+  },
+  {
+    "date": "2026-11-10",
+    "product": "Client App iPhone Glow",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude",
+    "id": "2026-11-11-kyc-under-review-screen",
+    "ts": "2026-11-11T01:47:00Z",
+    "type": "new",
+    "area": "14 · Identity check & KYC · Prospect",
+    "title": "New 14.12 KYC · Under review: broker is reviewing and will be in touch",
+    "summary": "After KYC is submitted and notifications are handled, prospects see that their broker is reviewing their identity check and investor details and will be in touch shortly.",
+    "details": [
+      "New screen 14.12 KYC · Under review · Prospect (3906:48846), cloned from 14.10; icon/shield-check.",
+      "Continue → 13.1 Enable passkey (3150:52722). Message your broker → same broker overlay as 14.9 (3370:41293).",
+      "Repointed: 14.10 Turn on notifications and Maybe later now go to 14.12 instead of 13.1."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3906-48846"
   }
 ]
