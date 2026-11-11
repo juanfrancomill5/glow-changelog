@@ -1952,5 +1952,22 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11155",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-holding-lots-left-align",
+    "date": "2026-11-10",
+    "ts": "2026-11-11T02:25:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "06 · Portfolio · Holding detail",
+    "title": "Holding detail · Lots: Amount and Price / share columns left-aligned",
+    "summary": "The two numeric columns in the Lots card are now left-aligned inside their fixed widths, so each column starts on the same line as its header.",
+    "details": [
+      "06.6 Holding detail · Anduril, Lots card 282:11155: value and detail text in header + rows (3923:48849, 48853, 48857, 48861) set to left alignment.",
+      "Column widths unchanged: Amount 56 px, Price / share 66 px."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11155",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
