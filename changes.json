@@ -1913,5 +1913,24 @@
       "Repointed: 14.10 Turn on notifications and Maybe later now go to 14.12 instead of 13.1."
     ],
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3906-48846"
+  },
+  {
+    "id": "2026-11-11-companycard-single-hotspot",
+    "date": "2026-11-10",
+    "ts": "2026-11-11T01:55:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "Company cards · Home, Explore, Companies",
+    "title": "Company cards: whole card is now one link to the company page",
+    "summary": "Each CompanyCard had four separate links (logo, name block, description, stats) to the same company page, so taps on the gaps did nothing. The link now sits on the whole card; the bookmark keeps its own Save interaction and takes priority over the card tap.",
+    "details": [
+      "67 CompanyCard instances on ▶ Prototype V3 across 14 screens, both personas (03.1, 04.x, P-04.x).",
+      "Card instance: ON_CLICK → company page (same destination as before). Monogram / text / description / stats: navigation removed.",
+      "Save (bookmark) reactions untouched; nested interaction wins over the card tap.",
+      "Implementation: the full card is the tap target; the bookmark is a separate target inside it."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3816-45708",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
