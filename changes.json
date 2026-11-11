@@ -1932,5 +1932,25 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3816-45708",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-holding-lots-columns",
+    "date": "2026-11-10",
+    "ts": "2026-11-11T02:20:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "06 · Portfolio · Holding detail",
+    "title": "Holding detail · Lots: columns reordered to Date · Amount · Price / share, aligned, with chevron",
+    "summary": "Lot rows now read Date, Amount, Price / share. Amount and Price / share are fixed-width, right-aligned columns so the numbers line up across rows and with the header, and each row ends with a chevron to show it opens the lot detail.",
+    "details": [
+      "06.6 Holding detail · Anduril (282:11137), Lots card 282:11155. Other holdings show 'Lot data pending' and were not changed.",
+      "Header + 3 rows detached from ListRow (Key-value) because instance text widths can't be overridden: 3923:48849 (header), 3923:48853 / 48857 / 48861 (rows). Tokens and text styles kept.",
+      "Columns: Date fill; Amount 56 px and Price / share 66 px, fixed, right-aligned; gap 16.",
+      "Rows: icon/chevron-right 20 px added; header has a matching 20 px spacer. Row links to Lot detail (3026:26310) kept.",
+      "Implementation: render lots as a 4-column grid (date flex, two fixed right-aligned numeric columns, chevron)."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11155",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
