@@ -2083,5 +2083,25 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3349-41328",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-request-amount-other-amount",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T05:50:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "15 · Request allocation",
+    "title": "Request allocation · Amount: 'Other amount' heading, and tapping the field clears the suggested options",
+    "summary": "The custom amount field now sits under a visible 'Other amount' heading, styled the same as 'Suggested amounts'. The field moved inside the Amount picker component, so tapping it in the prototype switches to a Custom variant with all options unselected, and tapping an option clears the field.",
+    "details": [
+      "Amount picker (3349:41328) variants: Selected=25k / 50k / 100k / Custom (3950:48989, was None) / Below minimum (3953:49055, new).",
+      "Each variant: 'options' stack (3 RadioOption rows) + 'other amount' stack (Heading 'Other amount' Manrope SemiBold 15/20 ink/primary + TextField with its label hidden).",
+      "Field ON_CLICK → CHANGE_TO Custom on 25k/50k/100k/Below minimum; option rows → CHANGE_TO their variant on every variant.",
+      "Screens: 270:836 uses Selected=50k, 3938:48921 Selected=Custom, 3938:49005 Selected=Below minimum. Separate field instances and the 270:836 field → 3938:48921 link removed.",
+      "'Suggested amounts' label on all three screens restyled from uppercase label to Manrope SemiBold 15/20 ink/primary."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3349-41328",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
