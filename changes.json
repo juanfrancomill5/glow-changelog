@@ -2064,5 +2064,24 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=270-836",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-request-amount-picker-interactive",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T05:40:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "15 · Request allocation",
+    "title": "Request allocation · Amount: suggested amounts are now an interactive variant component",
+    "summary": "The three suggested amounts on the Amount step are an instance of the Amount picker component, so tapping any option in the prototype selects it. A new Selected=None variant covers the custom-amount states. The CTA reads 'Continue' because it can't follow the selection.",
+    "details": [
+      "Component set 'Template · Amount picker — 15.1 Request allocation' (3349:41328, 🧩 Templates section): variants Selected=25k / 50k / 100k / None (new, 3950:48989). Each unselected RadioOption has ON_CLICK → CHANGE_TO its variant.",
+      "Instances: 3950:49015 on 270:836 (Selected=50k); 3950:49039 on 3938:48921 and 3950:49060 on 3938:49005 (Selected=None).",
+      "Replaces the hand-built 'Suggested amounts' frames and the old $50,000 → 15.1 navigate link on the custom states.",
+      "Pinned CTA label set to 'Continue' on all three Amount screens."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3349-41328",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
