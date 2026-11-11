@@ -1840,5 +1840,23 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11137",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-book-meeting-scroll",
+    "date": "2026-11-10",
+    "ts": "2026-11-11T01:30:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "09 · Menu & Account",
+    "title": "Book a meeting · Your broker now scrolls in the prototype",
+    "summary": "The screen had vertical scrolling off and its content ended above the pinned Confirm bar, so the Details card (Time zone row) was hidden and couldn't be reached. Vertical scroll is now on and the content has 128 px bottom padding, matching other screens with a pinned CTA.",
+    "details": [
+      "Screens: 3465:41707 (Existing Client) and 3470:41796 (Prospect) — overflowDirection NONE → VERTICAL.",
+      "Content frames 3465:41708 / 3470:41797 — paddingBottom 0 → 128; content now ends at y 953 (frame 874).",
+      "Sticky header, Pinned actions, Status bar and Home indicator stay fixed while content scrolls."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3465-41707",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
