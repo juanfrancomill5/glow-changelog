@@ -2103,5 +2103,44 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3349-41328",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-homechart-step-chart",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T12:45:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "Glow library · Data viz",
+    "title": "New HomeChart: animated step chart for Total invested (1Y / 3Y / All)",
+    "summary": "New library component for the Home hero: step line and gradient area of total capital invested, on a $0–$8M scale, with a date axis, a tooltip (date · amount) and range tabs. It draws in on load, morphs between ranges and moves the tooltip when the plot is tapped, all with Smart Animate.",
+    "details": [
+      "Component set 2193:14750, variants Range (1Y/3Y/All) × State (Intro, Idle, Scrub 1–4); boolean props Show tabs and Show y-axis",
+      "Intro → Idle: after 300ms, Smart Animate ease-out 900ms (the plot widens to reveal the chart left to right)",
+      "Tab tap → Range=X, State=Idle, Smart Animate ease-in-out 400ms; plot tap zones → Scrub 1–4 / Idle, ease-out 220ms",
+      "Every range uses the same layer names (area/step/riser 0–9) so Smart Animate morphs the steps between ranges",
+      "Area gradient uses fixed values from brand/300 and ember/deep with transparency (a gradient stop linked to a variable becomes fully opaque); all other colours are linked to Color variables",
+      "Values are illustrative until real data exists"
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2193-14750",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-11-home-invested-hero-homechart",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T12:55:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "V3 Prototype · Home",
+    "title": "Home Total invested card now uses the HomeChart component (animated)",
+    "summary": "The local static step chart and range tabs in InvestedHero were replaced with a HomeChart library instance set to All · Intro, so the chart draws in when Home opens and the 1Y / 3Y / All tabs and plot taps are interactive. The card now hugs its content (356px tall).",
+    "details": [
+      "Home 282:2553 › InvestedHero 3013:25668: removed the local chart (3013:25673) and range-tabs (3013:25687)",
+      "Added HomeChart instance 4020:50496 (Range=All, State=Intro)",
+      "InvestedHero vertical sizing changed from fixed to hug (329 → 356px)"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-2553",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
