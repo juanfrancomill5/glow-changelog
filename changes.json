@@ -2383,5 +2383,25 @@
       "02.18 scrim → 02.17; Alex Morgan row → 03.1 Home; View selected user → 02.16; Find another user → 02.14 (921:8879)"
     ],
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=921-8911"
+  },
+  {
+    "id": "2026-11-12-switch-account-sheet-search-scroll",
+    "date": "2026-11-12",
+    "ts": "2026-11-12T21:25:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "02 · Sign in · Admin viewing mode",
+    "title": "02.18 Switch account sheet is now near full height with search and a scrolling user list",
+    "summary": "The user list can be long, so the sheet grows to 806pt, pins the admin's own account at the top, adds a search field, and puts the application users in a fixed-height scrolling list meant to be virtualized in code. The secondary action is now Cancel.",
+    "details": [
+      "Sheet 4231:50550: fixed height 806pt at y 60; content fills",
+      "Pinned row: Alex Morgan · 'Your account · admin' (4231:50557) → 03.1 Home",
+      "Eyebrow 'APPLICATION USERS' (4235:50815) + SearchField 'Search by name or email' (4235:50817)",
+      "List frame 'user-list (virtualized · scrolls)' (4235:50821): fills remaining height (~343pt), clip content, vertical overflow; 11 RadioOption rows, Taylor Brooks selected. Implement as a lazy/virtualized list with search filtering",
+      "'Find another user' replaced by Ghost 'Cancel' (4231:50563) → 02.17"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4231-50452",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
