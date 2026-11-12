@@ -2308,5 +2308,80 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11607",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "date": "2026-11-12",
+    "product": "Client App iPhone Glow",
+    "area": "02 · Sign in · Admin viewing mode",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude",
+    "id": "2026-11-12-admin-viewing-home",
+    "ts": "2026-11-12T20:55:00Z",
+    "type": "new",
+    "title": "02.16 Home · Viewing another user: header and menu button show read-only admin view",
+    "summary": "New Home state for an admin who opened another user's account from Choose who to view. The header shows the viewed user's name with 'Viewing as admin · Read-only', and the menu button gets a brand ring plus an eye badge so the viewing mode is visible on every Home load.",
+    "details": [
+      "Frame 02.16 Home · Viewing Taylor Brooks (4228:49884), cloned from 03.1 Home (282:2553), placed after 02.15 in section 282:2159 (section widened to 3852)",
+      "TopBar title 'Taylor Brooks', subtitle 'Viewing as admin · Read-only' bound to brand/300",
+      "Menu IconButton: 1.5 inside stroke brand/300; 'Viewing indicator' badge 20pt circle brand/400, 2pt outside stroke bg, icon/eye 12pt on-brand (4228:50134)",
+      "Badge is a local layer for now; candidate IconButton variant in the Glow library"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4228-49884"
+  },
+  {
+    "date": "2026-11-12",
+    "product": "Client App iPhone Glow",
+    "area": "02 · Sign in · Admin viewing mode",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude",
+    "id": "2026-11-12-admin-viewing-menu-switcher",
+    "ts": "2026-11-12T21:00:00Z",
+    "type": "new",
+    "title": "02.17 Menu · Viewing another user: sidebar gets a viewing switcher card with Exit",
+    "summary": "In viewing mode the sidebar replaces the profile card with a 'Viewing as admin' switcher card. It shows the viewed user, read-only status and access expiry, an Exit action back to the admin's own account, and a row that opens the account switcher.",
+    "details": [
+      "Frame 02.17 Menu · Viewing Taylor Brooks (4229:50120): 02.16 underlay + Scrim + Sidebar cloned from 09.1",
+      "Viewing switcher card (4230:50452): surface/200, radius 12, 1pt stroke brand/300 at 50%; eyebrow icon/eye + 'VIEWING AS ADMIN' Text/label brand/300; Button Text/Small 'Exit' (4230:50458)",
+      "Switcher row (4230:50466): Avatar 38 'TB', name + 'Read-only · expires in 58 min' (Text/caption), icon/chevron-down",
+      "Profile card hidden in this state (4229:50171)"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4229-50120"
+  },
+  {
+    "date": "2026-11-12",
+    "product": "Client App iPhone Glow",
+    "area": "02 · Sign in · Admin viewing mode",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude",
+    "id": "2026-11-12-admin-switch-account-sheet",
+    "ts": "2026-11-12T21:05:00Z",
+    "type": "new",
+    "title": "02.18 Menu · Switch account sheet: return to own account or view another user",
+    "summary": "Bottom sheet opened from the menu switcher. Lists the admin's own account first, the user being viewed (selected), and other users, with 'View selected user' and 'Find another user' (back to Choose who to view).",
+    "details": [
+      "Frame 02.18 Menu · Switch account (4231:50452), Sheet cloned from 09.4.1 Sheet · Filter by account",
+      "RadioOptions: Alex Morgan (You · admin), Taylor Brooks (Viewing now, Selected=On), Thomas Nichols, Laura Deshpande",
+      "Actions: Primary 'View selected user' (4231:50562), Ghost 'Find another user' (4231:50563)"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4231-50452"
+  },
+  {
+    "date": "2026-11-12",
+    "product": "Client App iPhone Glow",
+    "area": "02 · Sign in · Admin viewing mode",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude",
+    "id": "2026-11-12-admin-viewing-prototype-links",
+    "ts": "2026-11-12T21:10:00Z",
+    "type": "updated",
+    "title": "Choose who to view now leads into the viewing-mode screens",
+    "summary": "'View selected user' on 02.15 now opens 02.16 instead of the regular Home, and the new viewing screens are linked end to end.",
+    "details": [
+      "02.15 CTA (921:8928) → 02.16",
+      "02.16 menu button and badge → 02.17 (Smart animate)",
+      "02.17 scrim / close → 02.16; switcher row → 02.18; Exit → 03.1 Home (282:2553)",
+      "02.18 scrim → 02.17; Alex Morgan row → 03.1 Home; View selected user → 02.16; Find another user → 02.14 (921:8879)"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=921-8911"
   }
 ]
