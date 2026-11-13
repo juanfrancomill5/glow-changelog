@@ -2403,5 +2403,25 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4231-50452",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-13-user-flow-documentation-refresh",
+    "date": "2026-11-13",
+    "ts": "2026-11-13T11:45:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "User Flow Documentation",
+    "title": "User Flow Documentation page brought up to date with the current V3 prototype",
+    "summary": "All 216 existing screen references were re-exported from ▶ Prototype V3, renamed screens were retitled, and new lanes were added for every flow that changed since Nov 9. Section 05 was rebuilt from Opportunities & Saved to Explore & Watch List, and hand-off notes now use Explore, the menu sidebar, Your representatives and Phoenix Client Services.",
+    "details": [
+      "New lanes: 02 admin view-as + switch account (02.16–02.18), verify by email (02.11b/02.12b); 03 KYC skipped / under review (14.11, 14.12); 04 prospect pending review (03.2b); 08 amount states (custom, below minimum); 09 tabs Private/Public/Cash, filtered by account, 06.1b pending; 11 representatives filter + single-rep states (09.4.1–09.4.4), house account (09.4.5, prospect 09.4)",
+      "Section 05 (3649:233) rebuilt: 6 client lanes (For You → company → offering sheet, Most Active + indicate interest, Watch List, Companies sort/filters, industry chips, other For You companies) + 4 prospect lanes (For You gate, lists, industry chips, pending review)",
+      "Overlay cards (sheets, toasts, sidebar, log-out dialog, account menu) are composited over their base screen so the scrim blur renders correctly",
+      "Retired from the page: 04.x Opportunities / Saved cards and client 05.12 Search · Research restricted (no longer in the prototype)",
+      "Sections restacked with 200pt gaps; Overview header now reads Updated Nov 13, 2026"
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3613-233",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
