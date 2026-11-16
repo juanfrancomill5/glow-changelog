@@ -2505,5 +2505,39 @@
       "Added rows: SpaceX charcoal #4A4544 → #232020; OpenAI proposed green #3CCB98 → #0E8C64 (not used on any screen yet)."
     ],
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=52-138"
+  },
+  {
+    "id": "2026-11-16-welcome-bg-glow-token",
+    "date": "2026-11-16",
+    "ts": "2026-11-16T15:20:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "01 · Splash & Welcome",
+    "title": "Welcome / Login background now uses Glow bg instead of an old-library colour",
+    "summary": "The Welcome / Login frame fill was bound to Color Theme/Background-app from the Rising Design System. It is now bound to the Glow bg variable. No visual change: the splash video covers the fill.",
+    "details": [
+      "Frames: 282:2134 (▶ Prototype V3 · 01.6 Welcome), 4182:49990 and 4191:49984 (Handoff Dev), 3011:27761 (Nov 4 backup page).",
+      "Implement the screen background with the bg token (Dark #0D0B0A, Light #EEE7E0)."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-2134",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-16-anthropic-logo-white-token",
+    "date": "2026-11-16",
+    "ts": "2026-11-16T15:20:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Logos",
+    "title": "Anthropic logo mark now uses Glow white instead of a Material 3 colour",
+    "summary": "The Anthropic mark in the company logo set was bound to Schemes/On Primary from the Material Design 3 library. It is now bound to the Glow white variable (same #FFFFFF, no visual change). After this, the V3 screens use only Glow colour variables.",
+    "details": [
+      "Library node 52:236, variant Property 1=anthropic in component set company (52:232).",
+      "Reaches the V3 Screens file after the library is published and the update accepted."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=52-236",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
   }
 ]
