@@ -2539,5 +2539,119 @@
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=52-236",
     "file": "Phoenix Glow — Design System",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-16-search-start-simple",
+    "date": "2026-11-16",
+    "ts": "2026-11-16T21:50:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Company search",
+    "title": "Search start screen redesigned: Recent, category carousel and Trending (no company list)",
+    "summary": "05.4 Search · Start no longer lists every company. It now shows recent searches, a horizontal Browse by category carousel (six largest categories plus View all categories) and a Trending list of five companies. Typing is the main action; search covers all companies, not only holdings.",
+    "details": [
+      "Frame 05.4 Search · Start (282:8877) rebuilt in place, so every existing link into Search still lands here.",
+      "The Directory filters chip row (All · In portfolio · With research · Offerings) is removed; sticky header is now 119 high.",
+      "SearchField placeholder: \"Search companies\".",
+      "Trending uses the existing CompanyRow, badge hidden. Section action \"What this means\" opens Overlay · 05.15.",
+      "Portfolio search buttons (06.1–06.4, all three account variants) now open 05.4 instead of the removed In portfolio search."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-8877",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-16-search-typed-filters",
+    "date": "2026-11-16",
+    "ts": "2026-11-16T21:52:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Company search",
+    "title": "Typed search results: four filters only — All · With research · Private · Public",
+    "summary": "Typed results are a single list of companies with one row of four single-select chips, each showing its live count. The old Companies / Offerings / Research result groups, the industry filter and the In portfolio filter are gone from search.",
+    "details": [
+      "05.5 All (282:8909), 05.6 With research (4531:50869), 05.7 Private (4531:51038), 05.8 Public (4531:51255); chips switch between them and keep the query.",
+      "Chip row scrolls horizontally (386 wide, clipped).",
+      "Rows are CompanyRow; companies with research show a Research badge; companies without a logo use the Monogram letter on surface/300.",
+      "05.9 Search · Typing · Loading (327:6649): skeleton rows under one Companies header, then dissolves to 05.5.",
+      "05.10 Search · No results (282:8944): Ask your broker + Clear search. 05.11 Search · Filter with no match (4531:50704): offers to show the results in All.",
+      "Implementation: one screen with a query and one filter value; counts come from the server."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-8909",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-16-search-categories",
+    "date": "2026-11-16",
+    "ts": "2026-11-16T21:54:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Company search",
+    "title": "Browse by category: carousel, All categories sheet and category screens",
+    "summary": "Companies can be browsed by category from the Search start screen. The carousel shows the six largest categories; View all categories opens a sheet with all 14. A category screen lists its companies with one chip per industry, so each industry is its own filter.",
+    "details": [
+      "Overlay · 05.14 Sheet · All categories (4533:50477): 14 rows with company counts; opens as a bottom overlay from the View all categories tile.",
+      "05.12 Search · Category · Robotics & hardware (4531:51460) and 05.13 Search · Category · Semiconductors (4531:51696): chips All n + one per industry (single-select); header action All categories returns to 05.4.",
+      "Overlay · 05.15 Sheet · What Trending means (4533:50604): Trending is based on client searches in the last 30 days and is not a recommendation.",
+      "Prototype: only the Robotics & hardware tile/row and the Semiconductors chip are wired; other categories behave the same."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4531-51460",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-16-category-tile-component",
+    "date": "2026-11-16",
+    "ts": "2026-11-16T21:55:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Company search",
+    "title": "New local component: CategoryTile (title + company count)",
+    "summary": "Tile used in the Browse by category carousel. 148 wide, surface/200 fill, line/default stroke, radius/xl, padding space/3. Text properties Title and Count. It is local to the screens file for now and should move to the Glow library.",
+    "details": [
+      "Component 4531:50730 inside section 05 · Company search · User 1 · Existing Client.",
+      "Title uses Controls/button-sm in ink/primary; Count uses Text/caption in ink/muted. The View all categories tile overrides the title colour to brand/300."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4531-50730",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-16-search-old-screens-removed",
+    "date": "2026-11-16",
+    "ts": "2026-11-16T21:57:00Z",
+    "type": "removed",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Company search",
+    "title": "Old search screens removed, including the In portfolio filters matrix",
+    "summary": "The previous search variants are deleted and replaced by the new set. The section \"05 · Company search · In portfolio filters\" (Account × Sort states and sheets) no longer exists; holdings are reached from Portfolio.",
+    "details": [
+      "Deleted from User 1: 05.5 Start · In portfolio, 05.6 Start · New client, 05.9 / 05.10 / 05.11 Results · Companies / Offerings / Research, 05.14 Start · Offerings, 05.15 Start · With research, 05.16 In portfolio · typing, and all G · t=… · a=… · s=… frames.",
+      "Flow starting point \"1 · Client — 05 · Company search · In portfolio filters\" removed; \"1 · Client — 05 · Company search\" now starts on 05.4.",
+      "Sections below 05 · Company search in User 1 moved up 3,044 px to close the gap."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-8876",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-16-search-prospect-replaced",
+    "date": "2026-11-16",
+    "ts": "2026-11-16T21:59:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Company search · Prospect",
+    "title": "Prospect search screens replaced with the same new set",
+    "summary": "The Prospect journey uses the same search as the client: Start, typed results with four filters, loading, empty states, category screens and the two sheets. Rows open the Prospect company profiles, Cancel returns to the Prospect Home and Ask your broker opens the Prospect contact sheet.",
+    "details": [
+      "Twelve frames named … · Prospect in section 3149:40729; start screen 4534:50508.",
+      "All links that opened the old Prospect search (Home search field and Browse all, Calendar search buttons, Explore pending-review search) now open 4534:50508.",
+      "Old frames deleted: Start, Start · New client, Results · All / Companies / Research / Research restricted, Loading, No results, Start · With research.",
+      "Section is now two rows (4780 × 1944); Prospect sections below it moved down 940 px."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4534-50508",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
