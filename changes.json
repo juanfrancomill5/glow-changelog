@@ -2423,5 +2423,87 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3613-233",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-16-logo-set-stripe-payments-removed",
+    "date": "2026-11-16",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Logos",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude",
+    "ts": "2026-11-16T13:30:00Z",
+    "type": "removed",
+    "title": "Duplicate \"Stripe Payments\" logo variant removed from the company set",
+    "summary": "The Stripe Payments variant duplicated Stripe and had zero instances in the V3 Screens file, so it was deleted from the company logo component set. Remaining variants were re-stacked evenly.",
+    "details": [
+      "Deleted variant 52:276 from component set company (52:232) on page Logos (52:138).",
+      "Set height adjusted after re-stacking; no screen affected."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=52-232"
+  },
+  {
+    "id": "2026-11-16-logo-set-openai-rename",
+    "date": "2026-11-16",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Logos",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude",
+    "ts": "2026-11-16T13:35:00Z",
+    "type": "fixed",
+    "title": "\"Oper Ai\" logo variant renamed to OpenAI",
+    "summary": "The misspelled variant name was corrected. No instances use it yet.",
+    "details": [
+      "Variant 52:274 in component set company (52:232)."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=52-274"
+  },
+  {
+    "id": "2026-11-16-logo-stripe-s-mark",
+    "date": "2026-11-16",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Logos",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude",
+    "ts": "2026-11-16T13:40:00Z",
+    "type": "updated",
+    "title": "Stripe logo: cropped \"str\" wordmark replaced with an S mark",
+    "summary": "The Stripe logo showed a cropped wordmark at small sizes. It is now a centred S mark, a placeholder until the official Stripe S asset is supplied. It reaches the 75 Stripe tiles on the V3 Screens once the library update is accepted there.",
+    "details": [
+      "Variant 52:233: Inter Bold S flattened to a vector, 15.4×20, centred, constraints SCALE."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=52-233"
+  },
+  {
+    "id": "2026-11-16-logo-castelion-wordmark",
+    "date": "2026-11-16",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Logos",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude",
+    "ts": "2026-11-16T13:45:00Z",
+    "type": "updated",
+    "title": "Castelion wordmark enlarged to fill the logo frame width",
+    "summary": "The script wordmark was too small inside the tile. It now fills the frame width (22.4 → 25.6); at Size=36 it still reads small, so a letter mark is the only further fix.",
+    "details": [
+      "Variant 52:251 in component set company (52:232)."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=52-251"
+  },
+  {
+    "id": "2026-11-16-company-brand-colors-table",
+    "date": "2026-11-16",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Logos",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude",
+    "ts": "2026-11-16T13:55:00Z",
+    "type": "fixed",
+    "title": "Company Brand Colors table now matches the Monogram tile gradients on the screens",
+    "summary": "The documentation table on the Logos page was out of sync with the tile gradients used on ▶ Prototype V3 (465 instances checked). The screens were treated as source of truth and no screen changed; a note under the table states that rule.",
+    "details": [
+      "Corrected rows: Saronic (lime) and Crusoe (ember orange) — previously swapped; Neuralink (slate), HavocAI (blue), CHAOS (graphite), Saildrone (amber), Castelion (taupe).",
+      "Added rows: SpaceX charcoal #4A4544 → #232020; OpenAI proposed green #3CCB98 → #0E8C64 (not used on any screen yet)."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=52-138"
   }
 ]
