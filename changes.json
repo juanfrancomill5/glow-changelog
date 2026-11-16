@@ -2653,5 +2653,23 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4534-50508",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-16-search-category-screens-all",
+    "date": "2026-11-16",
+    "ts": "2026-11-16T22:20:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Company search",
+    "title": "Category screen added for all 14 categories; every tile and sheet row now opens its category",
+    "summary": "Only Robotics & hardware had its inside screen. Each of the 14 categories now has a 05.12 Search · Category · <Category> frame with its real company count, its top industries as chips and its first companies A–Z, for the client and the prospect. All six carousel tiles and all 14 rows of the All categories sheet are wired.",
+    "details": [
+      "Client frames in section 282:8876, rows 3–4 (e.g. AI & machine learning 4537:47968, Fintech & payments 4537:49834, Business model 4537:50767). Prospect copies in 3149:40729 (e.g. 4537:51015).",
+      "Still one template: chips All n + one per industry, header action All categories → 05.4. Industry chips beyond Robotics → Semiconductors are not wired.",
+      "Both search sections are now 4780 × 3824; the sections below them moved down 1,880 px."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4537-47968",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
