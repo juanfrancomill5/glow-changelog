@@ -2671,5 +2671,23 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4537-47968",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-16-search-chip-row-glow-clip",
+    "date": "2026-11-16",
+    "ts": "2026-11-16T22:17:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Company search",
+    "title": "Search chip rows no longer cut off the selected chip's glow",
+    "summary": "The scrolling chip row was clipped tightly around the chips, so the glow of the selected chip had a hard edge on the left and bottom and the row stopped 16 px before the screen edge. The row is now full width with padding inside the clip, so the glow shows and chips scroll to the edge.",
+    "details": [
+      "42 frames: typed results, loading, filter with no match and all category screens, client and prospect.",
+      "The scope row is 402 × 76 with padding 12 / 16 / 28 / 16, absolutely positioned at y 120 in the Sticky header; the header keeps its 179 height through bottom padding.",
+      "Implementation: horizontal chip list with 16 px leading/trailing inset and no clipping of the selected chip's shadow."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4537-47968",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
