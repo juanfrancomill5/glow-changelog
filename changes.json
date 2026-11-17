@@ -2801,7 +2801,8 @@
       "Existing Client: 10 frames removed from 04 · Explore 3763:45459 (04.10 Companies · All, 04.10b Defense, 04.10c AI / Fintech / Space / Robotics, 04.12 Filters applied, 04.13 No results, Overlay 04.14 Filters · All industries and one related frame); 22 frames remain.",
       "Prospect: 9 Companies frames removed from 04 · Explore 3815:46831; 5 frames remain.",
       "Flow starting points removed with them: Explore · Companies & filters (both journeys) and Explore · Companies · No results.",
-      "Link audit after removal: 3,861 links checked, 0 pointing to a missing screen; all 58 flow starting points resolve."
+      "Link audit after removal: 3,861 links checked, 0 pointing to a missing screen; all 58 flow starting points resolve.",
+      "Both Explore sections renamed to drop Companies: \"04 · Explore · User 1 · Existing Client (For You · Most Active · Watch List · offering sheet)\" and \"04 · Explore · User 2 · Prospect (For You gate · Most Active · Watch List — Show interest → Create investment account)\". Node ids unchanged."
     ],
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3763-45459",
     "file": "V3 Phoenix Client App — Screens (Glow)",
