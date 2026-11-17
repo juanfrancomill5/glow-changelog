@@ -2782,7 +2782,7 @@
       "Rebuilt from the Prospect section: frames renamed without the Prospect suffix, 502 internal links preserved.",
       "Outbound links repointed to Existing Client screens: Cancel → 03.1 Home 282:2553; company rows → the client Overview screens for Stripe, Anthropic, SpaceX, Anduril Industries and Figure AI; Ask your broker → 09.5 Representative · Your broker 282:11788.",
       "28 entry points rewired to 05.4: Home search field (03.1 and 02.16), the search button on 12 Portfolio screens, 9 Calendar screens and 5 Explore screens.",
-      "Flow starting point re-added: 1 · Client — 05 · Company search → 4559:55007."
+      "Flow starting point re-added and named: 1 · Client — 05 · Company search → 4559:55007."
     ],
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4559-55006",
     "file": "V3 Phoenix Client App — Screens (Glow)",
