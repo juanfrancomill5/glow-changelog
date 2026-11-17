@@ -2807,5 +2807,21 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3763-45459",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-17-enable-passkey-client-links-restored",
+    "date": "2026-11-17",
+    "ts": "2026-11-17T12:20:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "13 · Passkey & 2FA states",
+    "title": "13.1 Enable passkey (Existing Client): Create passkey and Not now lead to Home again",
+    "summary": "Both buttons on the Existing Client Enable passkey screen had lost their prototype links, leaving the screen without an exit. They now open 03.1 Home, the same pattern the Prospect screen uses with its own Home.",
+    "details": [
+      "Screen 268:697. Button Create passkey 268:708 and Button Not now 268:709 → 03.1 Home 282:2553, navigate, same transition as the Prospect twin 3150:52722."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=268-697",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
