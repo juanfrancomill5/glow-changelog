@@ -2920,5 +2920,24 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11876",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-17-library-listrow-inset-divider",
+    "date": "2026-11-17",
+    "ts": "2026-11-17T13:58:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Display",
+    "title": "ListRow (Navigation): divider is inset under the title; new Show divider property",
+    "summary": "On navigation rows (icon well + title + chevron) the separator no longer runs the full row width under the icon. It starts under the title and runs to the right edge. A new Show divider property turns it off on the last row of a group. Event and Key-value rows keep their full-width divider.",
+    "details": [
+      "Component set ListRow 13:56, variant Type=Navigation 13:34. Bottom stroke removed; new layer divider 2265:154: 1px, line/default, 50 from the row start (38 icon well + 12 gap), stretches to the right edge, pinned to the bottom.",
+      "New boolean property Show divider, default on. Turn it off on the last row of a card or list.",
+      "Row height unchanged (50).",
+      "Reaches the screens files after the library is published and the update is accepted."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=13-56",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
   }
 ]
