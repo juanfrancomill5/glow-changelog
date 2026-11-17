@@ -2845,5 +2845,23 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11826",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-17-library-icons-smartphone-moon-sun",
+    "date": "2026-11-17",
+    "ts": "2026-11-17T12:42:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Icons",
+    "title": "Three new icons: icon/smartphone, icon/moon, icon/sun",
+    "summary": "Added for the Appearance options in 09.6 Settings (System Default, Dark, Light). Same construction as the rest of the set: Lucide outline, 24px grid, 1.6 stroke bound to ink/primary.",
+    "details": [
+      "Components 2260:137 (icon/smartphone), 2260:142 (icon/moon), 2260:155 (icon/sun) on the Icons page, frame Icons / Library 5:2. The set is now 55 icons.",
+      "Lucide names: smartphone, moon, sun. In Flutter use the matching Lucide icons.",
+      "Available in the screens file after the library is published."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=5-2",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
   }
 ]
