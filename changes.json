@@ -2708,5 +2708,44 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4541-51009",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-16-company-logo-set-159-svg",
+    "date": "2026-11-16",
+    "ts": "2026-11-16T23:30:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Logos",
+    "title": "159 official company SVG logos added to the company component set (13 → 172 variants)",
+    "summary": "The company logo set now carries 172 variants, up from 13. The 159 new marks come from the Sacra all-companies list and were imported as official brand vectors, not traced images. Each is a single flattened VECTOR named \"Vector\" inside a 26.25x26.25 component, fill bound to the Glow white colour variable, SCALE constraints, so it behaves exactly like the original 13.",
+    "details": [
+      "Component set `company` 52:232 on page Logos 52:138, property \"Property 1\", variant names use the company name from the source list.",
+      "Variants re-laid out as a 12-column grid; set is now 660x822.",
+      "Logo marks are white-on-gradient: the brand colour lives on the Monogram tile behind, never on the mark.",
+      "Stripe, Anthropic and SpaceX already existed and were left untouched; no existing variant changed, so no screen instance is affected.",
+      "Source list: 1,552 companies. 159 had a published official vector; the remaining 1,393 are not yet covered."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=52-232",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-16-company-brand-colors-159-rows",
+    "date": "2026-11-16",
+    "ts": "2026-11-16T23:30:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "Library · Logos",
+    "title": "Company Brand Colors table extended to 172 rows with a tile gradient per new company",
+    "summary": "Every newly added company now has a documented Monogram tile gradient, so tiles are built from the table instead of being picked by hand. Each gradient is derived from the company's official brand colour: a lighter top stop and a deeper bottom stop, matching the existing top → bottom convention.",
+    "details": [
+      "Table `section.list` 52:143; 159 rows appended, 172 total; list height 7916.",
+      "Row structure cloned from the existing row: swatch, name, colour name, hex pair.",
+      "Brands whose official colour is near-black fall back to the Charcoal pair #3A3A3C → #1C1C1E so the mark stays legible.",
+      "The existing 13 rows were not edited; screens remain the source of truth for the original tiles."
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=52-143",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
   }
 ]
