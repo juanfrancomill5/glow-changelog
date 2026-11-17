@@ -2747,5 +2747,25 @@
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=52-143",
     "file": "Phoenix Glow — Design System",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-17-search-company-logos-prospect",
+    "date": "2026-11-17",
+    "ts": "2026-11-17T11:45:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Company search",
+    "title": "Real company logos on the Prospect Company search screens (65 rows)",
+    "summary": "After the library update, every CompanyRow in the Prospect Company search section whose company now has a logo in the library shows that logo instead of a letter monogram, on its own brand-coloured tile. 65 of 603 rows changed, covering 43 companies; the other 538 rows keep the letter monogram because no logo exists for them yet.",
+    "details": [
+      "Section 05 · Company search · User 2 · Prospect 3149:40729, 87 frames.",
+      "Per row: Monogram switched to Show logo, the logo slot swapped to the matching `company` variant, and the tile fill set to that company's gradient from the library Company Brand Colors table.",
+      "Gradient transform copied from the existing logo tiles, so new tiles match the 14 that already had logos.",
+      "Name matching is exact on the company name, with aliases for Anduril Industries → Anduril, Saronic → Saronic Technologies, Crusoe Energy → Crusoe.",
+      "The equivalent Existing Client section was not updated: 05 · Company search · User 1 · Existing Client is no longer present on page ▶ Prototype V3."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3149-40729",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
