@@ -2755,16 +2755,36 @@
     "type": "updated",
     "product": "Client App iPhone Glow",
     "area": "05 · Company search",
-    "title": "Real company logos on the Prospect Company search screens (65 rows)",
-    "summary": "After the library update, every CompanyRow in the Prospect Company search section whose company now has a logo in the library shows that logo instead of a letter monogram, on its own brand-coloured tile. 65 of 603 rows changed, covering 43 companies; the other 538 rows keep the letter monogram because no logo exists for them yet.",
+    "title": "Real company logos on the Company search screens, both journeys (65 rows each)",
+    "summary": "After the library update, every CompanyRow on the Company search screens whose company now has a logo in the library shows that logo instead of a letter monogram, on its own brand-coloured tile. 65 of 603 rows changed per journey, covering 43 companies; the other rows keep the letter monogram because no logo exists for them yet.",
     "details": [
       "Section 05 · Company search · User 2 · Prospect 3149:40729, 87 frames.",
       "Per row: Monogram switched to Show logo, the logo slot swapped to the matching `company` variant, and the tile fill set to that company's gradient from the library Company Brand Colors table.",
       "Gradient transform copied from the existing logo tiles, so new tiles match the 14 that already had logos.",
       "Name matching is exact on the company name, with aliases for Anduril Industries → Anduril, Saronic → Saronic Technologies, Crusoe Energy → Crusoe.",
-      "The equivalent Existing Client section was not updated: 05 · Company search · User 1 · Existing Client is no longer present on page ▶ Prototype V3."
+      "Applies to both 05 · Company search sections: Prospect 3149:40729 and Existing Client 4559:55006."
     ],
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3149-40729",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-17-search-existing-client-section-restored",
+    "date": "2026-11-17",
+    "ts": "2026-11-17T12:05:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "05 · Company search",
+    "title": "Existing Client Company search flow restored (new node ids)",
+    "summary": "The section 05 · Company search · User 1 · Existing Client was missing from the prototype page and has been rebuilt, so both journeys have the full search flow again. Screens and behavior are identical to the Nov 16 build; only the node ids changed.",
+    "details": [
+      "New section 4559:55006 (89 frames, same position as before). 05.4 Search · Start is now 4559:55007; the old ids 282:8876 / 282:8877 no longer exist.",
+      "Rebuilt from the Prospect section: frames renamed without the Prospect suffix, 502 internal links preserved.",
+      "Outbound links repointed to Existing Client screens: Cancel → 03.1 Home 282:2553; company rows → the client Overview screens for Stripe, Anthropic, SpaceX, Anduril Industries and Figure AI; Ask your broker → 09.5 Representative · Your broker 282:11788.",
+      "28 entry points rewired to 05.4: Home search field (03.1 and 02.16), the search button on 12 Portfolio screens, 9 Calendar screens and 5 Explore screens.",
+      "Flow starting point re-added: 1 · Client — 05 · Company search → 4559:55007."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4559-55006",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
   }
