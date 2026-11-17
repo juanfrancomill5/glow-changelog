@@ -2835,7 +2835,7 @@
     "summary": "Appearance in Settings is now a single-choice list: System Default, Dark, Light, with the current choice shown as selected. It replaces the two-button Dark / Light switch, which had no selected state. System Default is the default and follows the device appearance setting.",
     "details": [
       "Screens: 09.6 Settings 282:11826 and 09.6 Settings · Prospect 3149:50791. Container renamed Appearance switch → Appearance options (282:11830, 3149:50795).",
-      "Rows are library RadioOption instances (icon off, subtitle hidden, 52 high, gap 8). Ids: 4575:61664 / 61679 / 61687 (Existing Client), 4575:61696 / 61711 / 61719 (Prospect).",
+      "Rows are library RadioOption instances (subtitle hidden, 52 high, gap 8) with icons: icon/smartphone for System Default, icon/moon for Dark, icon/sun for Light. Ids: 4575:61664 / 61679 / 61687 (Existing Client), 4575:61696 / 61711 / 61719 (Prospect).",
       "Helper caption under the rows (Text/caption, ink/muted): \"System Default matches your device's appearance setting.\"",
       "Behavior: single choice, default System Default. System Default follows the device light/dark setting and updates live when it changes. Dark and Light force that theme. Applies immediately, no Save; persists per device across sessions and sign-outs. Flutter: ThemeMode.system / dark / light.",
       "The behavior is also attached to the Appearance options frame as a Dev Mode annotation.",
@@ -2857,8 +2857,8 @@
     "summary": "Added for the Appearance options in 09.6 Settings (System Default, Dark, Light). Same construction as the rest of the set: Lucide outline, 24px grid, 1.6 stroke bound to ink/primary.",
     "details": [
       "Components 2260:137 (icon/smartphone), 2260:142 (icon/moon), 2260:155 (icon/sun) on the Icons page, frame Icons / Library 5:2. The set is now 55 icons.",
-      "Lucide names: smartphone, moon, sun. In Flutter use the matching Lucide icons.",
-      "Available in the screens file after the library is published."
+      "Paths are the official Lucide sources, checked against the lucide-static 1.74.0 package: smartphone, moon, sun. In Flutter use the matching Lucide icons.",
+      "icon/moon was redrawn the same day to the current Lucide moon (the first version used the older Lucide moon path); same component key."
     ],
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=5-2",
     "file": "Phoenix Glow — Design System",
