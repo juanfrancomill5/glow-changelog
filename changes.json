@@ -2939,5 +2939,25 @@
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=13-56",
     "file": "Phoenix Glow — Design System",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-17-v3-navigation-rows-inset-divider",
+    "date": "2026-11-17",
+    "ts": "2026-11-17T15:10:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "All flows · navigation rows",
+    "title": "Every navigation row in the prototype uses the inset divider; no line after the last row of a group",
+    "summary": "All 175 navigation rows (icon + title + chevron) on the prototype page now show the separator starting under the title, and the last row of each card or list has no separator. Applies to the menu sidebar, Settings, Help & support, Holding detail, Documents and the other list screens.",
+    "details": [
+      "Page ▶ Prototype V3. The 175 ListRow Type=Navigation instances were moved to the published library version; titles, subtitles, icons, sizes and prototype links were compared before and after with 0 differences.",
+      "Show divider is on for 110 rows and off for 65 last-in-group rows across 46 screens.",
+      "09.6 Settings · Account cards (282:11876, 3149:50840): the 10 temporary local divider frames were removed; the rows use the library divider.",
+      "Rule for implementation: separator inset 50 from the row start (38 icon well + 12 gap), 1px line/default, between rows only, never after the last row.",
+      "Key-value and Event rows are unchanged."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11607",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
