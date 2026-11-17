@@ -2787,5 +2787,24 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4559-55006",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-17-explore-companies-directory-removed",
+    "date": "2026-11-17",
+    "ts": "2026-11-17T12:10:00Z",
+    "type": "removed",
+    "product": "Client App iPhone Glow",
+    "area": "04 · Explore",
+    "title": "Explore Companies directory and its filter screens removed (both journeys)",
+    "summary": "The Companies directory inside Explore and its filter states were deleted, because Company search now covers browsing by category. Explore keeps For You, Most Active and Watch List. No prototype link points to a missing screen after the removal.",
+    "details": [
+      "Existing Client: 10 frames removed from 04 · Explore 3763:45459 (04.10 Companies · All, 04.10b Defense, 04.10c AI / Fintech / Space / Robotics, 04.12 Filters applied, 04.13 No results, Overlay 04.14 Filters · All industries and one related frame); 22 frames remain.",
+      "Prospect: 9 Companies frames removed from 04 · Explore 3815:46831; 5 frames remain.",
+      "Flow starting points removed with them: Explore · Companies & filters (both journeys) and Explore · Companies · No results.",
+      "Link audit after removal: 3,861 links checked, 0 pointing to a missing screen; all 58 flow starting points resolve."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3763-45459",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
