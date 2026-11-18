@@ -3002,5 +3002,27 @@
     "figma": "https://www.figma.com/design/NTwrNLrdN8FQBCLy58R4JO/?node-id=152-60519",
     "file": "Phoenix Client App — Screens (Glow · iPhone Duo)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-18-duo-v3-inner-frames",
+    "date": "2026-11-18",
+    "ts": "2026-11-18T20:25:00Z",
+    "type": "new",
+    "product": "Client App iPhone Duo",
+    "area": "▶ Prototype V3 · Duo",
+    "title": "iPhone Duo: Inner display frames (951 × 669) for all 596 V3 screens",
+    "summary": "Every Outer frame on the V3 Duo page now has an Inner frame to its right, so the page covers both displays (1,192 frames). Sectioned screens use two columns; the rest use one centred column. List-detail panes are not part of this pass.",
+    "details": [
+      "Inner frame = same name with ' · Inner', at x + 546 from its Outer frame; Platform mode duo-inner",
+      "Rail at x 867: no camera, StatusBar · Vertical from y 24, toolbar at y 118, NavRail 24 pt from the bottom",
+      "Two columns 421 + 398 (x 16 and x 453) when the content has two or more section headers; second half lives in 'content · column 2'",
+      "Single centred column 520 pt for lists, auth, onboarding, KYC, search and forms; pinned buttons 520 pt centred",
+      "Sheets 653 pt centred in the content area; dialogs and toasts centred; company header, section bar and offering bar 867 pt",
+      "Company screens use five 'Template · … · Inner' components",
+      "Links inside Inner frames go to Inner frames; Outer and Inner are separate prototype chains"
+    ],
+    "figma": "https://www.figma.com/design/NTwrNLrdN8FQBCLy58R4JO/?node-id=140-287",
+    "file": "Phoenix Client App — Screens (Glow · iPhone Duo)",
+    "addedBy": "Claude"
   }
 ]
