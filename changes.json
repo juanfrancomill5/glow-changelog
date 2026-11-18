@@ -3063,5 +3063,42 @@
     "figma": "https://www.figma.com/design/NTwrNLrdN8FQBCLy58R4JO/?node-id=140-287",
     "file": "Phoenix Client App — Screens (Glow · iPhone Duo)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-18-duo-active-tab-links-flows",
+    "date": "2026-11-18",
+    "ts": "2026-11-18T22:05:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Duo",
+    "area": "▶ Prototype V3 · Duo · Prototype",
+    "title": "iPhone Duo prototype: active-tab links restored on five screens, Inner flows labelled",
+    "summary": "A per-screen comparison with the phone prototype found five screens one link short: on these the active tab also navigates back to the tab root. The links are back on Outer and Inner, and link counts now match the phone on all 596 screens.",
+    "details": [
+      "07.2 Calendar · Month (Client and Prospect) and 07.4 Calendar · Empty day: Calendar tab → 07.1 Calendar · Week",
+      "10.6 Loading · Skeleton (Client and Prospect): Home tab → Home",
+      "58 Inner flow starting points renamed with ' · Inner' (116 flows on the page)"
+    ],
+    "figma": "https://www.figma.com/design/NTwrNLrdN8FQBCLy58R4JO/?node-id=140-287",
+    "file": "Phoenix Client App — Screens (Glow · iPhone Duo)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-18-duo-inner-list-detail",
+    "date": "2026-11-18",
+    "ts": "2026-11-18T22:15:00Z",
+    "type": "new",
+    "product": "Client App iPhone Duo",
+    "area": "▶ Prototype V3 · Duo · Inner",
+    "title": "iPhone Duo Inner: list + detail on Portfolio and Calendar (Existing Client)",
+    "summary": "On the inner display, Portfolio and Calendar now show the list on the left and a detail on the right, using one extra level of hierarchy as the open display allows. Other lists stay single or two-column for now.",
+    "details": [
+      "Portfolio All / Private / Public (9 frames incl. account variants): list 421 pt + pane with 06.6 Holding detail · SpaceX",
+      "Calendar Week / Month and subscribed / exported states (6 frames): list 421 pt + pane with 07.3 Event detail",
+      "Pane frame 'Detail pane · …' 398 pt at x 453; links inside the pane go to Inner frames",
+      "The detail's header actions and pinned button are not shown in the pane"
+    ],
+    "figma": "https://www.figma.com/design/NTwrNLrdN8FQBCLy58R4JO/?node-id=140-287",
+    "file": "Phoenix Client App — Screens (Glow · iPhone Duo)",
+    "addedBy": "Claude"
   }
 ]
