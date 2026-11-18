@@ -3024,5 +3024,25 @@
     "figma": "https://www.figma.com/design/NTwrNLrdN8FQBCLy58R4JO/?node-id=140-287",
     "file": "Phoenix Client App — Screens (Glow · iPhone Duo)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-18-library-navrail-dock",
+    "date": "2026-11-18",
+    "ts": "2026-11-18T20:50:00Z",
+    "type": "new",
+    "product": "Client App iPhone Duo",
+    "area": "Library · Navigation",
+    "title": "New NavRail/Dock: the V3 bottom dock turned vertical for the iPhone Duo rail",
+    "summary": "The Duo rail was still using the October NavRail, built from the old bottom nav (dot under the active tab, AI tile). NavRail/Dock matches the current phone dock: same pill and the same orange active tab, with four tabs.",
+    "details": [
+      "Component set NavRail/Dock (2272:283) on the library Navigation page, variants Active = Home / Deals / Portfolio / Calendar",
+      "60 pt wide, 5 pt padding, radius 30; inactive tabs 50 × 54, active tab 50 × 62 with the brand gradient",
+      "Active tab shows the icon only; the label is hidden because text does not fit a vertical bar",
+      "Existing NavRail and BottomNav/Dock are unchanged",
+      "Duo screens switch to NavRail/Dock after the library is published"
+    ],
+    "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2272-283",
+    "file": "Phoenix Glow — Design System",
+    "addedBy": "Claude"
   }
 ]
