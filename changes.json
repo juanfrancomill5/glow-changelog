@@ -3044,5 +3044,24 @@
     "figma": "https://www.figma.com/design/koMupwxjOx3Zuu4XoeTNGU/?node-id=2272-283",
     "file": "Phoenix Glow — Design System",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-18-duo-rail-uses-navrail-dock",
+    "date": "2026-11-18",
+    "ts": "2026-11-18T21:00:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Duo",
+    "area": "▶ Prototype V3 · Duo · Rail",
+    "title": "iPhone Duo rail now uses NavRail/Dock, matching the phone dock",
+    "summary": "All tab-root screens on the V3 Duo page switched from the old NavRail to NavRail/Dock, so the Duo navigation has the same pill and orange active tab as the phone. Tab links are unchanged.",
+    "details": [
+      "98 instances swapped: 49 Outer + 49 Inner",
+      "Active tab per screen kept (Home 16, Explore 18, Portfolio 28, Calendar 36)",
+      "294 tab links before and after the swap",
+      "Rail position: centred in the 84 pt column, 24 pt from the bottom"
+    ],
+    "figma": "https://www.figma.com/design/NTwrNLrdN8FQBCLy58R4JO/?node-id=140-287",
+    "file": "Phoenix Client App — Screens (Glow · iPhone Duo)",
+    "addedBy": "Claude"
   }
 ]
