@@ -2959,5 +2959,48 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-11607",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-18-duo-v3-outer-page",
+    "date": "2026-11-18",
+    "ts": "2026-11-18T19:40:00Z",
+    "type": "new",
+    "product": "Client App iPhone Duo",
+    "area": "▶ Prototype V3 · Duo",
+    "title": "iPhone Duo: new V3 page with all 596 screens for the outer display (466 × 678)",
+    "summary": "The Duo file now mirrors the V3 prototype on a new page. Every V3 screen exists as an Outer frame with the vertical rail; the V2 Duo page stays as an archive. Inner display frames (951 × 669) are not built yet.",
+    "details": [
+      "Page ▶ Prototype V3 · Duo (140:287); same sections, personas and screen names as V3, suffix ' · Outer'",
+      "Frames use Platform mode duo-outer with width/height bound to platform/screen variables",
+      "Trailing 84 pt column (x 382–466) reserved: camera, StatusBar · Vertical, Back + toolbar actions (RailToolbar), NavRail on the 49 tab-root screens",
+      "Content 350 pt at x 16; sticky header padding 24 / 16 / 100; pinned actions, CompanySectionBar and OfferingBar 382 pt wide, bottom-anchored",
+      "No horizontal status bar, home indicator or bottom nav on Duo; NavRail shows four tabs (Home, Explore, Portfolio, Calendar)",
+      "Each Outer frame leaves 60 + 951 pt free on its right for the Inner frame"
+    ],
+    "figma": "https://www.figma.com/design/NTwrNLrdN8FQBCLy58R4JO/?node-id=140-287",
+    "file": "Phoenix Client App — Screens (Glow · iPhone Duo)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-18-duo-walkthrough-cutout-rule",
+    "date": "2026-11-18",
+    "ts": "2026-11-18T19:45:00Z",
+    "type": "rule",
+    "product": "Client App iPhone Duo",
+    "area": "▶ Prototype V3 · Duo · Page notes",
+    "title": "iPhone Duo rule: nothing enters the status cut-out column (answers the Nov 18 simulator walkthrough)",
+    "summary": "The simulator walkthrough found content behind the status cut-out on seven screens. The design keeps the trailing 84 pt column clear on every screen, and the page notes map each reported defect to the rule.",
+    "details": [
+      "Notes frame 152:60519 on the V3 Duo page",
+      "Settings: toggles end at x 366, left of the reserved column",
+      "Notifications: NotificationItem 350 pt wide; time and unread dot stay visible; 'Mark all read' stays in the header",
+      "Company, Holding, Lot: header 382 pt and cards 350 pt; 'Ask your broker about liquidity' button 350 pt at x 16, 24 pt from the bottom, clear of the rounded corner",
+      "Status indicators follow the surface behind the rail: dark on light surfaces, light on dark",
+      "Onboarding 3: card stack capped 20 pt above the headline",
+      "Welcome: headline sits above the pinned buttons"
+    ],
+    "figma": "https://www.figma.com/design/NTwrNLrdN8FQBCLy58R4JO/?node-id=152-60519",
+    "file": "Phoenix Client App — Screens (Glow · iPhone Duo)",
+    "addedBy": "Claude"
   }
 ]
