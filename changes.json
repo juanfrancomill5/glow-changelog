@@ -3174,5 +3174,22 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4699-1123",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-19-portfolio-proposal-range-bar-decision",
+    "date": "2026-11-19",
+    "ts": "2026-11-19T16:30:00Z",
+    "type": "rule",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Iteration · Portfolio — chart + account picker (Nov 19)",
+    "title": "Portfolio proposal: range control stays the full-width orange bar, same as Home",
+    "summary": "The Portfolio chart keeps the full-width 1Y / 3Y / All range bar in the Ember style, matching the Home InvestedChart. The small range control alternative was dropped and its frame removed.",
+    "details": [
+      "Removed frame 4699:1123 (quiet range alternative). Range labels stay 1Y / 3Y / All.",
+      "Applies to the proposal page only; the live Portfolio screens on ▶ Prototype V3 are unchanged."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4685-61873",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
