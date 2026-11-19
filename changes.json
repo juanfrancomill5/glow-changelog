@@ -3100,5 +3100,61 @@
     "figma": "https://www.figma.com/design/NTwrNLrdN8FQBCLy58R4JO/?node-id=140-287",
     "file": "Phoenix Client App — Screens (Glow · iPhone Duo)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-19-portfolio-iteration-page",
+    "date": "2026-11-19",
+    "ts": "2026-11-19T15:55:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Iteration · Portfolio — chart + account picker (Nov 19)",
+    "title": "Portfolio proposal page: compact invested chart, grouped holdings, account pill (not in the prototype yet)",
+    "summary": "New iteration page with a proposal for 06 · Portfolio. The live Portfolio screens on ▶ Prototype V3 are unchanged; nothing here is approved for build yet.",
+    "details": [
+      "Page 4685:61873. Reference copies: 4685:61874 (06.1 today), 4685:61928 (06.5 account menu today).",
+      "Proposal frames: All 4685:61932 · Private 4685:61986 · Public 4685:62038 · Cash 4685:62088 · All scrolled 4692:1012 · All · Individual ••4821 4685:62174.",
+      "All tab: the single Holdings card becomes three groups (Private, Public, Cash) with the class total in each header; Cash is one row labelled as not part of total invested.",
+      "Prototype flow 'Portfolio proposal · Nov 19' starts at 4685:61932: tabs switch All / Private / Public / Cash, the account pill opens the sheet."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4685-61932",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-19-portfolio-compact-invested-chart",
+    "date": "2026-11-19",
+    "ts": "2026-11-19T15:55:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Iteration · Portfolio — chart + account picker (Nov 19)",
+    "title": "Portfolio proposal: StepChart replaced by a compact dot-matrix invested chart (40 × 9)",
+    "summary": "Portfolio uses the same chart language as the Home InvestedChart (dots, value column outside the plot, ember Today column, Ember range tabs) at 9 rows instead of 15, so the holdings list starts higher. The chart follows the selected tab and account.",
+    "details": [
+      "Local frame 'InvestedChart · compact (proposal)' 336 × 114: plot 277 × 60, dots 4 px with 3 px gap, bound to surface/400, cream and brand/300 (+ Today glow copied from the library plot).",
+      "Not a library component yet. If approved it becomes a Size variant of InvestedChart with a series per class and account.",
+      "Y-axis: Private and Public keep the account's total as the scale (as V3 does today). Alternative with Public on its own scale: 4690:950.",
+      "Range tabs are static on this page (All selected); inspect-by-drag is unchanged from the Home chart spec."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4685-61986",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-19-portfolio-account-switcher-sheet",
+    "date": "2026-11-19",
+    "ts": "2026-11-19T15:55:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Iteration · Portfolio — chart + account picker (Nov 19)",
+    "title": "Portfolio proposal: account dropdown becomes a pill in the title row + Accounts bottom sheet",
+    "summary": "The full-width Account dropdown under the title is replaced by a compact pill next to the search button, which shortens the sticky header from 177 to 111 px. Tapping it opens a bottom sheet with one radio option per account; choosing an option applies it immediately.",
+    "details": [
+      "Pill 'AccountSwitcher': 44 px high, same glass fill, stroke and radius as IconButton Glass, label + chevron-down. Local frame, library candidate.",
+      "Sheet frame 4685:62120: library Scrim + sheet pattern from 09.4.1 with RadioOption rows (All accounts · Individual · Phoenix Family Trust), subtitle = type · masked number · amount invested. No Apply / Cancel buttons.",
+      "Result state with an account applied: 4685:62174 (pill, hero label, chart scale, groups and cash all follow the account)."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4685-62120",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
