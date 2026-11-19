@@ -3156,5 +3156,23 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4685-62120",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-19-portfolio-proposal-tabs-fix",
+    "date": "2026-11-19",
+    "ts": "2026-11-19T16:25:00Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Iteration · Portfolio — chart + account picker (Nov 19)",
+    "title": "Portfolio proposal: class tabs render the same on every state; quiet range control added as an alternative",
+    "summary": "The Private tab carried hand overrides (orange gradient when selected, a stray glow when not), so the four class tabs did not match across states. On the proposal page they now all come from the library Tabs/Segment Default variant. A comparison frame replaces the full-width orange range bar with a small 1Y / 3Y / Max control at the top right of the hero.",
+    "details": [
+      "Overrides removed on the Private segment in 8 proposal frames; label, selection and links kept.",
+      "The same overrides still exist on the live 06.1–06.4 Portfolio frames on ▶ Prototype V3 (not changed here).",
+      "Alternative frame 4699:1123: range control 132 × 34, Tabs/Segment Default, absolute at the hero top right; hero 274 → 212 px; last range label reads Max so it does not repeat the class tab All."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4699-1123",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
