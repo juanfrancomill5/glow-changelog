@@ -3191,5 +3191,150 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4685-61873",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-20-company-private-public-proposal",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T22:40:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "05 Company · proposal page",
+    "title": "New proposal page: Company screen for private and public companies (13 screens + 5 review boards)",
+    "summary": "Added the page \"Proposals · Company screen — Private & Public (Nov 20)\" with the two current company screens for comparison, six private screens, four public screens, three portfolio screens and five review boards. The proposal gives private and public companies separate field sets instead of only changing the subtitle, and is built on the Notice data model.",
+    "details": [
+      "Page 4758:231. Row 1 current copies, Row 2 private C1–C6 plus C1b scrolled, Row 3 public C7–C10, Row 4 portfolio C11–C13, boards below.",
+      "All screens 402×874, instances of the Glow library; new elements are specimens on the page, not library components yet.",
+      "Boards: field spec, Notice data mapping, the public quote decision, component work, data notice copy and open questions."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4758-231",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-20-company-valuation-dated",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T22:40:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "05 Company · Overview",
+    "title": "Proposed: every valuation carries its round and date, and the growth percentage is removed",
+    "summary": "On the proposed private Overview the metric grid becomes Valuation · Last round · Total raised · Revenue (est.), with a valuation-age line underneath. The \"Growth +400%\" metric and the \"+900% since 2024\" label on the valuation chart are removed because both are performance claims calculated on an estimate.",
+    "details": [
+      "C1 4760:2878. MetricGrid slots remapped; the delta slot on MetricPanel now reads \"Series F · Sep 2025\".",
+      "New line under the grid: \"Post-money, Series F · Sep 2025 · set 14 months ago\".",
+      "Revenue estimate recoloured from success green to ink/primary."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4760-2878",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-20-valuation-chart-round-readout",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T22:40:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "05 Company · Overview · valuation chart",
+    "title": "Proposed: round names on the valuation axis and a readout carrying raised amount and price per share",
+    "summary": "The chart axis changes from bare years to round markers (Seed ’21, C ’23, E · F ’25, Today). Selecting a point shows post-money, amount raised and price per share for that round. On mobile this is a tap, not a hover, and the readout stays on screen until dismissed.",
+    "details": [
+      "C2 4761:2284. Uses the existing ChartScrub/Valuation component set at Point=2025, with its two-line tooltip hidden.",
+      "New RoundReadout specimen replaces that tooltip and carries three values plus the round name.",
+      "ChartScrub/Valuation and MetricPanel both need extending in the library if this is approved."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4761-2284",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-20-company-investors",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T22:40:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "05 Company · Overview and Company tab",
+    "title": "Proposed: investor summary on the company view with an expandable full list",
+    "summary": "An Investors section sits under Funding history on the Overview and on the Company tab, showing the leads with their rounds and a \"View all 19\" action that opens a sheet with the full list split into those that led a round and those that participated.",
+    "details": [
+      "C1 4760:2878, C3 4766:3878, sheet C4 4767:4392.",
+      "New InvestorRow specimen: avatar, investor name, role and the rounds joined.",
+      "The sheet uses the Glow Sheet and Scrim pattern and ends with a Primary action."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4767-4392",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-20-data-notice",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T22:40:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "05 Company · data notice",
+    "title": "Proposed: information icon and plain-language notice on approximate and beta data",
+    "summary": "An info icon with one line of plain text sits in the section header of any block carrying an estimate, opening an \"About this data\" sheet that explains what a valuation is, that revenue figures are estimated, that a round price per share is not the value of a holding, and that the data is in beta. Final wording is still to be supplied.",
+    "details": [
+      "Sheet C5 4767:4518, with placeholder copy marked on the screen.",
+      "Two wording versions are on board 5: one naming the data source, one attributing to the Phoenix Research Desk.",
+      "Which version ships depends on the attribution question on board 3."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4767-4518",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-20-public-company-screens",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T22:40:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "05 Company · public companies",
+    "title": "Proposed: how a listed company is represented, in two routes",
+    "summary": "A listed company gets its own field set: exchange, ticker, listing date and listing type, the private valuation history frozen at the listing date, the pre-IPO investors kept as history, and a bottom bar that says the company is not available through Phoenix and routes to the rep. Route A carries no price at all; Route B adds listing price, current price and change since listing.",
+    "details": [
+      "C7 4768:5259 Route A, C8 4768:6008 Route B, C9 4770:6588 Company tab, C10 4770:6834 listing transition.",
+      "The private price series terminates at the listing date and is labelled; nothing after it is shown.",
+      "New QuoteBlock specimen for Route B: price, change, exchange, feed delay and as-of timestamp.",
+      "Driver: the private-market data source stops pricing a company at listing, so a live quote needs a second vendor."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4768-5259",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-20-portfolio-public-positions",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T22:40:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "06 Portfolio · public positions",
+    "title": "Proposed: quotes on public holdings, a position detail screen and a locked-up state",
+    "summary": "The Portfolio Public tab shows ticker, share count and quote on each row, with market value in the tab hero and cost basis kept as the figure in All. Each row opens a position detail with shares, cost basis, market value and how the position got there. A separate locked-up state covers the period between listing and the first day a client can sell.",
+    "details": [
+      "C11 4771:7422, C12 4773:7491, C13 4773:7609.",
+      "Quote rows carry a delayed-quote line and state that listed positions are not traded through Phoenix.",
+      "Locked-up screen states the expiry date and routes to the rep; the action is unavailable rather than hidden."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4771-7422",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-20-lifecycle-state-rule",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T22:40:00Z",
+    "type": "rule",
+    "product": "Client App iPhone Glow",
+    "area": "Company data model",
+    "title": "Proposed rule: a company has a lifecycle state, not a private/public flag",
+    "summary": "A company moves through private, filed, listed, locked up and freely tradable, and the client position moves with it. The proposal puts that state on the Monogram logo tile so it travels into every row, card, search result and email without changing those layouts. Three of the five states do not exist anywhere in the system today.",
+    "details": [
+      "Board 1 and board 4 on page 4758:231 carry the field spec and the component work.",
+      "Needs one backend field; today two private companies sit under the Public tab, so the current split is not reliable.",
+      "Rule 144 context: broadly six months for shares of a reporting issuer, twelve where the issuer does not report; lock-ups commonly run 180 days from listing."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4758-231",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
