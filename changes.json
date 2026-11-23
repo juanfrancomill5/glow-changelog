@@ -3415,5 +3415,25 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4808-12712",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-23-company-meeting-items-proposal",
+    "date": "2026-11-23",
+    "ts": "2026-11-23T20:45:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "05 Company and 06 Portfolio · proposal page",
+    "title": "Proposed: meeting items applied to the existing company screens, private and public (11 screens)",
+    "summary": "New proposal page that keeps the current company screens as they are (same header, section order and bottom tabs, no navigation at the top) and adds only the items from the meeting: an investors block that expands in place and is also on the Company tab, round names and years on the valuation chart with a tap readout, a data notice with an info icon, the public company version with quote, price chart, IPO date and public offering information, and public positions in the portfolio with quotes and a detail screen. It replaces the two earlier Nov 23 pages, which were removed.",
+    "details": [
+      "Page 4837:231. Private 4837:2081, 4837:2723, 4837:3335, 4837:4326, 4837:4457. Public 4838:5010, 4838:5803, 4838:5911, 4838:6396. Portfolio 4842:4434, 4842:4948.",
+      "Investors: three rows plus a “Show all 19 investors” row; expanded state lists them in place with “Show fewer investors”.",
+      "Valuation chart: axis reads Seed ’21, C ’23, E · F ’25, Today; tapping a round shows post-money, raised and price per share.",
+      "Public Overview reuses the same layout: metric grid becomes Price, Market cap, IPO date, IPO price; the valuation panel position holds the price chart; “Available offering” becomes “Public offering” and expands in place.",
+      "Reuses the InvestorRow, RoundReadout and QuoteBlock specimens from the Nov 20 page."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4837-2081",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
