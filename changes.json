@@ -3395,5 +3395,25 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4798-7889",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-23-company-profile-notice-order",
+    "date": "2026-11-23",
+    "ts": "2026-11-23T14:05:00Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "05 Company · profile flow proposal",
+    "title": "Company profile proposal restructured to follow the Notice section order",
+    "summary": "The Overview for both the private and the public profile now runs in the same order as the reference company page: headline figure, chart, Market, About with key facts, Valuation, Revenue (private) or Listing (public), Funding and Investors. Each section opens with a one-sentence plain-language summary followed by its figures. The four bottom tabs are unchanged.",
+    "details": [
+      "Page 4794:231. Private screens P01–P13 in section 4794:233, master 4808:12712. Public screens U01–U14 in section 4794:234, master 4809:14056.",
+      "Anchor chips now read Overview, Market, Valuation, Revenue, Funding, Investors (private) and Overview, Market, Listing, Valuation, Funding, Investors (public).",
+      "The MetricGrid is removed from the Overview; key facts sit in the About section as key-value rows.",
+      "Market holds offering status, transfer type and the client position; on the public profile it holds market cap, 52-week range, IPO price and change since IPO.",
+      "The earlier A1–A11 and B1–B11 state screens were replaced; Funding rounds, Public offering details, the position detail and the three tab screens were kept and renumbered."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4808-12712",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
