@@ -3355,5 +3355,45 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4761-2284",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-23-company-profile-flow-private",
+    "date": "2026-11-23",
+    "ts": "2026-11-23T13:45:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "05 Company · private profile flow",
+    "title": "Proposed: full private company profile flow (11 screens)",
+    "summary": "New proposal page with the complete private company profile for Anthropic. The Overview opens on the post-money valuation with its round, date and age, has an anchor chip row under the header (Valuation, Funding, Investors, About, Research), and runs chart, key stats, position, funding, investors and about in that order. The flow covers the round-selected and revenue states of the chart, the scrolled Funding and Investors positions, a pushed Funding rounds screen with one round expanded, the investors sheet, the data notice sheet and the Company, Research and News tabs.",
+    "details": [
+      "Page 4794:231, section 4794:233, screens A1–A11 at 402×874.",
+      "A1 4794:2084 is the master; A2–A5, A7 and A8 are states of it.",
+      "Anchor row uses Chip Type=Filter; it scrolls the Overview, it does not replace the bottom section bar.",
+      "MetricPanel figure row is hidden on the Overview because the hero carries the valuation; axis labels are round markers.",
+      "Reuses the InvestorRow and RoundReadout specimens from the Nov 20 page."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4794-2084",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-23-company-profile-flow-public",
+    "date": "2026-11-23",
+    "ts": "2026-11-23T13:45:00Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "05 Company · public profile flow",
+    "title": "Proposed: full public company profile flow (11 screens)",
+    "summary": "The complete profile for a listed company, shown with Figma. The Overview opens on the delayed quote with exchange, ticker and as-of time, then the price chart with range tabs and a 52-week bar, key stats, the client position, the public offering summary, the private history frozen at listing, funding before listing and pre-IPO investors. The flow covers the price-point-selected state, the scrolled Offering and Private history positions, a pushed Public offering details screen, the pre-IPO investors sheet, the data notice sheet, the listed position detail and the Company, Research and News tabs.",
+    "details": [
+      "Page 4794:231, section 4794:234, screens B1–B11 at 402×874.",
+      "B1 4798:7889 is the master; B2, B3, B5, B6 and B7 are states of it.",
+      "Price chart uses AreaChart Size=Card, Tabs for the range and RangeBar for the 52-week range (RangeBar is detached on these screens so the pill can sit at the current price).",
+      "Bottom bar reads “Listed company · Not available through Phoenix” with Contact Serge on every public screen.",
+      "Quote, change since IPO and market value are shown in ink, never success or danger colour."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4798-7889",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
