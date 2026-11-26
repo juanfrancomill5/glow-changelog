@@ -3580,5 +3580,26 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4947-489",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-26-company-proposal-sections",
+    "date": "2026-11-26",
+    "ts": "2026-11-26T21:26:15Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Proposal · Company Private & Public · v3 (Nov 24)",
+    "title": "Company proposal reorganised into Figma Sections, matching the prototype page",
+    "summary": "The company profile proposal now uses top-level Figma Sections the same way the prototype page does: one section per persona and company type, plus a grey section for the proposed components. Screens were repositioned into tidy rows inside their sections and the free-floating row labels removed, since the section titles carry the names.",
+    "details": [
+      "User 1 · Existing Client · Public company 5042:7080 — 11 screens. User 1 · Existing Client · Private company 5042:7081 — 4 screens.",
+      "User 2 · Prospect (no Phoenix account) · Public company 5042:7082 — 8 screens. User 2 · Prospect (no Phoenix account) · Private company 5042:7083 — 6 screens.",
+      "🧩 Components · Company dock & charts 5042:7084 — CompanyDock, PriceChart, HeaderQuote and SectionRail.",
+      "Flow sections use the prototype page's solid #131110 fill; the components section uses #444444, as the Templates section does.",
+      "Rows sit at y=0, 1300, 2600, 3900 and 5200 with 120pt padding; screens keep 80pt gaps.",
+      "All 29 docks and 100 section-tab prototype links carried over unchanged."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4944-231",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
