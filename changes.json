@@ -3478,5 +3478,47 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5013-4088",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-26-companydock-component",
+    "date": "2026-11-26",
+    "ts": "2026-11-26T20:31:41Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Proposal · Company Private & Public · v3 (Nov 24)",
+    "title": "CompanyDock · (proposed) — offering line and section tabs in one bottom dock",
+    "summary": "New local component set that merges the two stacked bottom bars of the company profile into a single floating dock, inset 16 with radius 16, glass fill and nav blur 18. Tier 1 is the file's existing OfferingBar component; a hairline divider separates it from tier 2, the four section tabs with an ember underline on the active one.",
+    "details": [
+      "Component set 5029:5625 with variant property Section = Overview | Company | Research | News (5029:5533, 5029:5556, 5029:5579, 5029:5602).",
+      "370×116 overall: OfferingBar 67 + divider 1 + nav 46, plus the 1pt stroke.",
+      "The nested OfferingBar keeps its own Eyebrow and Detail text properties and its cta button, so offering copy is set per screen as before. Its bottom padding is overridden from 30 to 12 inside the dock, since it is no longer the last element above the home indicator.",
+      "Nav items: active ink/primary Manrope SemiBold 12.5/16 with an 18×2 brand/300 underline; inactive ink/muted Medium. Fill surface/200 at 90%, stroke line/strong, background blur 18, drop shadow 0 16 38 −16.",
+      "Local to the screens file; it belongs in the library if this option is adopted."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5029-5625",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-26-company-profile-dock-applied",
+    "date": "2026-11-26",
+    "ts": "2026-11-26T20:31:41Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Proposal · Company Private & Public · v3 (Nov 24)",
+    "title": "Company profile screens now use the single bottom dock",
+    "summary": "All thirteen frame screens of the company proposal switched from the stacked OfferingBar + CompanySectionBar pair to one CompanyDock instance. Permanent bottom chrome drops from 147pt to 132pt and the bottom reads as one object rather than two bars touching, with each screen keeping its own offering copy.",
+    "details": [
+      "Updated: U1 4947:489, U1s 4959:3970, U2 4947:595, U3 4947:739, U4 4947:1216, U5 4947:883, U6 4947:1067, U7 4947:1413, U8 4948:2143, U9 4952:4314, U10 4952:4338, P1 4948:4248, P2 4948:4595.",
+      "Dock placed at x=16 y=742; scroll frames resized to y=111 h=631.",
+      "Each dock carries the screen's previous Eyebrow, Detail and button label — public screens keep FIG · NYSE / $27.69 +0.73% today / Indicate interest, private keep Offering open / Series F / Request allocation, and U7 keeps Interest sent.",
+      "Section variant follows the screen's previous CompanySectionBar variant, so Company, Research and News screens keep their active tab.",
+      "On the sheet and toast screens the dock sits below Scrim, Sheet and Toast in z-order.",
+      "CompanySectionBar, OfferingBar and InterestBar are hidden on these screens, not removed, so the change is reversible.",
+      "P3 · Private · Research 4952:4355 and P4 · Private · News 4952:4468 are instances of the Template masters and were left unchanged — a dock cannot be added to them without detaching them from the template."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4948-4248",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
