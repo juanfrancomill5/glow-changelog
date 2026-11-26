@@ -3520,5 +3520,65 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4948-4248",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-26-company-profile-persona-matrix",
+    "date": "2026-11-26",
+    "ts": "2026-11-26T21:15:39Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Proposal · Company Private & Public · v3 (Nov 24)",
+    "title": "Company profile now covers all four persona × company combinations",
+    "summary": "The proposal gained a full Prospect set for both company types, so the company profile exists as Client · Public, Client · Private, Prospect · Public and Prospect · Private. A prospect has no investment account yet, so those screens drop the position block and replace the offering action with an account gate.",
+    "details": [
+      "Prospect · Public (row y=5400): UP1 Overview 5036:4750, UP2 Company 5036:4974, UP3 Research 5036:5204, UP4 News 5036:5315, UP5 Instant quote sheet 5036:5412, UP6 Market data sheet 5036:5658, UP7 Create investment account sheet 5036:5899, UP8 Account request sent 5036:6143.",
+      "Prospect · Private (row y=6400): PP1 Overview 5036:3610, PP2 Company 5036:4321, PP3 Research 5036:4538, PP4 News 5036:4651, PP5 Create investment account sheet 5037:5769, PP6 Account request sent 5037:5832.",
+      "Prospect screens hide the content group that holds PositionRow — no holding, no View holding link, no amount invested.",
+      "The dock's offering line becomes the gate: eyebrow To request allocations (private) or To indicate interest (public), detail Create your account, button Create account.",
+      "Gate sheet copy: Create your investment account — an account is needed before indicating interest or requesting an allocation, and the broker reviews every application. Confirmation toast reads Application sent for review.",
+      "Market data stays visible to a prospect on the public screens; the price block and chart are unchanged.",
+      "Row labels added for the four sets; prospect rows are ordered public above private to mirror the client rows."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5036-3610",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-26-private-research-news-detached",
+    "date": "2026-11-26",
+    "ts": "2026-11-26T21:15:39Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Proposal · Company Private & Public · v3 (Nov 24)",
+    "title": "Private Research and News screens detached from the Template masters and docked",
+    "summary": "P3 Private Research and P4 Private News were instances of the Template company screens, so the new bottom dock could not be added to them. Both are now frames carrying the dock, which completes the Client · Private set.",
+    "details": [
+      "P3 · Private · Research is now 5035:3844, P4 · Private · News is now 5035:3958 — node ids changed when the instances were detached.",
+      "Each kept its offering copy: Offering open / Series F / Request allocation, and its section variant.",
+      "The Template masters on the prototype page are untouched."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5035-3844",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-26-company-dock-prototype-links",
+    "date": "2026-11-26",
+    "ts": "2026-11-26T21:15:39Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Proposal · Company Private & Public · v3 (Nov 24)",
+    "title": "Dock section tabs and account gate wired as prototype links",
+    "summary": "Every dock's four section tabs now navigate inside their own persona set, so a client never lands on a prospect screen and the reverse. The dock action and the gate sheet buttons are wired too, which makes each of the four sets clickable end to end.",
+    "details": [
+      "100 tab links across 29 screens; the tab for the section a screen is already on carries no link.",
+      "Client · Public tabs point at U1 4947:489, U8 4948:2143, U9 4952:4314, U10 4952:4338; Client · Private at P1 4948:4248, P2 4948:4595, P3 5035:3844, P4 5035:3958; Prospect sets point at their own UP and PP screens.",
+      "Dock action: prospect screens open the account gate sheet, client public screens open the indicate-interest sheet.",
+      "Gate sheet: Create account goes to the sent state, Cancel and the scrim return to that set's Overview.",
+      "Client · Private dock action is not linked yet — the request allocation flow lives outside this page."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4947-489",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
