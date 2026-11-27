@@ -3760,5 +3760,23 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5101-2905",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-27-bottom-bar-option-e-marker",
+    "date": "2026-11-27",
+    "ts": "2026-11-27T16:09:37Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "🗳 Pick one · Company bottom bar — 3 options (Nov 27)",
+    "title": "Round 2 Option E replaced: ember marker instead of the tinted pill",
+    "summary": "The middle option of round 2 dropped its ember-tinted pill. The active section is now marked by a glowing ember bar directly under the dock divider, with a brand-coloured icon and a primary-ink label, so it reads differently from the pill options on either side.",
+    "details": [
+      "Component renamed CompanyDock · Ember marker (proposed E) 5101:2850; screen 5101:3028.",
+      "Marker 36×3 on the brand gradient with an ember glow; items stay icon over word in 58pt targets with no fill.",
+      "Dock 370×138. Options D and F are unchanged."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5101-2905",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
