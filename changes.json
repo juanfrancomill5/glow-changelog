@@ -3926,5 +3926,24 @@
   "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-2553",
   "file": "V3 Phoenix Client App — Screens (Glow)",
   "addedBy": "Claude"
+ },
+ {
+  "id": "2026-11-27-explore-curated-info-icon",
+  "date": "2026-11-27",
+  "ts": "2026-11-27T21:55:20Z",
+  "type": "updated",
+  "product": "Client App iPhone Glow",
+  "area": "04 Explore · For You",
+  "title": "Curated for you info icon switched from brand/300 to ink/primary",
+  "summary": "The info icon on the Curated for you section header now uses the same treatment as the Total invested disclosure and the DataNote on the company proposal screens: stroke bound to ink/primary instead of brand/300. Size and position are unchanged.",
+  "details": [
+   "04.1 Explore · For You 3765:45831 — SectionHeader 3765:46059, nested icon/info vector I3765:46059;5173:7191;2110:254 rebound to ink/primary.",
+   "Icon stays at 20x20, matching the 17/22 section title.",
+   "Applied as an instance override; the SectionHeader component in the library still defaults its info icon to brand/300.",
+   "The equivalent headers on the two prospect For You screens (3816:45929, 4007:49256) are hidden layers and were left untouched."
+  ],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3765-45831",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "addedBy": "Claude"
  }
 ]
