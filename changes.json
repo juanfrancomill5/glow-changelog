@@ -3915,9 +3915,9 @@
   "title": "Info (i) on the Total invested chart opens a What this means sheet",
   "summary": "The Total invested eyebrow on Home and Portfolio now carries the library info icon, which opens a bottom sheet explaining what the figure and the step chart do and do not represent. The sheet states that the chart is not a current value, a gain, a loss or a return, and that it only moves when a purchase settles. Nothing else on either screen changed.",
   "details": [
-   "03.1 Home 282:2553 — eyebrow wrapped in an auto-layout group 5180:69446 (gap space/1) holding the existing label plus icon/info at 16x16, stroke bound to brand/300.",
+   "03.1 Home 282:2553 — eyebrow wrapped in an auto-layout group 5180:69446 (gap space/1) holding the existing label plus icon/info at 14x14, stroke bound to ink/primary, matching the DataNote pattern used on the company proposal screens.",
    "06.1 Portfolio 282:10909 — same group 5180:69495.",
-   "Group height is pinned to 14 with clipping off, so the icon overhangs by 1px and InvestedHero keeps its original height (356 Home, 329 Portfolio); no element below moved.",
+   "Group height is pinned to 14 with clipping off, so icon and label share the same 14pt box and the icon's optical centre lands on the label's cap-height centre; InvestedHero keeps its original height (356 Home, 329 Portfolio) and no element below moved.",
    "New overlays: Overlay · 03.1s Sheet · What Total invested means 5180:69388 and Overlay · 06.1s Sheet · What Total invested means 5180:69450, both built on the library Sheet + Scrim with a single Primary 'Got it'.",
    "Prototype: ON_CLICK on the eyebrow group opens the overlay (Move in); the scrim and 'Got it' close it.",
    "Portfolio copy notes that the figure follows the selected account and tab; the Home copy covers all accounts.",
