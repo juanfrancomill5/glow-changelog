@@ -3800,5 +3800,50 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5110-7203",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-27-v3-company-dock",
+    "date": "2026-11-27",
+    "ts": "2026-11-27T20:09:17Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "▶ Prototype V3 · Company screens",
+    "title": "Company screens on Prototype V3 now use the Expanding pill dock",
+    "summary": "All 115 company screens on the V3 prototype page, in both the Existing Client and Prospect flows, replaced the stacked offering bar and section bar with the approved single dock. The four Template masters carry the dock, so every company inherits it, and each screen kept its own offering line, button label and prototype links.",
+    "details": [
+      "Component set CompanyDock · Expanding pill 5110:7203 (Section = Overview | Company | Research | News), 370×134, placed at x=16 y=724.",
+      "Template masters 3072:26482, 3072:26546, 3072:26580, 3072:26607 now contain the dock; CompanySectionBar, OfferingBar and InterestBar are hidden in the masters and on every screen, not deleted.",
+      "91 template instances and 20 standalone frame screens converted. Scroll area height is 613 so content stops at the dock.",
+      "The 20 frame screens had no scroll wrapper; their content now sits in a clipped scroll frame (vertical overflow) because the floating dock no longer hides overflow the way the full-width bars did.",
+      "Prototype: 341 section links and 111 action links moved from the old bars to the dock, same destinations.",
+      "Prospect line shortened from Create an investment account first to Create your account first on 56 screens, because the longer line truncates in the dock.",
+      "Saved toasts on four screens moved up to y=652 to clear the dock.",
+      "Page backup: ▶ Prototype V3 — Backup — 2026-11-27 (before company dock)."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3164-52201",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-27-duo-v3-company-dock",
+    "date": "2026-11-27",
+    "ts": "2026-11-27T20:09:17Z",
+    "type": "updated",
+    "product": "Client App iPhone Duo",
+    "area": "▶ Prototype V3 · Duo · Company screens",
+    "title": "Company screens on Prototype V3 · Duo now use the Expanding pill dock",
+    "summary": "All 230 company screens on the Duo V3 prototype page, outer and inner displays in both flows, replaced the stacked offering bar and section bar with the same dock as the iPhone prototype. The dock spans the content column next to the rail, and each screen kept its offering line, button label and prototype links.",
+    "details": [
+      "Local component set CompanyDock · Expanding pill 594:119837 in the Templates section, same structure and Glow variable bindings as the iPhone file.",
+      "Outer display 466×678: dock 350 wide at x=16 y=528. Inner display 951×669: dock 835 wide at x=16 y=519.",
+      "Eight Template masters updated (143:37286, 143:37323, 143:37377, 143:37401, 156:60592, 156:60721, 156:60839, 156:60927); old bars hidden, not deleted.",
+      "182 template instances and 40 standalone frame screens converted; the frame screens got a clipped scroll wrapper ending at the dock.",
+      "Prototype: 1,228 section links and 404 action links moved to the dock with the same destinations.",
+      "Prospect line shortened to Create your account first, matching the iPhone prototype.",
+      "Page backup: ▶ Prototype V3 · Duo — Backup — 2026-11-27 (before company dock)."
+    ],
+    "figma": "https://www.figma.com/design/NTwrNLrdN8FQBCLy58R4JO/?node-id=143-37256",
+    "file": "iPhone Duo",
+    "addedBy": "Claude"
   }
 ]
