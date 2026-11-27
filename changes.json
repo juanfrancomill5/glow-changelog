@@ -3702,5 +3702,24 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4947-489",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-27-stripe-logo-company-research-news",
+    "date": "2026-11-27",
+    "ts": "2026-11-27T15:54:17Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Proposal · Company Private & Public · v3 (Nov 24)",
+    "title": "Stripe logo and violet tile on the public Company, Research and News screens",
+    "summary": "The public Company, Research and News screens were named Stripe but still carried the Anthropic logo on the clay tile, left over from the template they were built from. All six, and their copies on the export board, now show the Stripe logo on the violet tile, and the Company key facts no longer carry the previous company's values.",
+    "details": [
+      "Proposal page: U8 4948:2143, U9 4952:4314, U10 4952:4338, UP2 5036:4974, UP3 5036:5204, UP4 5036:5315. Export board: the matching Client · Public and Prospect · Public Company, Research and News copies.",
+      "Logo variant set to Property 1=Stripe; tile gradient #8a83ff → #5048e5.",
+      "Key facts on the public Company screens: Founded 2010, Employees 8,000+, Market Online payments.",
+      "Audit after the fix: every logo on public screens is Stripe on violet, every logo on private screens is Anthropic on clay."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4948-2143",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
