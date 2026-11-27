@@ -3778,5 +3778,27 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5101-2905",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-27-company-dock-expanding-pill",
+    "date": "2026-11-27",
+    "ts": "2026-11-27T18:13:46Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Proposal · Company Private & Public · v3 (Nov 24)",
+    "title": "Company dock switched to the Expanding pill nav on every proposal screen",
+    "summary": "The company profile dock now uses the Expanding pill navigation chosen from the review board: inactive sections are icon-only targets and the active one opens into a brand gradient pill with its icon and word. It is a new component set with a variant per section, bound to Glow variables and styles, and it replaces the underline dock on all 29 proposal screens and their copies on the export board.",
+    "details": [
+      "Component set CompanyDock · Expanding pill 5110:7203, variant property Section = Overview 5110:7095 | Company 5110:7125 | Research 5110:7151 | News 5110:7177. 370×134.",
+      "Bindings: dock radius radius/2xl, pill radius radius/xl, nav padding and icon-label gap space/2, gap between items space/1, background blur blur/nav, fill surface/200 at 90%, stroke line/strong, divider line/default.",
+      "Active pill: brand/400 → brand/500 gradient, effect style Glow/glow-sm, icon and Manrope Bold 13.5/16 label on on-brand. Inactive items 64×48 with icon/muted icons.",
+      "Tier 1 is still OfferingBar with per-screen Eyebrow, Detail and button label; every screen kept its copy.",
+      "Docks sit at x=16 y=724; scroll frames resized to h=613.",
+      "Prototype: 100 section-tab links re-wired inside each persona set, and the 17 dock action links carried over.",
+      "The previous underline set CompanyDock · (proposed) 5029:5625 is kept in the components section; it is still used by Option A on the review board."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5110-7203",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
