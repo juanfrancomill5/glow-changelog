@@ -3945,5 +3945,44 @@
   "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=3765-45831",
   "file": "V3 Phoenix Client App — Screens (Glow)",
   "addedBy": "Claude"
+ },
+ {
+  "id": "2026-11-27-home-your-portfolio-label",
+  "date": "2026-11-27",
+  "ts": "2026-11-27T22:31:00Z",
+  "type": "updated",
+  "product": "Client App iPhone Glow",
+  "area": "03 · Home · User 1 · Existing Client",
+  "title": "Home section header renamed from \"Your companies\" to \"Your portfolio\"",
+  "summary": "The section listing the client's held companies on Home now reads \"Your portfolio\". The rows below it were repointed to holding detail, so the header now names what the rows lead to instead of describing them as generic companies.",
+  "details": [
+   "Screen 03.1 Home (282:2553); section header text node 342:6980, layer renamed to match.",
+   "Sibling label \"Browse all\" (342:6981) unchanged.",
+   "Three other screens still read \"Your companies\": 02.16 Home · Viewing Taylor Brooks (4228:49915), 02.17 Menu · Viewing Taylor Brooks (4229:50151), 02.18 Menu · Switch account (4231:50483)."
+  ],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-2553",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "addedBy": "Claude"
+ },
+ {
+  "id": "2026-11-27-home-company-rows-to-holding",
+  "date": "2026-11-27",
+  "ts": "2026-11-27T22:31:30Z",
+  "type": "updated",
+  "product": "Client App iPhone Glow",
+  "area": "03 · Home · User 1 · Existing Client",
+  "title": "Your portfolio rows on Home now navigate to the holding detail screens, not the company profiles",
+  "summary": "Each CompanyRow in the Your portfolio section was repointed from the 05 company profile screen to the matching 06.6 Holding detail screen. Tapping a company from Home now opens that client's position — amount invested, lots and documents — rather than the public company profile.",
+  "details": [
+   "SpaceX 342:6984: 3084:28400 (v2 · Overview · Dark · SpaceX) → 3019:25239 (06.6 Holding detail · SpaceX).",
+   "Anduril 342:6995: 3086:29490 (v2 · Overview · Dark · Anduril Industries) → 282:11137 (06.6 Holding detail · Anduril).",
+   "Stripe 342:7006: 282:8572 (v2 · Overview · Dark · Stripe) → 3019:25334 (06.6 Holding detail · Stripe).",
+   "Trigger and transition preserved: On click · Navigate to · Dissolve, ease out, 200ms, reset scroll position.",
+   "The company profile screens remain reachable from Browse all and from the Opportunities and search entry points.",
+   "Equivalent rows on 02.16 / 02.17 / 02.18 still point at the company profiles."
+  ],
+  "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=282-2553",
+  "file": "V3 Phoenix Client App — Screens (Glow)",
+  "addedBy": "Claude"
  }
 ]
