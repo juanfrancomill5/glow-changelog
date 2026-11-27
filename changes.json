@@ -3740,5 +3740,25 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5077-2798",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-27-bottom-bar-round-2",
+    "date": "2026-11-27",
+    "ts": "2026-11-27T16:08:07Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "🗳 Pick one · Company bottom bar — 3 options (Nov 27)",
+    "title": "Round 2: three bolder bottom-bar options D, E and F",
+    "summary": "A second section on the review page adds three more navigation treatments for the company dock, all using the brand ember on the active section and larger targets. The first section with options A, B and C is untouched, and the offering row is the same across both rounds.",
+    "details": [
+      "Section 5101:2905 with PNG @2x and PDF export presets; screens D 5101:2910, E 5101:3028, F 5101:3154.",
+      "Option D · Ember pill — component 5101:2825: words only, 46pt items, active item on the brand gradient with on-brand Bold 13 label and ember glow. Dock 370×136.",
+      "Option E · Ember tint — component 5101:2850: icon over word, 58pt items, active item in an ember-tinted pill with brand/300 icon and label. Dock 370×148.",
+      "Option F · Expanding pill — component 5101:2879: inactive sections are icon-only 64×48 targets, the active one expands to a brand gradient pill with icon and word. Dock 370×138.",
+      "Nav tier padding 10 with 6 between items in all three."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5101-2905",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
