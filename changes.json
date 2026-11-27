@@ -3601,5 +3601,25 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4944-231",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-27-company-bottom-bar-pick-board",
+    "date": "2026-11-27",
+    "ts": "2026-11-27T15:04:17Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "🗳 Pick one · Company bottom bar — 3 options (Nov 27)",
+    "title": "Three company bottom-bar options on a review page for the team to choose from",
+    "summary": "New page holding three bottom-bar designs for the company profile, each shown on the same full screen so only the bottom differs. Option A is the dock already used by the company proposal; B splits the sections and the action; C merges both into one 58pt bar. Each option has a close-up of the bar and a caption naming its cost.",
+    "details": [
+      "Page 5074:7080, section 5077:2798. Screens: Option A 5074:7081, Option B 5074:7124, Option C 5074:7167 — all the Anthropic private Overview, existing client.",
+      "Option A · One dock — CompanyDock, offering line and sections in one container, 132pt of bottom chrome.",
+      "Option B · Split — SectionRail 44pt at the bottom plus the primary Button floating above it; the OfferingBar moves to the top of the page content with its button hidden. 118pt of bottom chrome.",
+      "Option C · Single bar — new local component CompanyBar · 58 (proposed C) 5076:2721: four section labels plus a 46pt trailing action tile on the brand gradient, arrow icon on on-brand. 74pt of bottom chrome, and the action carries no label.",
+      "Board carries a title card, a 1.25× close-up of each bar and a caption per option; section uses the prototype page's #131110 fill."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5077-2798",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
