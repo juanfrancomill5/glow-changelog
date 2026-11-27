@@ -3721,5 +3721,24 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4948-2143",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-27-bottom-bar-options-pills",
+    "date": "2026-11-27",
+    "ts": "2026-11-27T16:02:20Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "🗳 Pick one · Company bottom bar — 3 options (Nov 27)",
+    "title": "Bottom bar options B and C are now pill navs with larger targets",
+    "summary": "Options B and C on the review board were replaced. B is a words-only pill nav and C pairs each word with an icon; both give every section a larger tap target than the segmented and chip versions they replace. Option A, the underline dock, and the shared offering row are unchanged.",
+    "details": [
+      "Option B 5074:7124 — component CompanyDock · Pills (proposed B) 5080:2769: four 44pt items, active item in a glass/200 pill with a line/strong stroke, labels Manrope 13/16. Dock 370×130.",
+      "Option C 5074:7167 — component CompanyDock · Icon pills (proposed C) 5080:2793: four 56pt items with the section icons from CompanySectionBar (trending-up, info, file-text, newspaper) over an 11.5/16 label, active item in a glass pill. Dock 370×142.",
+      "Nav tier padding is 8 with 6 between items; inactive icons and labels use ink/muted.",
+      "The segmented-control and scrolling-chip tiers were removed from both components."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5077-2798",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
