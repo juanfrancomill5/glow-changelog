@@ -3681,5 +3681,26 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5084-7081",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-27-public-company-stripe",
+    "date": "2026-11-27",
+    "ts": "2026-11-27T15:41:49Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Proposal · Company Private & Public · v3 (Nov 24)",
+    "title": "Public company example switched from Figma to Stripe",
+    "summary": "The public company screens used Figma, which is not one of the demo companies in the prototype and therefore had no logo tile colour of its own — it was inheriting Anthropic's clay gradient. All public screens now use Stripe, which is the most used company in the prototype and carries the violet tile the system defines for it.",
+    "details": [
+      "Logo variant swapped to Property 1=Stripe on 21 instances per page; tile gradient set to #8a83ff → #5048e5, the value V3 already uses for Stripe.",
+      "Private screens are unchanged and stay on Anthropic with its clay tile #e39a74 → #c4693f.",
+      "Copy updated across 19 public screens on the proposal page and the 19 copies on the export board: header Public · NYSE: STRP · Payments, ticker line STRP · NYSE, instant quote title, website stripe.com, exchange row NYSE · STRP, Payments tag.",
+      "Research and news rows rewritten to Stripe equivalents, including the IPO pricing and post-IPO headlines; the business model line now describes transaction fees plus billing, treasury and fraud subscriptions.",
+      "Indicate-interest sheet copy now names Stripe.",
+      "Prices and figures are unchanged placeholders."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=4947-489",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
