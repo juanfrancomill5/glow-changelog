@@ -3621,5 +3621,43 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5077-2798",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-27-bottom-bar-options-nav-approaches",
+    "date": "2026-11-27",
+    "ts": "2026-11-27T15:09:45Z",
+    "type": "updated",
+    "product": "Client App iPhone Glow",
+    "area": "🗳 Pick one · Company bottom bar — 3 options (Nov 27)",
+    "title": "Review board reworked: three navigation approaches, one shared floating action",
+    "summary": "The three options now vary the navigation only. The floating dock and the Request allocation row are identical across all three, so the choice is purely how the four sections are presented: an ember underline, an enclosed segmented track, or a scrolling chip rail.",
+    "details": [
+      "Option A · Underline tabs 5074:7081 — the existing CompanyDock, plain labels with an ember underline on the active section.",
+      "Option B · Segmented control 5074:7124 — new component CompanyDock · Segmented (proposed B) 5080:2769, nav tier built from the published Tabs component, enclosed track with the selected segment raised. Dock 370×132.",
+      "Option C · Scrolling chips 5074:7167 — new component CompanyDock · Chips (proposed C) 5080:2793, nav tier is a clipped horizontal chip rail showing Overview, Company, Research, News, Investors, Documents. Dock 370×124.",
+      "The earlier split-rail and merged-bar treatments were removed along with their components, and the in-page offering band was reverted.",
+      "Each option keeps its close-up and caption; the board title now states that only the navigation changes."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5077-2798",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-27-dock-default-offering-copy",
+    "date": "2026-11-27",
+    "ts": "2026-11-27T15:09:45Z",
+    "type": "fixed",
+    "product": "Client App iPhone Glow",
+    "area": "🎨 Proposal · Company Private & Public · v3 (Nov 24)",
+    "title": "Dock components no longer default to offering terms",
+    "summary": "The dock components inherited the OfferingBar default copy, which put allocation percentage and a close date on a Company Detail surface. All dock components now default to the neutral Offering open / Series F / Request allocation line.",
+    "details": [
+      "Updated defaults on CompanyDock variants 5029:5533, 5029:5556, 5029:5579, 5029:5602 and on the two review-board components 5080:2769 and 5080:2793.",
+      "Previous default read Offering · Secondary / 82% allocated · Closes Apr 12 / View offering.",
+      "Screen-level overrides are unaffected — public screens still show FIG · NYSE with Indicate interest, prospect screens still show the account gate."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5029-5625",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
