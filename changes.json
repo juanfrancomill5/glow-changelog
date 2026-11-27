@@ -3659,5 +3659,27 @@
     "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5029-5625",
     "file": "V3 Phoenix Client App — Screens (Glow)",
     "addedBy": "Claude"
+  },
+  {
+    "id": "2026-11-27-company-profile-export-board",
+    "date": "2026-11-27",
+    "ts": "2026-11-27T15:23:54Z",
+    "type": "new",
+    "product": "Client App iPhone Glow",
+    "area": "📤 Export · Company profile flows (Nov 27)",
+    "title": "Export board: the four company profile flows in one section",
+    "summary": "New page with a single section holding all 29 company profile screens, grouped into the four flows and laid out for sharing. Titles only — a board title, a title per flow and a title per screen, with no descriptions or annotations. The section carries PNG @2x and PDF export presets so it goes out in one click.",
+    "details": [
+      "Page 5084:7080, section 5084:7081, 5262×4840.",
+      "Client · Public — Overview 1D live, Overview scrolled, scrubbing the chart, Since IPO, Instant quote sheet, Market data sheet, Indicate interest sheet, Interest sent, Company, Research, News.",
+      "Client · Private — Overview, Company, Research, News.",
+      "Prospect · Public — Overview, Company, Research, News, Instant quote sheet, Market data sheet, Create investment account sheet, Account request sent.",
+      "Prospect · Private — Overview, Company, Research, News, Create investment account sheet, Account request sent.",
+      "Screens are copies of the proposal page, so the proposal stays the working source and this board stays a stable snapshot.",
+      "Section fill matches the prototype page at #131110."
+    ],
+    "figma": "https://www.figma.com/design/k9NJkb5ouN0Fxgbmct41fp/?node-id=5084-7081",
+    "file": "V3 Phoenix Client App — Screens (Glow)",
+    "addedBy": "Claude"
   }
 ]
